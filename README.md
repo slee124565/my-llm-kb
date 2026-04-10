@@ -2,6 +2,8 @@
 
 一個專門用來承接我每日閱讀 `LLM + agent` 文章、並持續編譯成可查詢知識庫的 repo。
 
+這個 repo 基於 [llm-wiki-kb](https://github.com/slee124565/llm-wiki-kb) 的 knowledge-base operating model，並進一步收斂成個人的 daily reading workflow for LLM and agent articles。
+
 它以 Karpathy 式 `llm-wiki` / `llm knowledge base` 的設計理念為原型，但不是要做成自動收集器，而是要把「人的判斷」與「agent 的編譯能力」拆成兩層，讓 repo 成為長期可累積的 externalized knowledge layer。
 
 **兩層協作模型**
