@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "generated_manually": true,
+  "description": "Machine-readable registry of prompt assets for repo-local human-agent collaboration.",
+  "prompts": [
+    {
+      "id": "ingest-source",
+      "path": "prompts/ingest-source.md",
+      "title": "Ingest Source",
+      "purpose": "ingest a new source into raw and article layers with repo-aware merge judgment",
+      "use_when": [
+        "a new article, interview, paper note, or transcript should enter the repo"
+      ],
+      "inputs": [
+        "source content or path",
+        "why it matters",
+        "optional topic emphasis"
+      ],
+      "outputs": [
+        "ingest verdict",
+        "raw/article action",
+        "related concepts and maps",
+        "merge candidates"
+      ],
+      "related_prompts": [
+        "compare-article-to-existing",
+        "topic-update",
+        "ingest-review"
+      ],
+      "tags": [
+        "ingest",
+        "source",
+        "article"
+      ]
+    },
+    {
+      "id": "markdown-source-ingest",
+      "path": "prompts/markdown-source-ingest.md",
+      "title": "Markdown Source Ingest",
+      "purpose": "classify and ingest a markdown source while preserving provenance and naming accuracy",
+      "use_when": [
+        "the source already exists as a markdown file",
+        "the source comes from another workspace folder"
+      ],
+      "inputs": [
+        "source path",
+        "why it should enter the repo",
+        "desired emphasis such as ingest compare merge or review"
+      ],
+      "outputs": [
+        "source classification",
+        "provenance decision",
+        "raw/article/concept action",
+        "naming recommendation"
+      ],
+      "related_prompts": [
+        "compare-article-to-existing",
+        "topic-update",
+        "ingest-review"
+      ],
+      "tags": [
+        "ingest",
+        "markdown",
+        "provenance"
+      ]
+    },
+    {
+      "id": "ingest-review",
+      "path": "prompts/ingest-review.md",
+      "title": "Ingest Review",
+      "purpose": "review today's newly ingested articles for net-new signal merge pressure and structural impact",
+      "use_when": [
+        "one or more new article cards were added or updated today"
+      ],
+      "inputs": [
+        "today's new or updated article cards",
+        "existing concepts maps and index"
+      ],
+      "outputs": [
+        "daily ingest synthesis review",
+        "article verdicts",
+        "concept and map update suggestions"
+      ],
+      "related_prompts": [
+        "topic-update",
+        "conflict-review",
+        "repo-maintenance-review"
+      ],
+      "tags": [
+        "review",
+        "ingest",
+        "synthesis"
+      ]
+    },
+    {
+      "id": "compare-article-to-existing",
+      "path": "prompts/compare-article-to-existing.md",
+      "title": "Compare Article To Existing",
+      "purpose": "compare a new article against existing repo pages and decide whether it is net-new duplicate or revision pressure",
+      "use_when": [
+        "a new source looks similar to existing articles or concepts"
+      ],
+      "inputs": [
+        "new article or source",
+        "closest relevant pages in the repo"
+      ],
+      "outputs": [
+        "difference analysis",
+        "recommended write target",
+        "duplicate versus net-new judgment"
+      ],
+      "related_prompts": [
+        "ingest-source",
+        "markdown-source-ingest",
+        "topic-update",
+        "conflict-review"
+      ],
+      "tags": [
+        "compare",
+        "article",
+        "deduplication"
+      ]
+    },
+    {
+      "id": "topic-update",
+      "path": "prompts/topic-update.md",
+      "title": "Topic Update",
+      "purpose": "update a concept or map from a topic-first perspective rather than a single-article perspective",
+      "use_when": [
+        "the user wants to advance a topic such as tool use memory evals or agent workflow"
+      ],
+      "inputs": [
+        "target topic",
+        "new source or batch of sources",
+        "existing concept and map pages"
+      ],
+      "outputs": [
+        "topic state before",
+        "concept updates",
+        "map updates",
+        "open threads"
+      ],
+      "related_prompts": [
+        "compare-article-to-existing",
+        "conflict-review",
+        "repo-maintenance-review"
+      ],
+      "tags": [
+        "topic",
+        "concept",
+        "map",
+        "synthesis"
+      ]
+    },
+    {
+      "id": "conflict-review",
+      "path": "prompts/conflict-review.md",
+      "title": "Conflict Review",
+      "purpose": "separate real conflicts from framing differences uncertainty and revision pressure",
+      "use_when": [
+        "a new source appears to disagree with existing repo understanding",
+        "the user wants a conflict-focused review"
+      ],
+      "inputs": [
+        "new source",
+        "relevant article concept and map pages"
+      ],
+      "outputs": [
+        "real conflicts",
+        "contextual differences",
+        "recommended revisions",
+        "follow-up verification needs"
+      ],
+      "related_prompts": [
+        "compare-article-to-existing",
+        "topic-update",
+        "repo-maintenance-review"
+      ],
+      "tags": [
+        "review",
+        "conflict",
+        "uncertainty"
+      ]
+    },
+    {
+      "id": "repo-maintenance-review",
+      "path": "prompts/repo-maintenance-review.md",
+      "title": "Repo Maintenance Review",
+      "purpose": "review repo structure for cleanup merge opportunities and navigation improvements without ingesting new sources",
+      "use_when": [
+        "there is no new source to ingest",
+        "the user wants to improve repo structure and navigability"
+      ],
+      "inputs": [
+        "index",
+        "maps",
+        "concepts",
+        "recent article cards"
+      ],
+      "outputs": [
+        "structure issues",
+        "cleanup suggestions",
+        "top next actions"
+      ],
+      "related_prompts": [
+        "topic-update",
+        "compare-article-to-existing",
+        "ingest-review"
+      ],
+      "tags": [
+        "review",
+        "maintenance",
+        "structure"
+      ]
+    }
+  ]
+}

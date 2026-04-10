@@ -1,0 +1,34 @@
+# Log
+
+- 2026-04-10: repository scaffold created for daily LLM and agent reading
+- 2026-04-10: added repo-specific architecture and workflow docs
+- 2026-04-10: added starter templates for article, concept, and map pages
+- 2026-04-10: imported Karpathy LLM knowledge base source into `raw/sources/2026/2026-04-06-karpathy-llm-knowledge-bases.md`
+- 2026-04-10: imported OpenAI shell, skills, and compaction article into `raw/sources/2026/2026-02-11-shell-skills-compaction-tips-for-long-running-agents-openai.md`
+- 2026-04-10: imported Anthropic long-running harness article into `raw/sources/2026/2026-03-25-claude-effective-harnesses-for-long-running-agents.md`
+- 2026-04-10: replaced placeholder sample pages with first real article cards, concepts, and maps
+- 2026-04-10: added `AGENTS.md` for OpenAI Codex and clarified agent entry files in `README.md`
+- 2026-04-10: imported Peter Steinberger article into `raw/sources/2026/2026-03-04-shipping-at-inference-speed-peter-steinberger.md`
+- 2026-04-10: added article card for `Shipping at Inference-Speed` and merged its reusable observations into long-running agent concepts and maps
+- 2026-04-10: updated `AGENTS.md` ingest rule to preserve provenance when importing sources from elsewhere in the workspace
+- 2026-04-10: imported OpenAI `Harness engineering` into `raw/sources/2026/2026-02-11-openai-harness-engineering.md`
+- 2026-04-10: imported OpenAI `Introducing Codex` into `raw/sources/2025/2025-05-16-openai-introducing-codex.md`
+- 2026-04-10: imported OpenAI `Using PLANS.md for multi-hour problem solving` into `raw/sources/2025/2025-10-07-openai-using-plans-md-for-multi-hour-problem-solving.md`
+- 2026-04-10: added three Codex-oriented article cards and introduced `repository-knowledge-as-system-of-record` plus `codex-workflows`
+- 2026-04-10: merged the three-article ingest results into existing long-running agent concepts and maps
+- 2026-04-10: imported Anthropic `Harness Design for Long-Running Application Development` into `raw/sources/2026/2026-03-25-claude-harness-design-long-running-apps.md`
+- 2026-04-10: added article card for `Harness Design for Long-Running Application Development` and merged its planner-generator-evaluator insights into long-running agent concepts and maps
+- 2026-04-10: expanded `README.md` opening with a Human Layer / Agent Layer collaboration model and daily interaction scenarios
+- 2026-04-10: added prompt starters and markdown-source interaction guidance to `README.md`
+- 2026-04-10: ingested Peter Steinberger `OpenClaw takes over the internet` transcript from workspace blog, preserved provenance, added a new article card, and merged its local-memory and CLI-first agent observations into concepts and maps
+- 2026-04-10: added `prompts/` prompt assets for source ingest, markdown-source ingest, ingest review, comparison, topic update, conflict review, and repo maintenance review
+- 2026-04-10: added lightweight frontmatter schema to prompt assets so agents can select prompts by purpose, use case, inputs, outputs, and tags
+- 2026-04-10: documented a minimal `raw/inbox/` markdown frontmatter contract and short batch-ingest prompt in `raw/README.md`
+- 2026-04-10: added `prompts/index.json` as a machine-readable prompt registry and reduced `README.md` prompt starters to thin navigation
+- 2026-04-10: added `related_prompts` links to prompt frontmatter and `prompts/index.json` so prompt assets can suggest their likely next steps
+- 2026-04-10: added `tools/list-prompts` for prompt registry lookup and documented its thin README usage plus fuller prompt README examples
+- 2026-04-10: selected `prompts/markdown-source-ingest.md`, imported `Claude Managed Agents` from workspace blog into `raw/sources/2026/2026-04-10-claude-managed-agents.md`, added a new article card, and merged hosted-runtime / brain-hands-memory observations into long-running agent concepts and maps
+- 2026-04-10: selected `prompts/markdown-source-ingest.md`, imported Andrej Karpathy `Deep Dive into LLMs like ChatGPT` transcript from workspace course notes, added a new article card, and merged its working-memory framing into existing agent concepts and maps
+- 2026-04-10: promoted `prompts/` and `tools/` into formal repo contract in `AGENTS.md` and `ARCHITECTURE.md`
+- 2026-04-10: re-thinned `index.md` into map-first navigation with core concepts, anchor articles, and working assets
+- 2026-04-10: corrected `prompts/README.md` navigation so repo entry and prompt-local entry are distinct
