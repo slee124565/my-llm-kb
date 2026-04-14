@@ -25,6 +25,7 @@
 
 ## Relation To Existing Concepts
 
+- [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
 - [Long-Running Agent Harnesses](../concepts/long-running-agent-harnesses.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
 - [LLM Agents](../maps/llm-agents.md)

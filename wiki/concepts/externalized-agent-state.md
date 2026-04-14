@@ -18,9 +18,9 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - 維護中的 `docs/` 與 `AGENTS` 規則，也是一種可被 agent 回讀的長期狀態表面
 - `PLANS.md` 這類 self-contained execution document，則把長任務的目標、決策、驗證與進度整合成可接手 artifact
 - sprint contracts、planner-generated specs、evaluator feedback files 這類中介 artifact，也能承接跨代理 handoff 所需的局部狀態
-- personal agent 把使用者自己的 memory 存成 local markdown files，則把「記憶 ownership」本身也變成可攜、可檢查的 externalized state
-- 在 hosted agent 架構裡，獨立 session log 也是 externalized state：它把執行歷史從推理 runtime 與工具執行層拆開，讓 session 可恢復、可審計、可交接
-- 把 context storage 與 context management 分開，是 externalized state 的另一層治理原則：先確保歷史不丟，再讓摘要、裁剪與檢索策略隨模型演化調整
+- personal agent 的 local markdown memory、hosted agent 的 session log、repo-local docs / plans，都是 externalized state，但它們分屬不同 runtime surface，治理責任也不同
+- 把 context storage 與 context management 分開，是 externalized state 的治理原則：先確保歷史不丟，再讓摘要、裁剪與檢索策略隨模型演化調整
+- memory ownership 與 runtime surface 的差異，應與 state externalization 分開理解；前者決定誰持有與管理狀態，後者決定狀態是否脫離單次對話存在
 
 ## Signals From Recent Articles
 
@@ -47,6 +47,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 
 ## Related Pages
 
+- [Agent Runtime Surfaces](agent-runtime-surfaces.md)
 - [Agent Knowledge Compilation](agent-knowledge-compilation.md)
 - [Long-Running Agent Harnesses](long-running-agent-harnesses.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)

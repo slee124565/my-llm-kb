@@ -93,6 +93,39 @@
       ]
     },
     {
+      "id": "adoption-follow-up",
+      "path": "prompts/adoption-follow-up.md",
+      "title": "Adoption Follow-Up",
+      "purpose": "turn a newly ingested article into workflow changes habit changes and a concrete next adoption step",
+      "use_when": [
+        "a high-value article card was just added or updated",
+        "the user wants to turn understanding into practice"
+      ],
+      "inputs": [
+        "target article card",
+        "related concept or map pages if relevant",
+        "optional current workflow or habit to compare against"
+      ],
+      "outputs": [
+        "knowledge delta",
+        "workflow delta",
+        "habit delta",
+        "next adoption experiment",
+        "recommended repo writeback target"
+      ],
+      "related_prompts": [
+        "ingest-source",
+        "markdown-source-ingest",
+        "topic-update"
+      ],
+      "tags": [
+        "adoption",
+        "workflow",
+        "habit",
+        "follow-up"
+      ]
+    },
+    {
       "id": "compare-article-to-existing",
       "path": "prompts/compare-article-to-existing.md",
       "title": "Compare Article To Existing",

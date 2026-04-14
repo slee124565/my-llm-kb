@@ -84,6 +84,8 @@ frontmatter schema：
   當來源本身已經是 markdown 檔
 - [ingest-review.md](ingest-review.md)
   回顧今天 new ingest 的增量、重複與 merge 建議
+- [adoption-follow-up.md](adoption-follow-up.md)
+  將高價值 article ingest 轉成 workflow / habit adoption
 - [compare-article-to-existing.md](compare-article-to-existing.md)
   比較一篇新文章和 repo 既有內容
 - [topic-update.md](topic-update.md)

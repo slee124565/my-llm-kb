@@ -32,3 +32,15 @@
 - 2026-04-10: promoted `prompts/` and `tools/` into formal repo contract in `AGENTS.md` and `ARCHITECTURE.md`
 - 2026-04-10: re-thinned `index.md` into map-first navigation with core concepts, anchor articles, and working assets
 - 2026-04-10: corrected `prompts/README.md` navigation so repo entry and prompt-local entry are distinct
+- 2026-04-11: ran `prompts/topic-update.md` for agent runtime surfaces, added a new concept page, and rewired concept/map/index links around hosted vs repo-local vs local-personal agent execution surfaces
+- 2026-04-12: ran `prompts/ingest-source.md` for `Bespoke CLIs for Codex`, imported the workspace blog summary plus a supporting capture of the linked OpenAI Developers article into `raw/sources/2026/`, added an article card, and merged CLI-vs-MCP operability observations into existing Codex workflow pages
+- 2026-04-12: added `docs/adoption.md` plus `prompts/adoption-follow-up.md` to formalize post-ingest workflow / habit adoption and registered the new prompt in prompt docs and registry
+- 2026-04-12: ran the first `adoption-follow-up` on `Bespoke CLIs for Codex` and wrote back a concrete CLI-candidate habit change plus success criteria into the article card
+- 2026-04-12: reran adoption on `Bespoke CLIs for Codex` using the `gmail-inbox-triage` plus `gws` case, refining the article-level adoption note around `substrate vs task-native CLI vs companion skill` responsibility split
+- 2026-04-12: reran `Bespoke CLIs for Codex` against the updated adoption schema, added an explicit `Issue Follow-Up Decision`, and opened GitHub issue #2 in `my-llm-kb` with `adoption` and `experiment` labels
+- 2026-04-12: ran `prompts/markdown-source-ingest.md` for the Boris Cherny `What happens after coding is solved` workspace article, normalized its malformed import filename into `raw/sources/2026/`, added a new article card, and merged its role-shift / feedback-triage observations into existing agent concept and map pages
+- 2026-04-12: ran `prompts/adoption-follow-up.md` on the Boris Cherny article and wrote back a concrete `triage before implementation` adoption experiment into the article card
+- 2026-04-12: added a minimal GitHub adoption-issue workflow to `docs/adoption.md` plus an issue template in `.github/ISSUE_TEMPLATE/`; attempted to create the first adoption issue but `slee124565/my-llm-kb` currently has GitHub Issues disabled
+- 2026-04-12: after enabling GitHub Issues on `slee124565/my-llm-kb`, created the first adoption issue for the Boris Cherny article, added `adoption` and `experiment` labels, and documented their semantics in `docs/adoption.md`
+- 2026-04-14: ran `prompts/ingest-source.md` for Anthropic Engineering `A postmortem of three recent issues`, imported the workspace article into `raw/sources/2026/`, added a new article card, and merged provider-runtime quality-harness observations into runtime and long-running agent pages
+- 2026-04-14: ran `prompts/adoption-follow-up.md` on `A postmortem of three recent issues` and wrote back a regression-note habit for intermittent workflow quality failures without opening a GitHub adoption issue yet

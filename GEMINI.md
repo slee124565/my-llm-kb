@@ -1,4 +1,4 @@
-# CLAUDE.md
+# GEMINI.md
 
 Read `AGENTS.md`, `README.md`, and `ARCHITECTURE.md` first.
 Treat them as the repository governance baseline.

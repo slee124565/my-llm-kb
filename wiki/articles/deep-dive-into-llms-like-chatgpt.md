@@ -26,6 +26,7 @@
 
 ## Relation To Existing Concepts
 
+- [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
 - [Agent Knowledge Compilation](../concepts/agent-knowledge-compilation.md)
 - [LLM Agents](../maps/llm-agents.md)

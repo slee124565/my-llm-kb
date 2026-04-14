@@ -23,6 +23,7 @@
 
 ## Relation To Existing Concepts
 
+- [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
 - [Repository Knowledge As System Of Record](../concepts/repository-knowledge-as-system-of-record.md)
 - [Codex Workflows](../maps/codex-workflows.md)

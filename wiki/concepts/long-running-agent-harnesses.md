@@ -23,6 +23,9 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - hosted agent platforms 把部分 harness complexity 產品化：使用者不再自己維運 sandbox、state recovery、credential routing，而是消費 provider-managed runtime primitives
 - 對 hosted long-running agents 而言，brain / hands / memory 分離可同時支撐 lazy execution、故障隔離、credential isolation 與多 agent handoff
 - 隨模型能力升級，某些 hand-tuned orchestration patch 會迅速失去必要性；由模型供應商維護的 harness，理論上能比每個客戶各自重寫更快跟上
+- runtime surface 會改變 harness 責任分工：repo-local coding agent、provider-managed hosted agent、local personal agent，不會共享完全相同的 control surfaces
+- 對 provider-managed runtime 而言，quality harness 不能只看離線 eval；routing correctness、cross-platform equivalence、production-side sensitive eval、rollback discipline 與 privacy-aware debugging tooling 都是 load-bearing parts
+- 當多個小型 infra bug 疊加且症狀互相干擾時，community feedback 與 postmortem loop 也應被視為 harness 的一部分，而不是事後公關附屬品
 
 ## Signals From Recent Articles
 
@@ -34,6 +37,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Harness Design for Long-Running Application Development](../articles/harness-design-for-long-running-application-development.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
+- [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
 
 ## Open Questions
 
@@ -44,9 +48,11 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - async remote execution 與 repo-local long session 各自應由哪些 control surfaces 承擔
 - evaluator 在主觀品質任務中的 role，是否能穩定遷移到一般產品 QA
 - hosted managed runtime 與 repo-local harness 之間，最小可攜 contract 應如何定義，才能降低平台綁定
+- provider-managed runtime 要如何在不放寬隱私邊界的前提下，維持足夠敏感的 regression detection 與 root-cause debugging 能力
 
 ## Related Pages
 
+- [Agent Runtime Surfaces](agent-runtime-surfaces.md)
 - [Externalized Agent State](externalized-agent-state.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)
 - [Long-Running Agents](../maps/long-running-agents.md)
