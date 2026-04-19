@@ -16,6 +16,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - shell、skills、compaction 這類 primitive 是 harness 的底層能力，不是完整解法本身
 - 對更成熟的模型而言，部分顯式 harness 步驟可能退化為較輕量的 conversation-first planning 與 doc-driven steering
 - 對 Codex 類 workflow 而言，isolated sandboxes、verifiable evidence、async delegation 與 plan artifacts 是同一套 harness 的不同面向
+- 對高不確定性的長任務，prototyping milestones 與 parallel implementations 也應被視為 harness 技法：先以可驗證的小路徑降風險，再決定是否納入主實作
 - planner / generator / evaluator 的角色分離，是另一種可把主觀評估與功能驗證納入 loop 的 harness pattern
 - context reset 與 compaction 應視為不同控制手段，而不是單純新舊替代
 - 在 local personal-agent workflow 中，conversation-first UX 也可以是一種 harness 選擇：把 session、folder 與 model management 隱藏起來，換取更高 steerability
@@ -26,6 +27,10 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - runtime surface 會改變 harness 責任分工：repo-local coding agent、provider-managed hosted agent、local personal agent，不會共享完全相同的 control surfaces
 - 對 provider-managed runtime 而言，quality harness 不能只看離線 eval；routing correctness、cross-platform equivalence、production-side sensitive eval、rollback discipline 與 privacy-aware debugging tooling 都是 load-bearing parts
 - 當多個小型 infra bug 疊加且症狀互相干擾時，community feedback 與 postmortem loop 也應被視為 harness 的一部分，而不是事後公關附屬品
+- harmony format 把 reasoning、tool calls 與 final answers 排進同一條可恢復的 turn chain，說明 harness 必須同時處理狀態保留與 user-facing normalization
+- raw CoT handling 讓「internal trace 必須跨 turn 保留，但不能直接展示」成為 harness 的明確責任，而不是 UI 的臨時細節
+- gpt-oss verification guidance 顯示 harness 的驗證邊界應涵蓋 API shape、reasoning transport 與 eval bundle，而不只是單一 smoke test
+- gpt-oss-safeguard guide 進一步表明，harness 還要把 policy prompt structure、reasoning effort 與 output format 當成可驗證的 control surfaces
 
 ## Signals From Recent Articles
 
@@ -38,6 +43,10 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Harness Design for Long-Running Application Development](../articles/harness-design-for-long-running-application-development.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
+- [OpenAI harmony response format](../articles/openai-harmony.md)
+- [How to handle the raw chain of thought in gpt-oss](../articles/handle-raw-cot.md)
+- [Verifying gpt-oss implementations](../articles/verifying-implementations.md)
+- [User Guide For Gpt-Oss-Safeguard](../articles/gpt-oss-safeguard-guide.md)
 
 ## Open Questions
 
@@ -49,6 +58,10 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - evaluator 在主觀品質任務中的 role，是否能穩定遷移到一般產品 QA
 - hosted managed runtime 與 repo-local harness 之間，最小可攜 contract 應如何定義，才能降低平台綁定
 - provider-managed runtime 要如何在不放寬隱私邊界的前提下，維持足夠敏感的 regression detection 與 root-cause debugging 能力
+- plan 內的 prototype path 與正式 path 應如何分流，才不會讓 living document 過厚又失去可執行性
+- raw reasoning persistence 和 user-facing safety 之間，應如何設計最小可用的 state handoff contract
+- verification bundle 的最小組合應如何分層，才不會把 smoke test 和 production-grade eval 混為一談
+- safety prompt 的驗證應否成為 harness 的標準步驟，而不是額外手工檢查
 
 ## Related Pages
 

@@ -15,16 +15,19 @@ Agent knowledge compilation 指的是：先把來源保存為 raw material，再
 - `wiki/concepts/` 保存跨來源穩定理解
 - `wiki/maps/` 保存導航入口
 - `index.md` 與 `log.md` 分別承接導航與歷史
+- 可重用的知識頁面本身也應該好掃讀：takeaway 要前置，標題要具體，段落要短，這樣下一輪 agent 才能快速判斷哪些內容該 merge、哪些內容只留在 article card
 
 ## Signals From Recent Articles
 
 - [LLM Knowledge Bases](../articles/karpathy-llm-knowledge-bases.md)
+- [What Makes Documentation Good](../articles/what-makes-documentation-good.md)
 
 ## Open Questions
 
 - concept page 的拆分粒度應如何控制
 - query 產出的 reusable artifact 應如何分類回寫
 - 何時需要從 index-first 升級到 search-first
+- knowledge page 是否也應明確區分 skim layer 與 detail layer
 
 ## Related Pages
 
