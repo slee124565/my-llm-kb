@@ -19,6 +19,8 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - `PLANS.md` 這類 self-contained execution document，則把長任務的目標、決策、驗證與進度整合成可接手 artifact
 - 完整的 execution plan 不只保存目標與進度，還應把 repository context、interfaces、dependencies、idempotence 與 recovery 條件一起外部化
 - sprint contracts、planner-generated specs、evaluator feedback files 這類中介 artifact，也能承接跨代理 handoff 所需的局部狀態
+- issue tracker state、blocker links、comments、PR links 與 per-issue workspace path 也可以成為 externalized agent state；它們把工作進度從 terminal session 移到 team 已經使用的 deliverable system
+- `WORKFLOW.md` 把 team process 外部化成 agent 可讀的 repo contract，讓「如何接 issue、何時移狀態、如何附 evidence」不只存在於人類默契
 - personal agent 的 local markdown memory、hosted agent 的 session log、repo-local docs / plans，都是 externalized state，但它們分屬不同 runtime surface，治理責任也不同
 - 把 context storage 與 context management 分開，是 externalized state 的治理原則：先確保歷史不丟，再讓摘要、裁剪與檢索策略隨模型演化調整
 - memory ownership 與 runtime surface 的差異，應與 state externalization 分開理解；前者決定誰持有與管理狀態，後者決定狀態是否脫離單次對話存在
@@ -42,6 +44,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Notes From a Marketer Building a Real CLI With Codex](../articles/notes-from-a-marketer-building-a-real-cli-with-codex.md)
+- [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [How to handle the raw chain of thought in gpt-oss](../articles/handle-raw-cot.md)
 - [Verifying gpt-oss implementations](../articles/verifying-implementations.md)
 - [User Guide For Gpt-Oss-Safeguard](../articles/gpt-oss-safeguard-guide.md)
@@ -59,6 +62,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - raw reasoning 應以什麼粒度保存，才能同時支援 tool calling、debug 與 user privacy
 - reasoning summary、raw reasoning 與 persisted turn history 的責任邊界應如何切分
 - 當 conversation 本身成為工作 artifact 時，export format 應如何和後續檢索、重用、審計對齊
+- tracker-backed state 與 repo-backed state 之間，哪些欄位應雙寫、哪些應單一來源，才不會造成狀態漂移
 - policy prompt 的版本化與 replayable evidence 應如何保存
 
 ## Related Pages

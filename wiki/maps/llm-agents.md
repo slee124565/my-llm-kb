@@ -29,6 +29,7 @@
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
 - [OpenClaw Takes Over The Internet](../articles/openclaw-takes-over-the-internet-peter-steinberger.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
+- [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [What Happens After Coding Is Solved](../articles/what-happens-after-coding-is-solved-boris-cherny.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
@@ -53,6 +54,7 @@
 - compaction、progress artifact、skill contract 三者的最小組合是什麼
 - 更強模型是否會讓 orchestration 複雜度下降，而不是上升
 - repo-local knowledge base 與 remote async execution 應如何協同設計
+- issue tracker 作為 agent control plane 時，哪些 team process 應該被版本化成 repo-local workflow contract
 - local personal agents 與 cloud coding agents 應共享哪些設計原則，又該在哪些地方刻意分流
 - provider-managed agent infrastructure 會不會把 runtime 與 orchestration 進一步集中到少數平台
 - 如果 coding 不再是主要瓶頸，agent-era builder 的最小能力組合應如何定義，哪些 specialist review 仍然不可壓縮

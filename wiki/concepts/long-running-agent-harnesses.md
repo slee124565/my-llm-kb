@@ -16,6 +16,8 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - shell、skills、compaction 這類 primitive 是 harness 的底層能力，不是完整解法本身
 - 對更成熟的模型而言，部分顯式 harness 步驟可能退化為較輕量的 conversation-first planning 與 doc-driven steering
 - 對 Codex 類 workflow 而言，isolated sandboxes、verifiable evidence、async delegation 與 plan artifacts 是同一套 harness 的不同面向
+- ticket-level orchestration 把長任務 harness 從「單一 agent session 如何持續」推進到「issue tracker 如何分派、阻塞、重試、恢復與觀測多個 agent run」
+- always-on coding agents 需要 bounded concurrency、retry/backoff、per-issue workspace isolation、terminal-state cleanup 與 structured observability，否則只是把多個互動 session 包成更難 debug 的背景程序
 - 對高不確定性的長任務，prototyping milestones 與 parallel implementations 也應被視為 harness 技法：先以可驗證的小路徑降風險，再決定是否納入主實作
 - planner / generator / evaluator 的角色分離，是另一種可把主觀評估與功能驗證納入 loop 的 harness pattern
 - context reset 與 compaction 應視為不同控制手段，而不是單純新舊替代
@@ -39,6 +41,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
 - [OpenClaw Takes Over The Internet](../articles/openclaw-takes-over-the-internet-peter-steinberger.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
+- [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Harness Design for Long-Running Application Development](../articles/harness-design-for-long-running-application-development.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
@@ -55,6 +58,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - coding 與 non-coding workload 是否應共用同一種 harness 骨架
 - 隨模型能力提升，哪些 harness 元件可被簡化，哪些不能
 - async remote execution 與 repo-local long session 各自應由哪些 control surfaces 承擔
+- ticket state machine、blocker graph、workspace lifecycle 與 workflow prompt 應如何拆分責任，才不會把 orchestration policy 寫死在 runner 裡
 - evaluator 在主觀品質任務中的 role，是否能穩定遷移到一般產品 QA
 - hosted managed runtime 與 repo-local harness 之間，最小可攜 contract 應如何定義，才能降低平台綁定
 - provider-managed runtime 要如何在不放寬隱私邊界的前提下，維持足夠敏感的 regression detection 與 root-cause debugging 能力

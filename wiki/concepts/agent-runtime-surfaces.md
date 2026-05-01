@@ -11,6 +11,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 ## Current Framing
 
 - repo-local coding agent 傾向把 `AGENTS.md`、`docs/`、plans、logs 與可驗證 evidence 留在 repository 中，讓 repo 變成主要 system of record
+- ticket-backed orchestrator 是另一種 runtime surface：issue tracker 持有 task state 與 dependency graph，repo 持有 workflow contract，agent runner 持有 per-issue workspace 與 session execution
 - 隨 coding 本身被壓縮，repo-local coding agent 的工作面也可能向上游擴張：不只實作 feature，還會吸收 feedback triage、bug prioritization、PR drafting 與部分 product shaping
 - provider-managed hosted agent 會把 sandbox lifecycle、session recovery、credential routing 與部分 orchestration 收斂到平台，由平台吸收模型快速演化帶來的 runtime churn
 - local personal agent 則更強調 user-owned memory、conversation-first steerability、CLI-first operability 與對本地資料面的直接接觸
@@ -34,6 +35,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
+- [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Introducing Codex](../articles/introducing-codex.md)
 - [Bespoke CLIs for Codex](../articles/bespoke-clis-for-codex.md)
 - [Notes From a Marketer Building a Real CLI With Codex](../articles/notes-from-a-marketer-building-a-real-cli-with-codex.md)
@@ -54,6 +56,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - product judgment 與 taste 能否被可靠地編成 repo-local rules，而不只是留在人的直覺裡
 - 隨 provider-managed agent infrastructure 成熟，repo-local knowledge base 會成為補充層，還是仍然是 load-bearing system of record
 - 當 coding agent 開始讀取回饋、整理需求與建議優先順序時，runtime surface 會如何重畫 PM、design 與 engineering 的責任邊界
+- issue tracker、repo workflow file、agent app-server 與 dynamic tool calls 之間的權限邊界應如何切，才能讓 agent 操作 tracker 而不暴露完整 credential surface
 - provider-managed runtime 的品質問題若只在特定硬體、流量路由或 partner surface 上發生，使用者與 team 應透過哪些 artifact 才能看見並調試這些差異
 - harmony / reasoning / tool-call contract 是否應被視為 runtime surface 的核心層，而非單純的 model-specific adapter
 - verification 的邊界要畫到哪裡：prompt format、response shape、reasoning transport，還是完整 eval bundle

@@ -20,6 +20,7 @@
 - [Effective Harnesses for Long-Running Agents](wiki/articles/effective-harnesses-for-long-running-agents.md)
 - [Harness Design for Long-Running Application Development](wiki/articles/harness-design-for-long-running-application-development.md)
 - [Harness Engineering](wiki/articles/harness-engineering-codex-agent-first-world.md)
+- [OpenAI Symphony Codex Orchestration](wiki/articles/openai-symphony-codex-orchestration.md)
 - [Introducing Codex](wiki/articles/introducing-codex.md)
 - [Bespoke CLIs for Codex](wiki/articles/bespoke-clis-for-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](wiki/articles/using-plans-md-for-multi-hour-problem-solving.md)
