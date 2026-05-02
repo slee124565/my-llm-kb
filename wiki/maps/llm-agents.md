@@ -8,6 +8,7 @@
 
 - [Agent Knowledge Compilation](../concepts/agent-knowledge-compilation.md)
 - [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
+- [AI Compute Infrastructure](../concepts/ai-compute-infrastructure.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
 - [Long-Running Agent Harnesses](../concepts/long-running-agent-harnesses.md)
 - [Repository Knowledge As System Of Record](../concepts/repository-knowledge-as-system-of-record.md)
@@ -16,6 +17,7 @@
 
 - agent knowledge compilation
 - agent runtime surfaces
+- AI compute infrastructure
 - externalized agent state
 - long-running agent harnesses
 - repository knowledge as system of record
@@ -33,6 +35,7 @@
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [What Happens After Coding Is Solved](../articles/what-happens-after-coding-is-solved-boris-cherny.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
+- [Jensen Huang - TPU Competition, China Chips, and Nvidia's Supply Chain Moat](../articles/jensen-huang-tpu-china-chips-nvidia-supply-chain-moat.md)
 - [Introducing Codex](../articles/introducing-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 
@@ -41,6 +44,7 @@
 - Andrej Karpathy
 - OpenAI
 - Anthropic
+- Nvidia
 - Boris Cherny
 - Peter Steinberger
 - Aaron Friel
@@ -59,3 +63,4 @@
 - provider-managed agent infrastructure 會不會把 runtime 與 orchestration 進一步集中到少數平台
 - 如果 coding 不再是主要瓶頸，agent-era builder 的最小能力組合應如何定義，哪些 specialist review 仍然不可壓縮
 - 當 hosted model quality regressions 只在特定 routing path 或硬體平台上出現時，使用者可見的 agent reliability 應如何被觀測、解釋與治理
+- AI compute stack 的分裂或集中，會如何影響 hosted agent 的成本、可用性、可靠性與 developer ecosystem lock-in
