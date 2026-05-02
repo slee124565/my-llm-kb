@@ -25,6 +25,7 @@
 ## Key Articles
 
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
+- [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [LLM Knowledge Bases](../articles/karpathy-llm-knowledge-bases.md)
 - [Shell + Skills + Compaction](../articles/shell-skills-compaction-long-running-agents.md)
 - [Effective Harnesses for Long-Running Agents](../articles/effective-harnesses-for-long-running-agents.md)
@@ -45,6 +46,8 @@
 - OpenAI
 - Anthropic
 - Nvidia
+- Google DeepMind
+- Demis Hassabis
 - Boris Cherny
 - Peter Steinberger
 - Aaron Friel
@@ -64,3 +67,5 @@
 - 如果 coding 不再是主要瓶頸，agent-era builder 的最小能力組合應如何定義，哪些 specialist review 仍然不可壓縮
 - 當 hosted model quality regressions 只在特定 routing path 或硬體平台上出現時，使用者可見的 agent reliability 應如何被觀測、解釋與治理
 - AI compute stack 的分裂或集中，會如何影響 hosted agent 的成本、可用性、可靠性與 developer ecosystem lock-in
+- context window, externalized memory, and learned continual memory should be composed how if agents are expected to adapt to a user's or task's long-term context
+- future general agents should absorb specialized capabilities into one model, or orchestrate separate expert systems as tools

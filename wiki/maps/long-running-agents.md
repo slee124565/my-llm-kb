@@ -30,6 +30,7 @@
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Harness Design for Long-Running Application Development](../articles/harness-design-for-long-running-application-development.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
+- [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
 
 ## Key People Or Labs
@@ -40,6 +41,7 @@
 - Aaron Friel
 - Ryan Lopopolo
 - Prithvi Rajasekaran
+- Demis Hassabis
 
 ## Open Threads
 
@@ -52,3 +54,4 @@
 - generator / evaluator 分離在什麼類型的任務上最划算
 - provider-managed runtime 若成為主流，哪些 state artifact 仍必須由使用者自己持有
 - provider-managed long-running agent 若因 serving bug 導致品質退化，production eval、user feedback 與 rollback loop 應算哪一層的 harness contract
+- multi-agent swarms and long autonomous runs should be judged by output value per agent-hour, not only by trace length or autonomy level

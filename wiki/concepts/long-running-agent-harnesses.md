@@ -19,6 +19,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - ticket-level orchestration 把長任務 harness 從「單一 agent session 如何持續」推進到「issue tracker 如何分派、阻塞、重試、恢復與觀測多個 agent run」
 - always-on coding agents 需要 bounded concurrency、retry/backoff、per-issue workspace isolation、terminal-state cleanup 與 structured observability，否則只是把多個互動 session 包成更難 debug 的背景程序
 - 對高不確定性的長任務，prototyping milestones 與 parallel implementations 也應被視為 harness 技法：先以可驗證的小路徑降風險，再決定是否納入主實作
+- Hassabis's agent critique is a useful value test: long autonomous runs and swarms need output that justifies their agent-hours, not only impressive traces or demos
 - planner / generator / evaluator 的角色分離，是另一種可把主觀評估與功能驗證納入 loop 的 harness pattern
 - context reset 與 compaction 應視為不同控制手段，而不是單純新舊替代
 - 在 local personal-agent workflow 中，conversation-first UX 也可以是一種 harness 選擇：把 session、folder 與 model management 隱藏起來，換取更高 steerability
@@ -33,6 +34,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - raw CoT handling 讓「internal trace 必須跨 turn 保留，但不能直接展示」成為 harness 的明確責任，而不是 UI 的臨時細節
 - gpt-oss verification guidance 顯示 harness 的驗證邊界應涵蓋 API shape、reasoning transport 與 eval bundle，而不只是單一 smoke test
 - gpt-oss-safeguard guide 進一步表明，harness 還要把 policy prompt structure、reasoning effort 與 output format 當成可驗證的 control surfaces
+- full fire-and-forget agents likely require continual learning and task-context adaptation; patching together current stateless models can help with subtasks but is not yet a complete long-task harness
 
 ## Signals From Recent Articles
 
@@ -45,6 +47,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Harness Design for Long-Running Application Development](../articles/harness-design-for-long-running-application-development.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
+- [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
 - [OpenAI harmony response format](../articles/openai-harmony.md)
 - [How to handle the raw chain of thought in gpt-oss](../articles/handle-raw-cot.md)
@@ -54,6 +57,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 ## Open Questions
 
 - 最小可用 harness contract 是什麼
+- what evidence threshold should prove that a multi-hour agent run is worth its compute, coordination, and review cost
 - reinforcement、compaction、subagent handoff 應如何組合
 - coding 與 non-coding workload 是否應共用同一種 harness 骨架
 - 隨模型能力提升，哪些 harness 元件可被簡化，哪些不能

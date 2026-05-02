@@ -15,6 +15,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - 隨 coding 本身被壓縮，repo-local coding agent 的工作面也可能向上游擴張：不只實作 feature，還會吸收 feedback triage、bug prioritization、PR drafting 與部分 product shaping
 - provider-managed hosted agent 會把 sandbox lifecycle、session recovery、credential routing 與部分 orchestration 收斂到平台，由平台吸收模型快速演化帶來的 runtime churn
 - local personal agent 則更強調 user-owned memory、conversation-first steerability、CLI-first operability 與對本地資料面的直接接觸
+- Hassabis's local/cloud assistant framing adds another runtime split: small on-device models can handle private high-bandwidth perception, while frontier cloud models are called selectively for harder work
 - 對 repo-local 或 local-personal agent 來說，MCP / connector 常先解決「能不能碰到資料」，但真正影響效果的往往是 operability：能否用 CLI 把搜尋、精讀、下載、草稿寫入與大 payload export 壓成可組合的小命令
 - 當人類用 agent 共同打造自己的 CLI 或資料匯出工具時，真正的控制面不只在 access / operability，還包括 product judgment：defaults、overwrite policy、artifact format 與真實 example testing
 - brain / hands / memory 分離是 hosted runtime 的重要 framing；repo docs / plans / logs 則是 repo-local coding agent 的對應 state surfaces
@@ -27,12 +28,14 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - 只要一個 stack 需要保留 raw reasoning 或 tool traces，runtime surface 就不只是輸入輸出 API，而是包含可恢復的內部狀態契約
 - policy prompts 也是 runtime surface 的一部分：policy length、output format、reasoning effort 與 precedence 規則會直接決定 safety workflow 的品質
 - 在 Trust & Safety 流程中，runtime 不是只有生成答案，而是生成可審計的 policy decision
+- future general agents may be tool-using orchestrators over specialized expert systems, such as AlphaFold-like scientific tools, rather than one giant model that internalizes every domain capability
 
 ## Signals From Recent Articles
 
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [OpenClaw Takes Over The Internet](../articles/openclaw-takes-over-the-internet-peter-steinberger.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
+- [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
@@ -49,6 +52,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 ## Open Questions
 
 - hosted runtime、repo-local runtime 與 local personal runtime 之間，最小可攜的 state contract 應長什麼樣子
+- local small model, cloud frontier model, multimodal perception layer, and specialized tool should be orchestrated at which boundary
 - 哪些 memory surfaces 應由使用者自己持有，哪些可以安全讓渡給平台
 - conversation-first 介面降低了多少摩擦，又犧牲了多少顯式 controllability 與 auditability
 - MCP / connector 與 CLI surface 的分工邊界應如何定義，才能同時保留 access control 與 operability

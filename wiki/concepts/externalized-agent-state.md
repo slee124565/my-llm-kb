@@ -14,6 +14,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - feature list / task list 提供可驗證的未完成工作視圖
 - skill、workflow docs、templates 把 procedure 外部化
 - Karpathy 對 `weights = vague recollection`、`context window = working memory` 的 framing，說明了為什麼 repo artifact 有價值：它讓 agent 能把正確狀態重新載入 working memory，而不是只靠模型參數中的模糊回憶
+- Hassabis adds a complementary warning: a larger context window is still a brute-force memory surface unless the system can decide what is relevant, retrieve it cheaply, consolidate it, and adapt it to the current task context
 - raw/article/concept/map 四層結構把知識與操作記憶穩定放在 repo 中
 - 維護中的 `docs/` 與 `AGENTS` 規則，也是一種可被 agent 回讀的長期狀態表面
 - `PLANS.md` 這類 self-contained execution document，則把長任務的目標、決策、驗證與進度整合成可接手 artifact
@@ -43,6 +44,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Harness Design for Long-Running Application Development](../articles/harness-design-for-long-running-application-development.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
+- [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [Notes From a Marketer Building a Real CLI With Codex](../articles/notes-from-a-marketer-building-a-real-cli-with-codex.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [How to handle the raw chain of thought in gpt-oss](../articles/handle-raw-cot.md)
@@ -52,6 +54,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 ## Open Questions
 
 - 哪些 state 必須 machine-readable，哪些只要 human-readable 即可
+- learned continual memory, explicit repo artifacts, and raw long context should divide responsibilities how
 - compaction 與 explicit artifact handoff 的責任邊界如何切分
 - artifact 變多之後如何防止 state 腐化與過期
 - `docs/` 與 progress artifact 在不同任務型別下應如何分工

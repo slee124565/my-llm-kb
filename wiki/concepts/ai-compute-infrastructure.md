@@ -13,6 +13,8 @@ Agent users experience this layer indirectly as model speed, price, reliability,
 - LLM progress is not only algorithmic; it is tied to the ability to run large distributed training and inference systems over many accelerators.
 - Accelerator choice is part of the runtime surface. A model served across GPUs, TPUs, Trainium, or custom ASICs needs equivalence checks, compiler confidence, and production monitoring.
 - Software-stack control matters because CUDA, XLA, Triton, kernels, libraries, and networking fabrics determine how quickly new model architectures can be made efficient.
+- Distillation and small-model deployment are compute-infrastructure strategies, not only model-quality choices: they trade frontier capability for latency, cost, privacy, edge execution, and iteration speed.
+- Cheaper inference may not remove scarcity because agent swarms, parallel reasoning, and ensembling can expand demand to consume available capacity.
 - Supply-chain coordination can be a moat when one platform can align foundries, HBM suppliers, packaging, networking, cloud operators, and downstream demand earlier than competitors.
 - Energy, data-center construction, and skilled labor can become as important as chips once accelerator supply starts to scale.
 - Export controls are not only hardware restrictions; they influence which developer ecosystem becomes default in different countries.
@@ -20,6 +22,7 @@ Agent users experience this layer indirectly as model speed, price, reliability,
 ## Signals From Recent Articles
 
 - [Jensen Huang - TPU Competition, China Chips, and Nvidia's Supply Chain Moat](../articles/jensen-huang-tpu-china-chips-nvidia-supply-chain-moat.md)
+- [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
 
@@ -30,6 +33,7 @@ Agent users experience this layer indirectly as model speed, price, reliability,
 - What is the right abstraction for agent builders: model API reliability, provider runtime surface, or full hardware / compiler / cloud path?
 - How should policy debates weigh short-term compute denial against long-term stack fragmentation?
 - Will inference split into multiple accelerator markets based on latency, throughput, cost, and token value?
+- If frontier capability is rapidly distilled into smaller models, which workloads should stay local, which should route to the cloud, and which should call specialized expert systems?
 
 ## Related Pages
 

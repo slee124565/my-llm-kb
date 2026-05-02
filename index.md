@@ -23,6 +23,7 @@
 - [Harness Engineering](wiki/articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](wiki/articles/openai-symphony-codex-orchestration.md)
 - [Jensen Huang - TPU Competition, China Chips, and Nvidia's Supply Chain Moat](wiki/articles/jensen-huang-tpu-china-chips-nvidia-supply-chain-moat.md)
+- [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](wiki/articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [Introducing Codex](wiki/articles/introducing-codex.md)
 - [Bespoke CLIs for Codex](wiki/articles/bespoke-clis-for-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](wiki/articles/using-plans-md-for-multi-hour-problem-solving.md)

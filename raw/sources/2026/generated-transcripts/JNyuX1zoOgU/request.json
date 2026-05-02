@@ -1,0 +1,21 @@
+{
+  "contents": [
+    {
+      "parts": [
+        {
+          "fileData": {
+            "fileUri": "https://www.youtube.com/watch?v=JNyuX1zoOgU",
+            "mimeType": "video/*"
+          }
+        },
+        {
+          "text": "Process the public YouTube video and return a transcript-oriented markdown packet.\n\nKnown title: Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough\nSource URL: https://www.youtube.com/watch?v=JNyuX1zoOgU\n\nRequirements:\n1. Output in Traditional Chinese markdown.\n2. Use exactly these sections in order: `## Summary` then `## Transcript`.\n3. Under `## Summary`, provide 3-6 concise bullet points.\n4. Under `## Transcript`, write one segment per line in the format `HH:MM:SS Speaker: text` when the speaker is clear, or `HH:MM:SS text` otherwise.\n5. Preserve speaker turns, key names, numbers, technical terms, product names, and policy terms.\n6. If a segment is uncertain, append `[unclear]`. If speech is inaudible, append `[inaudible]`.\n7. Do not invent speakers, timestamps, or facts that are not grounded in the video.\n8. Do not wrap the final answer in a code fence.\n"
+        }
+      ]
+    }
+  ],
+  "generationConfig": {
+    "temperature": 0.2,
+    "mediaResolution": "MEDIA_RESOLUTION_LOW"
+  }
+}

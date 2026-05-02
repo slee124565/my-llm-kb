@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=JNyuX1zoOgU",
+  "canonical_url": "https://www.youtube.com/watch?v=JNyuX1zoOgU",
+  "video_id": "JNyuX1zoOgU",
+  "title": "Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough",
+  "channel_title": "Y Combinator",
+  "label": null,
+  "generated_at": "2026-05-02T01:50:11Z",
+  "generation_mode": "sync",
+  "model": "gemini-2.5-flash",
+  "request_hash": "bbcb36ad1b6a4ad357adea02ff6870429a6138d7a35ad99e6ec67c18bf536f29",
+  "response_id": "wVf1aZbgL7zR1e8Pu9qj2Qc",
+  "model_version": "gemini-2.5-flash",
+  "usage_metadata": {
+    "promptTokenCount": 253294,
+    "candidatesTokenCount": 16447,
+    "totalTokenCount": 269741,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 235
+      },
+      {
+        "modality": "VIDEO",
+        "tokenCount": 174447
+      },
+      {
+        "modality": "AUDIO",
+        "tokenCount": 78612
+      }
+    ]
+  },
+  "package_files": [
+    "README.md",
+    "metadata.json",
+    "request.json",
+    "response.raw.json",
+    "transcript.md"
+  ]
+}
