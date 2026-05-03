@@ -1,3 +1,14 @@
+# Deep Dive into LLMs like ChatGPT
+
+Source: https://www.youtube.com/watch?v=7xTGNNLPyMI
+Author: Andrej Karpathy
+Published: 2025-02-05
+Captured at: 2026-04-10
+Video length: 03:31:24
+Source type: YouTube transcript converted to markdown
+Imported from workspace path: `/Users/lee/ws/myCS146S/docs/01-introduction-to-coding-llms-and-ai-development/01-deep-dive-into-llms-like-chatgpt-transcript-Andrej-Karpathy.md`
+Original transcript SHA-256 before provenance header: `53ec7a5c5e6832051905bd49b9b04f5f85779f80d30692bb89d6e9ffbf225072`
+
 ## Introduction
 
 Hi everyone, so I've wanted to make this video for a while. It is a comprehensive but general audience introduction to large language models like ChatGPT. And what I'm hoping to achieve in this video is to give you kind of mental models for thinking through what it is that this tool is. It is obviously magical and amazing in some respects, it's really good at some things, not very good at other things, and there's also a lot of sharp edges to be aware of.

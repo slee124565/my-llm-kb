@@ -59,3 +59,5 @@
 - 2026-05-03: saved the six-question GPT-5.5 outcome-first agent prompt checklist into `prompt-migration-and-agent-steerability` for future query reuse
 - 2026-05-03: recorded the synthesis that GPT-5.5 outcome-first prompting functions as a declarative control layer over harness engineering, splitting task contract responsibility from tools, state, observability, recovery, and verification
 - 2026-05-03: Added `human-supervised-agent-ops` concept capturing the AI-native operational-loop ownership thesis; updated LLM Agents, Long-Running Agents, Codex Workflows, runtime surfaces, long-running harnesses, and index links.
+- 2026-05-03: saved the Shopee CS harness development practice for avoiding design/implement `PLANS.md` loop drift into `human-supervised-agent-ops`, including the M0-M34 operational-loop ownership framing and GPT-5.5 six-question milestone gate.
+- 2026-05-03: refreshed the Karpathy `Deep Dive into LLMs like ChatGPT` ingest with canonical YouTube URL, publish date, transcript provenance hash, and merged its human-to-agent ratio / long-context supervision framing into long-running agent pages.

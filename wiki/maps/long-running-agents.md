@@ -21,9 +21,11 @@
 - verification loops
 - tracker-backed orchestration
 - human supervisor plane
+- human-to-agent ratio
 
 ## Key Articles
 
+- [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Shell + Skills + Compaction](../articles/shell-skills-compaction-long-running-agents.md)
 - [Effective Harnesses for Long-Running Agents](../articles/effective-harnesses-for-long-running-agents.md)
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
@@ -39,6 +41,7 @@
 
 - OpenAI
 - Anthropic
+- Andrej Karpathy
 - Peter Steinberger
 - Aaron Friel
 - Ryan Lopopolo
@@ -57,4 +60,5 @@
 - provider-managed runtime 若成為主流，哪些 state artifact 仍必須由使用者自己持有
 - provider-managed long-running agent 若因 serving bug 導致品質退化，production eval、user feedback 與 rollback loop 應算哪一層的 harness contract
 - multi-agent swarms and long autonomous runs should be judged by output value per agent-hour, not only by trace length or autonomy level
+- longer context windows do not by themselves solve long-running multimodal task memory; harnesses still need relevance selection, evidence, supervision, and recovery
 - 哪些 operational loops 可以交給 agent 關閉，哪些必須保留 human supervisor approval，應成為 AI-native harness 的核心設計問題

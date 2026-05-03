@@ -2,13 +2,15 @@
 
 ## Source
 
-- URL: unknown; imported markdown transcript from a workspace course-notes folder
+- URL: https://www.youtube.com/watch?v=7xTGNNLPyMI
 - Author: Andrej Karpathy
-- Published: unknown
+- Published: 2025-02-05
 - Captured: 2026-04-10
 - Raw file: `raw/sources/2026/2026-04-10-deep-dive-into-llms-like-chatgpt-andrej-karpathy-transcript.md`
 - Imported from workspace path: `/Users/lee/ws/myCS146S/docs/01-introduction-to-coding-llms-and-ai-development/01-deep-dive-into-llms-like-chatgpt-transcript-Andrej-Karpathy.md`
-- Source note: filename and body both indicate a Karpathy transcript-style explainer on LLMs, but the imported markdown does not preserve a canonical URL or original publish date
+- Source type: YouTube transcript converted to markdown
+- Video length: 03:31:24
+- Source note: the workspace transcript was already present in `raw/` and matched the supplied file byte-for-byte before the provenance header was added; this ingest refreshes canonical YouTube metadata rather than creating a duplicate source.
 
 ## Main Claims
 
@@ -19,16 +21,21 @@
 - LLM 能力具有 jagged intelligence：它可能在高難度任務上表現驚人，卻在 spelling、counting、簡單比較等地方出現局部失真，因此更適合作為需要驗證的工具，而不是可直接託付的權威
 - 在 verifiable domain 上，RL 的核心不是模仿人類解法，而是讓模型以 guess-and-check 發現對自己有效的中介步驟；相對地，RLHF 更像有限的 alignment fine-tune，因 reward model 可被 gaming
 - 更長的 context window 雖然重要，但不足以單獨支撐真正長時、多模態、持續運行的 agent；之後仍需要新的 memory / test-time learning ideas
+- 長時間 agent task 的產品形態會把人推向 supervisor role：模型可以執行更長的數位任務，但因為仍有 hallucination、jagged intelligence 與 context/memory 限制，人類需要用 evidence、approval 與 ratio management 監督 agent
 
 ## Why It Matters
 
 這篇不是某個單點 agent pattern 的文章，而是一份很強的基礎 framing source。它把 tokenization、working memory、tool use、hallucination、reasoning、RL 與 agent trajectory 放進同一條敘事線，讓 repo 裡很多後續文章在談的「externalized state 為什麼重要」「為什麼 context 不是越長越好就好」「為什麼工具會改變回答品質」都有更清楚的底層解釋。
+
+這次補上 YouTube provenance 後，這張 article card 可以更穩定地作為 repo 的 anchor source：它不是只來自 workspace course note 的匿名 transcript，而是 Karpathy 2025-02-05 發布的 3.5 小時 general-audience LLM deep dive。
 
 ## Relation To Existing Concepts
 
 - [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
 - [Agent Knowledge Compilation](../concepts/agent-knowledge-compilation.md)
+- [Human-Supervised Agent Ops](../concepts/human-supervised-agent-ops.md)
+- [Long-Running Agent Harnesses](../concepts/long-running-agent-harnesses.md)
 - [LLM Agents](../maps/llm-agents.md)
 - [Long-Running Agents](../maps/long-running-agents.md)
 
@@ -45,9 +52,11 @@
 - `models need tokens to think` 這個 framing，在 reasoning model 擁有更多 test-time compute 或隱式 scratchpad 後，哪些部分仍然成立
 - tool use 的學習究竟主要依賴少量 schema examples，還是更深層的 environment-model alignment
 - 若未來多模態與 computer use 成為基礎能力，repo-based knowledge compilation 應如何和更動態的 runtime memory 分工
+- human-to-agent ratio 會由哪些 evidence threshold 決定：任務風險、可逆性、source lineage、模型 confidence、還是操作面可觀測性
 
 ## Merge Candidates
 
 - context window functions like working memory; model weights are a vague recollection
 - tools improve factuality by refreshing working memory, not only by adding retrieval
 - reasoning quality depends on giving models room to unfold computation across multiple tokens
+- long-running agent supervision should be grounded in evidence and approval surfaces, because longer context does not remove hallucination, jagged capability, or memory-management limits

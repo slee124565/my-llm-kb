@@ -20,6 +20,7 @@ Prompt migration and agent steerability 指的是：當模型能力、API runtim
 - Reasoning effort should be workload-specific and eval-backed; higher effort is not automatically the right default.
 - Migration should happen one change at a time, with evals or targeted validation proving that the new prompt preserves required behavior.
 - Repo-local instruction surfaces such as `AGENTS.md`, `docs/`, prompt assets, and templates prevent global prompts from becoming overloaded with domain workflow detail.
+- The six-question GPT-5.5 checklist can also be used as a milestone intake gate for coding-agent collaboration: in the Shopee CS harness case, it turns "design the next plan" into "define the next operational-loop ownership delta, evidence threshold, stop gate, and handoff shape."
 
 ## GPT-5.5 Outcome-First Prompt Checklist
 
@@ -74,6 +75,7 @@ Prompt 負責定義 intent、success criteria、constraints、evidence policy、
 
 - [Agent Runtime Surfaces](agent-runtime-surfaces.md)
 - [Externalized Agent State](externalized-agent-state.md)
+- [Human-Supervised Agent Ops](human-supervised-agent-ops.md)
 - [Long-Running Agent Harnesses](long-running-agent-harnesses.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)
 - [LLM Agents](../maps/llm-agents.md)
