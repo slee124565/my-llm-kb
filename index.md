@@ -13,6 +13,7 @@
 - [Agent Runtime Surfaces](wiki/concepts/agent-runtime-surfaces.md)
 - [Externalized Agent State](wiki/concepts/externalized-agent-state.md)
 - [Long-Running Agent Harnesses](wiki/concepts/long-running-agent-harnesses.md)
+- [Prompt Migration And Agent Steerability](wiki/concepts/prompt-migration-and-agent-steerability.md)
 - [Repository Knowledge As System Of Record](wiki/concepts/repository-knowledge-as-system-of-record.md)
 
 ## Anchor Articles
@@ -27,6 +28,10 @@
 - [Introducing Codex](wiki/articles/introducing-codex.md)
 - [Bespoke CLIs for Codex](wiki/articles/bespoke-clis-for-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](wiki/articles/using-plans-md-for-multi-hour-problem-solving.md)
+- [OpenAI Prompt Engineering - GPT-3.5 Era](wiki/articles/openai-prompt-engineering-gpt-3-5-era.md)
+- [OpenAI Prompt Guidance - GPT-5.5](wiki/articles/openai-prompt-guidance-gpt-5-5.md)
+- [OpenAI Prompt Guidance - GPT-5.4](wiki/articles/openai-prompt-guidance-gpt-5-4.md)
+- [OpenAI Prompt Guidance - GPT-5.3 Codex](wiki/articles/openai-prompt-guidance-gpt-5-3-codex.md)
 
 ## Working Assets
 

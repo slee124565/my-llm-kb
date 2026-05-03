@@ -11,6 +11,7 @@
 - [AI Compute Infrastructure](../concepts/ai-compute-infrastructure.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
 - [Long-Running Agent Harnesses](../concepts/long-running-agent-harnesses.md)
+- [Prompt Migration And Agent Steerability](../concepts/prompt-migration-and-agent-steerability.md)
 - [Repository Knowledge As System Of Record](../concepts/repository-knowledge-as-system-of-record.md)
 
 ## Core Concepts
@@ -20,6 +21,7 @@
 - AI compute infrastructure
 - externalized agent state
 - long-running agent harnesses
+- prompt migration and agent steerability
 - repository knowledge as system of record
 
 ## Key Articles
@@ -40,6 +42,10 @@
 - [Jensen Huang - TPU Competition, China Chips, and Nvidia's Supply Chain Moat](../articles/jensen-huang-tpu-china-chips-nvidia-supply-chain-moat.md)
 - [Introducing Codex](../articles/introducing-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
+- [OpenAI Prompt Engineering - GPT-3.5 Era](../articles/openai-prompt-engineering-gpt-3-5-era.md)
+- [OpenAI Prompt Guidance - GPT-5.5](../articles/openai-prompt-guidance-gpt-5-5.md)
+- [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
+- [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 
 ## Key People Or Labs
 
@@ -71,3 +77,4 @@
 - context window, externalized memory, and learned continual memory should be composed how if agents are expected to adapt to a user's or task's long-term context
 - future general agents should absorb specialized capabilities into one model, or orchestrate separate expert systems as tools
 - local personal agents with browser/app control should expose which security and agent-facing API contracts before becoming mainstream consumer software
+- model upgrades should trigger prompt simplification, eval-backed reasoning-effort choices, and stricter runtime contracts rather than unbounded prompt accumulation

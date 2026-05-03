@@ -26,6 +26,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - runtime surface 的差異，會反過來影響 harness complexity：有些控制面應交給平台吸收，有些則必須保留在使用者自己的 repo 或本地檔案中
 - hosted runtime 不只暴露 task execution surface，也隱含 quality-control surface：routing correctness、hardware equivalence、production eval coverage、rollback ability 與 privacy-safe debug tooling 都會直接影響使用者實際看到的 agent 品質
 - harmony response format 顯示 prompt template 本身也是 runtime surface；roles、channels 與 stop-token 規則決定 reasoning、tool call 與 persisted history 如何流動
+- OpenAI prompt guidance for GPT-5.4 / GPT-5.5 makes `phase`, preambles, assistant-item replay, reasoning effort, and output contracts explicit runtime surfaces rather than mere wording choices
 - gpt-oss verification guidance 進一步把 prompt formatting、reasoning transport 與 inference code 都拉進 runtime correctness 的定義裡，而不只是把它當成輸出品質問題
 - 只要一個 stack 需要保留 raw reasoning 或 tool traces，runtime surface 就不只是輸入輸出 API，而是包含可恢復的內部狀態契約
 - policy prompts 也是 runtime surface 的一部分：policy length、output format、reasoning effort 與 precedence 規則會直接決定 safety workflow 的品質
@@ -53,6 +54,9 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [How to handle the raw chain of thought in gpt-oss](../articles/handle-raw-cot.md)
 - [Verifying gpt-oss implementations](../articles/verifying-implementations.md)
 - [User Guide For Gpt-Oss-Safeguard](../articles/gpt-oss-safeguard-guide.md)
+- [OpenAI Prompt Guidance - GPT-5.5](../articles/openai-prompt-guidance-gpt-5-5.md)
+- [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
+- [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 
 ## Open Questions
 
@@ -71,6 +75,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - harmony / reasoning / tool-call contract 是否應被視為 runtime surface 的核心層，而非單純的 model-specific adapter
 - verification 的邊界要畫到哪裡：prompt format、response shape、reasoning transport，還是完整 eval bundle
 - safety policy prompts 的控制面要落在 repo 文件、模板還是 runtime library
+- prompt guidance 的哪些部分應由 API runtime 強制處理，哪些應留給 repo-local prompt / skill / task contract
 - user-authorized personal automation and platform-hostile scraping should be distinguished by which technical and product contracts
 
 ## Related Pages
@@ -78,5 +83,6 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Externalized Agent State](externalized-agent-state.md)
 - [Long-Running Agent Harnesses](long-running-agent-harnesses.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)
+- [Prompt Migration And Agent Steerability](prompt-migration-and-agent-steerability.md)
 - [LLM Agents](../maps/llm-agents.md)
 - [Long-Running Agents](../maps/long-running-agents.md)

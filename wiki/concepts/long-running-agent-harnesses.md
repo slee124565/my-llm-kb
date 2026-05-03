@@ -32,6 +32,8 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - 當多個小型 infra bug 疊加且症狀互相干擾時，community feedback 與 postmortem loop 也應被視為 harness 的一部分，而不是事後公關附屬品
 - harmony format 把 reasoning、tool calls 與 final answers 排進同一條可恢復的 turn chain，說明 harness 必須同時處理狀態保留與 user-facing normalization
 - raw CoT handling 讓「internal trace 必須跨 turn 保留，但不能直接展示」成為 harness 的明確責任，而不是 UI 的臨時細節
+- GPT-5.4 / GPT-5.5 prompt guidance makes preambles, phase-preserving assistant replay, validation loops, retrieval budgets, and stop rules part of the long-running harness contract
+- GPT-5.5 outcome-first prompting reframes prompt text as a declarative control layer over the harness: prompt defines success, constraints, evidence, permission boundaries, output shape, and stop conditions, while the harness supplies tools, state, observability, recovery, and verification evidence
 - gpt-oss verification guidance 顯示 harness 的驗證邊界應涵蓋 API shape、reasoning transport 與 eval bundle，而不只是單一 smoke test
 - gpt-oss-safeguard guide 進一步表明，harness 還要把 policy prompt structure、reasoning effort 與 output format 當成可驗證的 control surfaces
 - full fire-and-forget agents likely require continual learning and task-context adaptation; patching together current stateless models can help with subtasks but is not yet a complete long-task harness
@@ -56,6 +58,9 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [How to handle the raw chain of thought in gpt-oss](../articles/handle-raw-cot.md)
 - [Verifying gpt-oss implementations](../articles/verifying-implementations.md)
 - [User Guide For Gpt-Oss-Safeguard](../articles/gpt-oss-safeguard-guide.md)
+- [OpenAI Prompt Guidance - GPT-5.5](../articles/openai-prompt-guidance-gpt-5-5.md)
+- [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
+- [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 
 ## Open Questions
 
@@ -73,6 +78,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - raw reasoning persistence 和 user-facing safety 之間，應如何設計最小可用的 state handoff contract
 - verification bundle 的最小組合應如何分層，才不會把 smoke test 和 production-grade eval 混為一談
 - safety prompt 的驗證應否成為 harness 的標準步驟，而不是額外手工檢查
+- preamble / phase / final-answer separation 應作為所有 long-running Responses workflow 的基礎 contract，還是只在 tool-heavy agent 中使用
 - self-modifying agent runtimes need which minimum review, rollback, and local security evidence before they are safe for non-expert users
 
 ## Related Pages
@@ -80,4 +86,5 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Agent Runtime Surfaces](agent-runtime-surfaces.md)
 - [Externalized Agent State](externalized-agent-state.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)
+- [Prompt Migration And Agent Steerability](prompt-migration-and-agent-steerability.md)
 - [Long-Running Agents](../maps/long-running-agents.md)

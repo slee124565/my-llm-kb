@@ -10,6 +10,7 @@
 - [Repository Knowledge As System Of Record](../concepts/repository-knowledge-as-system-of-record.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
 - [Long-Running Agent Harnesses](../concepts/long-running-agent-harnesses.md)
+- [Prompt Migration And Agent Steerability](../concepts/prompt-migration-and-agent-steerability.md)
 
 ## Core Concepts
 
@@ -17,6 +18,7 @@
 - agent runtime surfaces
 - externalized agent state
 - long-running agent harnesses
+- prompt migration and agent steerability
 - async delegation with verifiable evidence
 - ticket tracker as agent control plane
 - CLI-first operability plus companion skills for repeated noisy data surfaces
@@ -28,6 +30,10 @@
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
+- [OpenAI Prompt Engineering - GPT-3.5 Era](../articles/openai-prompt-engineering-gpt-3-5-era.md)
+- [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
+- [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
+- [OpenAI Prompt Guidance - GPT-5.5](../articles/openai-prompt-guidance-gpt-5-5.md)
 - [OpenClaw Takes Over The Internet](../articles/openclaw-takes-over-the-internet-peter-steinberger.md)
 - [OpenClaw: The Viral AI Agent that Broke the Internet](../articles/openclaw-viral-ai-agent-lex-fridman-peter-steinberger.md)
 - [Notes From a Marketer Building a Real CLI With Codex](../articles/notes-from-a-marketer-building-a-real-cli-with-codex.md)
@@ -49,3 +55,4 @@
 - 什麼時候應該直接用 connector / MCP，什麼時候應該再往上編譯成 agent-friendly CLI 與 companion skill
 - 在 agent 幫忙做工具時，哪些 product judgment 應該保持在 human loop，而不是被 prompt 或自動化完全吸收
 - OpenClaw-style agentic engineering can transfer which habits to Codex: short conversational prompts, guiding the agent's codebase view, post-build refactor prompts, and designing codebases for fresh-session navigation
+- Codex prompt design should be split across global operating rules, repo-local `AGENTS.md`, task prompts, tool affordances, and validation evidence rather than one ever-growing instruction blob
