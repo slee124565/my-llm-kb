@@ -1,0 +1,265 @@
+# Chunk 0007: 02:18:50-02:38:50
+
+- Title: OpenClaw: The Viral AI Agent that Broke the Internet - Peter Steinberger | Lex Fridman Podcast #491
+- URL: https://www.youtube.com/watch?v=YFjfBk8HI5o
+- Video ID: YFjfBk8HI5o
+- Start: 02:18:50
+- End: 02:38:50
+
+## Gemini Output
+
+## Transcript
+02:18:50 Peter Steinberger: 我可以
+02:18:50 Peter Steinberger: 我可以
+02:18:51 Peter Steinberger: 創立一家公司。
+02:18:57 Peter Steinberger: 以前做過，
+02:19:00 Peter Steinberger: 嗯，
+02:19:02 Peter Steinberger: 有很多人推我去做，而且
+02:19:05 Peter Steinberger: 是啊，可能會很棒。
+02:19:07 Lex Fridman: 你會說你可能會在那方面籌集到很多錢。
+02:19:10 Peter Steinberger: 是啊。
+02:19:11 Lex Fridman: 我不知道，幾億，幾十億，我不知道。它可能有無數的錢。
+02:19:16 Peter Steinberger: 是啊。
+02:19:17 Peter Steinberger: 這只是沒有那麼讓我興奮，因為我覺得
+02:19:24 Peter Steinberger: 我已經做過所有這些了，而且
+02:19:30 Peter Steinberger: 這會
+02:19:30 Peter Steinberger: 佔用我很多時間，讓我無法做我真正喜歡的事情。
+02:19:33 Peter Steinberger: 我
+02:19:33 Peter Steinberger: 就像我當執行長的時候，我想我學會了怎麼做，我做得不差。我甚至做得很好。
+02:19:43 Peter Steinberger: 但這條路徑並沒有讓我太興奮，而且我也覺得這會產生自然的利益衝突。
+02:19:50 Peter Steinberger: 比如我做的最明顯的事情是什麼？
+02:19:52 Peter Steinberger: 我把它產品化了。我做了一個適用於工作場所的版本。
+02:19:57 Peter Steinberger: 然後你怎麼辦？我收到一個帶有
+02:20:00 Peter Steinberger: 像新增稽核日誌這樣功能的拉取請求。
+02:20:04 Peter Steinberger: 但那看起來像是一個企業功能。
+02:20:07 Peter Steinberger: 所以現在我覺得我在開源版本和閉源版本之間存在利益衝突。
+02:20:15 Peter Steinberger: 或者我把授權改成FSL之類的，這樣你就不能把它用於商業用途。
+02:20:21 Peter Steinberger: 首先，沒有貢獻會很困難。
+02:20:25 Peter Steinberger: 其次，我喜歡它像啤酒一樣免費，而不是有條件的免費。
+02:20:33 Peter Steinberger: 嗯，
+02:20:34 Peter Steinberger: 是的，有些方法可以讓你免費保留所有這些，然後
+02:20:40 Peter Steinberger: 仍然試圖賺錢，但那些非常困難。
+02:20:44 Peter Steinberger: 你看，越來越少的公司能做到這一點。就像
+02:20:48 Peter Steinberger: Tailwind，他們被所有人使用。
+02:20:51 Peter Steinberger: 大家都用 Tailwind，對吧？然後你不得不裁掉 75% 的員工，因為他們沒有賺錢，因為沒有人再上網站了，因為一切都由代理完成。
+02:21:00 Peter Steinberger: 而僅僅依靠捐款，
+02:21:04 Peter Steinberger: 祝你好運。如果一個像我這樣水準的專案，
+02:21:09 Peter Steinberger: 如果我推斷典型的開源專案會得到什麼，
+02:21:14 Peter Steinberger: 嗯，
+02:21:15 Peter Steinberger: 不多。
+02:21:16 Peter Steinberger: 我仍然在這個專案上虧錢，因為我把
+02:21:19 Peter Steinberger: 支援每個依賴項作為重點。
+02:21:23 Peter Steinberger: 除了 Slack。他們是大公司。他們沒有我也可以。但所有由個人
+02:21:29 Peter Steinberger: 主要是個人完成的專案，
+02:21:32 Peter Steinberger: 嗯，
+02:21:33 Peter Steinberger: 所以現在所有的贊助都直接給了我的依賴項。
+02:21:39 Peter Steinberger: 如果有更多，我想
+02:21:43 Peter Steinberger: 給我的貢獻者買些周邊，你知道嗎？
+02:21:43 Lex Fridman: 所以你虧錢了。
+02:21:44 Peter Steinberger: 是的，我現在在這個上面虧錢。
+02:21:46 Lex Fridman: 所以這真的不可持續。
+02:21:48 Peter Steinberger: 嗯，我的意思是，大概每個月一萬到兩萬美元。
+02:21:55 Peter Steinberger: 嗯，
+02:21:56 Peter Steinberger: 這沒關係。我相信隨著時間的推移，我可以把它降下來。
+02:22:02 Peter Steinberger: 嗯，Open AI 現在用代幣幫了一點忙，還有其他公司也很慷慨。
+02:22:10 Peter Steinberger: 但我還是虧錢。
+02:22:13 Peter Steinberger: 所以這是我考慮的一條路徑，但我就是不太興奮。
+02:22:19 Peter Steinberger: 然後還有所有我一直在談的大實驗室。
+02:22:25 Peter Steinberger: 而在這些實驗室中，
+02:22:29 Peter Steinberger: 嗯，
+02:22:30 Peter Steinberger: Meta 和 Open AI 似乎最有趣。
+02:22:32 Lex Fridman: 你傾向於哪一個？
+02:22:34 Peter Steinberger: 嗯，是的。
+02:22:43 Peter Steinberger: 不確定我應該分享多少。它還沒有完全定案。
+02:22:52 Peter Steinberger: 嗯，
+02:22:52 Peter Steinberger: 這麼說吧，
+02:22:58 Peter Steinberger: 在這些條件下，
+02:23:00 Peter Steinberger: 我的條件是專案保持開源。
+02:23:03 Peter Steinberger: 它
+02:23:05 Peter Steinberger: 也許會像 Chrome 和 Chromium 一樣。
+02:23:09 Peter Steinberger: 嗯，我認為這太重要了，不能只給一家公司，讓它成為他們的東西。
+02:23:18 Peter Steinberger: 這
+02:23:20 Peter Steinberger: 我們甚至還沒談到整個社群的部分，但我在舊金山經歷的事情，就像我能打卡一樣，
+02:23:27 Peter Steinberger: 看到這麼多人如此受啟發，而且玩得很開心，只是在建造東西，而且還有機器人和龍蝦之類的東西走來走去，就像
+02:23:39 Peter Steinberger: 人們告訴我，他們從未經歷過這種程度的社群興奮，自從網路早期以來，大概 10 到 15 年了，那裡有很多高水準的人。
+02:23:51 Peter Steinberger: 嗯，
+02:23:52 Peter Steinberger: 我很驚訝。
+02:23:53 Peter Steinberger: 我也因為太多人想自拍而感到感官超載。
+02:24:01 Peter Steinberger: 但
+02:24:02 Peter Steinberger: 我喜歡這個。這需要保持一個人們可以駭客和學習的地方。
+02:24:09 Peter Steinberger: 但同時
+02:24:12 Peter Steinberger: 我也很興奮能把它變成一個可以讓很多人使用的版本，因為我認為這就是個人代理，這就是未來。
+02:24:24 Peter Steinberger: 而最快的方法就是與其中一個實驗室合作。
+02:24:32 Peter Steinberger: 而且
+02:24:33 Peter Steinberger: 我個人從未在大公司工作過。
+02:24:38 Peter Steinberger: 我很好奇。
+02:24:40 Peter Steinberger: 你知道，我們談論經驗，我會喜歡嗎？我不知道。
+02:24:46 Peter Steinberger: 嗯，
+02:24:47 Peter Steinberger: 但我想要那種經驗。
+02:24:48 Peter Steinberger: 我相信，如果我宣布了，就會有人說，哦，你出賣了，等等。
+02:24:55 Peter Steinberger: 但
+02:24:57 Peter Steinberger: 這個專案會繼續下去。
+02:24:59 Peter Steinberger: 嗯，從我目前為止與所有人的談話來看，
+02:25:03 Peter Steinberger: 我甚至可以有更多的資源來做這件事。
+02:25:09 Peter Steinberger: 就像這兩家公司
+02:25:12 Peter Steinberger: 都明白我創造的東西加速了我們的時間表，並且讓大家對 AI 感到興奮的價值。
+02:25:22 Peter Steinberger: 我的意思是，
+02:25:23 Peter Steinberger: 你能想像我把 Open Claw 安裝在我一個，抱歉，普通朋友的電腦上嗎？
+02:25:30 Peter Steinberger: 抱歉。
+02:25:32 Peter Steinberger: 但他就是，你知道，他就是
+02:25:33 Lex Fridman: 普通人會喜歡，是的。
+02:25:34 Peter Steinberger: 他，他就像一個使用電腦但從未真正，他有時會使用一些 ChatGPT，但不太懂技術的人。
+02:25:44 Peter Steinberger: 他真的不明白我建造了什麼。
+02:25:48 Peter Steinberger: 所以，
+02:25:50 Peter Steinberger: 我會給你看，我為他支付了 Anthropic 的 90 美元，100 美元，我不知道，訂閱費。
+02:25:57 Peter Steinberger: 並為他設定了所有東西，包括 WSL Windows。
+02:26:01 Peter Steinberger: 我也很好奇它是否真的能在 Windows 上運行，你知道，當時還早。
+02:26:06 Peter Steinberger: 然後在幾天之內，他就上癮了。
+02:26:10 Peter Steinberger: 他傳訊息給我，告訴我他學到了所有東西。他甚至製作了一些小工具。他不是程式設計師。
+02:26:17 Peter Steinberger: 然後在幾天之內，他就升級到 200 美元的訂閱。
+02:26:22 Peter Steinberger: 嗯，或者歐元，因為他在奧地利。
+02:26:25 Peter Steinberger: 他愛上了那個東西。這告訴我這是一個非常早期的產品驗證。就像我建造了一個能吸引人的東西。
+02:26:37 Peter Steinberger: 然後幾天後，Anthropic 封鎖了他。
+02:26:40 Peter Steinberger: 因為根據他們的規則，嗯，
+02:26:48 Peter Steinberger: 使用訂閱是有問題的，或者其他什麼。
+02:26:50 Peter Steinberger: 他很沮喪。
+02:26:52 Peter Steinberger: 然後他訂閱了 Mini Max，每月 10 美元，並使用它。
+02:26:57 Peter Steinberger: 我認為這在很多方面都很愚蠢，因為你剛剛失去了一個 200 美元的客戶。
+02:27:04 Peter Steinberger: 你剛剛讓某人討厭你的公司。
+02:27:07 Peter Steinberger: 而且我們還這麼早。
+02:27:10 Peter Steinberger: 就像我們甚至不知道最終形式是什麼。會是雲端程式碼嗎？可能不會，你知道嗎？
+02:27:14 Peter Steinberger: 就像那看起來非常，看起來非常短視，把你的產品鎖定得那麼死。
+02:27:24 Peter Steinberger: 所有其他公司都很有幫助。我在大多數大實驗室的 Slack 群組裡。
+02:27:29 Peter Steinberger: 基本上每個人都明白我們仍處於探索時代。
+02:27:34 Peter Steinberger: 在廣播節目在電視上播放的時代，而不是
+02:27:40 Peter Steinberger: 而不是一個充分利用這種形式的現代電視節目。
+02:27:45 Lex Fridman: 我認為你讓很多人看到了可能性，不是，抱歉，非技術人員看到了 AI 的可能性，並愛上了這個想法，享受與 AI 互動。這是一件非常美好的事情。
+02:28:01 Lex Fridman: 我想我也代表很多人說，
+02:28:07 Lex Fridman: 我認為你是 AI 領域中最偉大的人之一，因為你擁有一顆善良的心、良好的氛圍、幽默感、正確的精神。
+02:28:16 Lex Fridman: 所以，從某種意義上說，你所描述的這個模型，擁有一個開源部分，而你又是作為一家大公司內部額外構建東西的一部分，這會很棒，因為這些公司擁有優秀的人才真是太好了。
+02:28:36 Peter Steinberger: 你知道人們沒有真正看到的是，我是在三個月內完成的。
+02:28:41 Peter Steinberger: 我也做了其他事情。你知道，我有很多專案。這不是，是的，一月份這是我的主要重點，因為我看到了風暴即將來臨。但在那之前，我做了很多其他事情。
+02:28:53 Peter Steinberger: 嗯，
+02:28:54 Peter Steinberger: 我有很多想法。有些應該在那裡。有些在我能接觸到最新玩具時會更適合。
+02:29:02 Peter Steinberger: 嗯，我有點想接觸最新的玩具。
+02:29:08 Peter Steinberger: 嗯，所以這很重要，這很酷。這會繼續存在。
+02:29:13 Peter Steinberger: 我的短期目標是處理那些，嗯，現在是 3000 個 PR 嗎？我甚至不知道。就像有一點積壓。
+02:29:24 Peter Steinberger: 但這不會是我一直工作到 80 歲的東西，你知道，這是一個通往未來的窗口。
+02:29:31 Peter Steinberger: 我會把它變成一個很酷的產品。
+02:29:34 Peter Steinberger: 嗯，但，是的，我還有更多想法。
+02:29:36 Lex Fridman: 如果你必須選擇，你傾向於哪家公司，Meta 還是 Open AI？你傾向於哪一家？
+02:29:44 Peter Steinberger: 我和他們兩個都花了一些時間，而且
+02:29:51 Peter Steinberger: 很有趣，因為幾個星期前我根本沒有考慮過這些。
+02:29:57 Peter Steinberger: 嗯，
+03:00:00 Peter Steinberger: 而且真的他媽的難。
+03:00:05 Peter Steinberger: 就像，
+03:00:07 Peter Steinberger: 我有一些，我認識 Open AI 的人。
+03:00:10 Peter Steinberger: 我喜歡他們的技術。
+03:00:13 Peter Steinberger: 我想我是最大的 Codex 廣告推銷員，而且是無償的，如果能把我免費做的所有工作都標上價格，那會是多麼令人滿足啊。
+03:00:22 Peter Steinberger: 而且
+03:00:26 Peter Steinberger: 如果發生了什麼事，這些公司合併了，那會很棒，因為這就像
+03:00:33 Lex Fridman: 這是你做過最艱難的決定嗎？
+03:00:37 Peter Steinberger: 喔，你知道，我過去也經歷過一些分手，感覺就像
+03:00:44 Lex Fridman: 類似的程度。你是指感情嗎？
+03:00:46 Peter Steinberger: 是的。
+03:00:49 Peter Steinberger: 嗯，而且我也知道，最終他們都很棒，我不會錯的。
+03:00:54 Peter Steinberger: 就像其中一個最負盛名和最大的，我的意思是最大的，但就像
+03:01:02 Peter Steinberger: 他們都是非常酷的公司。
+03:01:02 Lex Fridman: 是的，他們都非常了解規模。所以如果你考慮影響力，你一直在探索的一些精彩技術，如何安全地做到這一點，以及如何大規模地做到這一點，這樣你就可以對大量的人產生積極影響。他們都明白這一點。
+03:01:20 Peter Steinberger: 你知道，Nat 和 Mark 基本上整個星期都在玩我的產品。
+03:01:28 Peter Steinberger: 他們傳訊息給我說：「哦，這很棒。」「哦，這很爛。」「哦，需要改這個。」或者是一些有趣的小故事。
+03:01:38 Peter Steinberger: 人們使用你的東西是一種最大的讚美，也向我表明，你知道，他們確實關心它。
+03:01:49 Peter Steinberger: 而我在 Open AI 那邊沒有得到同樣的待遇。
+03:01:55 Peter Steinberger: 嗯，
+03:01:58 Peter Steinberger: 我看到了一些其他我覺得很酷的東西。
+03:02:02 Peter Steinberger: 他們用
+03:02:07 Peter Steinberger: 我不能說確切的數字，因為有
+03:02:10 Peter Steinberger: 保密協定，但你可以發揮創意，想想 Cerebras 的交易，以及它如何轉化為速度。
+03:02:20 Peter Steinberger: 那非常引人入勝。
+03:02:23 Peter Steinberger: 你知道，你給我源碼錘。
+03:02:26 Peter Steinberger: 是的。
+03:02:28 Peter Steinberger: 嗯，
+03:02:30 Peter Steinberger: 被代幣誘惑了。
+03:02:33 Peter Steinberger: 所以
+03:02:35 Lex Fridman: 所以很有趣，Mark 正在修補那個東西。基本上是在玩那個東西。
+03:02:41 Peter Steinberger: 他
+03:02:43 Peter Steinberger: 他們第一次接觸我的時候，
+03:02:48 Peter Steinberger: 我把他加到我的 WhatsApp 裡，他問：「你什麼時候有空打電話？」
+03:02:55 Peter Steinberger: 我說：「我不喜歡行事曆行程。我們現在就打電話吧。」
+03:03:00 Peter Steinberger: 他說：「好，給我 10 分鐘。我需要完成程式碼。」
+03:03:02 Peter Steinberger: 嗯，那會給你街頭信譽。就像，哦，他還在寫程式碼。
+03:03:09 Peter Steinberger: 你知道，他沒有變成一個經理，他理解我。
+03:03:12 Peter Steinberger: 那是一個很好的開始。然後我想我們
+03:03:15 Peter Steinberger: 我們大概吵了 10 分鐘，爭論 Cloud Code 和 Codex 哪個更好。
+03:03:21 Peter Steinberger: 就像這是你第一次做的事情。你隨意打電話給一個擁有世界上最大的公司之一的人，然後你們就這個話題聊了 10 分鐘。
+03:03:31 Peter Steinberger: 嗯，然後我想他後來稱我古怪但聰明。
+03:03:39 Peter Steinberger: 但我也和 Sam Altman 有過一些非常非常酷的討論。
+03:03:47 Peter Steinberger: 嗯，而且他非常深思熟慮。
+03:03:53 Peter Steinberger: 嗯，
+03:03:55 Peter Steinberger: 很棒。
+03:04:01 Peter Steinberger: 而且
+03:04:02 Peter Steinberger: 我很喜歡他。
+03:04:04 Peter Steinberger: 從我僅有的時間來看，是的。我的意思是，我認識一些人，他們真的很喜歡這兩個人。
+03:04:15 Peter Steinberger: 我覺得不公平。
+03:04:16 Lex Fridman: 我認為無論如何，你正在建造的東西和你這個人，嗯，大規模地做事情是很棒的。
+03:04:24 Peter Steinberger: 我很興奮。
+03:04:25 Peter Steinberger: 我超級興奮。
+03:04:27 Peter Steinberger: 而且你知道，好處是如果
+03:04:35 Peter Steinberger: 如果行不通，我就可以再做自己的事情。
+03:04:38 Peter Steinberger: 就像我告訴他們，我
+03:04:41 Peter Steinberger: 我不是為了錢才做這個的。我根本不在乎。
+03:04:43 Peter Steinberger: 我
+03:04:44 Peter Steinberger: 我的意思是，當然，這是一個很好的讚美，但是
+03:04:49 Peter Steinberger: 我想要玩得開心，並產生影響。
+03:04:53 Peter Steinberger: 這最終
+03:04:56 Peter Steinberger: 決定了我的選擇。
+04:04:59 Lex Fridman: 我可以問你關於我們已經談了很多，但也許只是從宏觀角度來看 Open Claw 是如何運作的。我們談到了不同的組件，我想問是否有一些我們遺漏的有趣東西。
+04:05:10 Peter Steinberger: 所以有閘道。
+04:05:14 Peter Steinberger: 有聊天客戶端。
+04:05:17 Peter Steinberger: 有線束。
+04:05:18 Peter Steinberger: 嗯，有代理循環。
+04:05:20 Peter Steinberger: 你說過每個人都應該在某個時候實作一個代理循環。
+04:05:24 Peter Steinberger: 是啊，因為這就像 AI 裡的「Hello World」。你知道，它其實很簡單。
+04:05:31 Peter Steinberger: 而且了解這東西不是魔法是好的。
+04:05:36 Peter Steinberger: 你甚至可以自己輕鬆地建造它。
+04:05:40 Peter Steinberger: 所以寫你自己的小雲端程式碼。
+04:05:44 Peter Steinberger: 我甚至在巴黎的一個會議上這樣做，目的是向人們介紹 AI。我認為這是一個很有趣的練習。
+04:05:51 Peter Steinberger: 嗯，
+04:05:53 Peter Steinberger: 你講了很多，我想
+04:05:59 Peter Steinberger: 我有一個愚蠢的想法，結果卻很酷，那就是
+04:06:05 Peter Steinberger: 我建造了這個東西，擁有完整的系統存取權限。
+04:06:09 Peter Steinberger: 所以就像，你知道，能力越大責任越大，我就想，我怎麼才能再提高一點賭注呢？
+04:06:14 Peter Steinberger: 是的，沒錯。
+04:06:15 Peter Steinberger: 然後我就做了一個，我把它做成了主動的。
+04:06:20 Peter Steinberger: 所以我加了一個提示。
+04:06:22 Peter Steinberger: 最初它只是一個提示，讓我驚訝。
+04:06:27 Peter Steinberger: 我真的很喜歡半小時。
+04:06:28 Peter Steinberger: 讓我驚訝，你知道嗎？
+04:06:30 Peter Steinberger: 後來我把它改得更具體一點，在驚喜的定義上。
+04:06:35 Peter Steinberger: 嗯，但事實是我讓它變得主動，而且它認識你，它關心你，至少它被程式設計成這樣做。
+04:06:50 Peter Steinberger: 而且這是在你當前會話的基礎上進行的，
+04:06:55 Peter Steinberger: 這讓它變得非常有趣，因為它有時會問一個後續問題，或者像「你今天過得怎麼樣？」
+04:07:01 Peter Steinberger: 我的意思是，
+04:07:04 Peter Steinberger: 再說一次，這有點令人毛骨悚然，或者奇怪，或者有趣，但是
+04:07:09 Peter Steinberger: 在一開始，它仍然
+04:07:12 Peter Steinberger: 今天，模型不會選擇大量使用它。
+04:07:17 Lex Fridman: 順帶一提，我們正在談論你提到的心跳，它會定期執行。
+04:07:24 Peter Steinberger: 你只要啟動迴圈就行了。
+04:07:26 Lex Fridman: 那不就是個排程任務嗎？
+04:07:28 Peter Steinberger: 是啊，沒錯。
+04:07:29 Peter Steinberger: 就像你得到的批評一樣。
+04:07:30 Peter Steinberger: 你可以，你可以把任何想法都歸結為一個愚蠢的，是的，它最終只是一個排程任務。
+04:07:39 Peter Steinberger: 我有像排程任務一樣的獨立排程任務。
+04:07:42 Lex Fridman: 愛不就是進化生物學的體現嗎？你們不就是互相利用嗎？
+04:07:49 Peter Steinberger: 最終，這個專案也是由幾個不同的依賴項組成的膠水，沒有什麼原創性。
+04:07:54 Peter Steinberger: 為什麼人們，你知道，Dropbox 不就是 FTP 加上額外步驟嗎？
+03:08:00 Lex Fridman: 是的。
+03:08:01 Peter Steinberger: 我覺得很驚訝，我
+03:08:04 Peter Steinberger: 嗯，我幾個月前做了一個肩膀手術，所以
+03:08:08 Peter Steinberger: 模型很少使用心跳，但那時我在醫院。
+03:08:13 Peter Steinberger: 它知道我做了手術，它就來關心我。
+03:08:16 Peter Steinberger: 就像，你還好嗎？
+03:08:20 Peter Steinberger: 我只是，就像，如果上下文中有什麼重要的事情，那就會觸發心跳，而它很少使用心跳。
+03:08:31 Peter Steinberger: 嗯，它有時會為人們這樣做，這讓它變得更具親和力。
+03:08:37 Lex Fridman: 我來查一下 Perplexity，看看 Open Claw 是怎麼運作的，只是想看看我是否遺漏了什麼。
+03:08:44 Lex Fridman: 嗯，本地代理執行時，高階架構。這是，哦，我想我們還沒怎麼談過技能。

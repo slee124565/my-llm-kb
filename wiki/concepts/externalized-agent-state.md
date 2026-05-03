@@ -15,6 +15,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - skill、workflow docs、templates 把 procedure 外部化
 - Karpathy 對 `weights = vague recollection`、`context window = working memory` 的 framing，說明了為什麼 repo artifact 有價值：它讓 agent 能把正確狀態重新載入 working memory，而不是只靠模型參數中的模糊回憶
 - Hassabis adds a complementary warning: a larger context window is still a brute-force memory surface unless the system can decide what is relevant, retrieve it cheaply, consolidate it, and adapt it to the current task context
+- OpenClaw's `identity.md` / `soul.md` framing turns personality, values, and interaction norms into externalized state: future sessions reconstruct continuity by reading files rather than by relying on hidden model memory
 - raw/article/concept/map 四層結構把知識與操作記憶穩定放在 repo 中
 - 維護中的 `docs/` 與 `AGENTS` 規則，也是一種可被 agent 回讀的長期狀態表面
 - `PLANS.md` 這類 self-contained execution document，則把長任務的目標、決策、驗證與進度整合成可接手 artifact
@@ -31,6 +32,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - gpt-oss 的 reasoning fields 與 reasoning-text events，提供了把內部 trace 以結構化方式外部化的例子
 - 當 AI 對話需要成為後續可重用的工作 artifact 時，匯出成 markdown、PDF 或 repo file 就不只是備份，而是把 state 從聊天 UI 外部化
 - policy taxonomy、decision label 與 output schema 也是外部化狀態；若它們只留在 prompt 裡而沒有版本化，就很難做後續審計或回放
+- self-aware agent runtimes add another state layer: source tree, docs, model identity, permissions, and harness structure become artifacts the agent can reload and modify
 
 ## Signals From Recent Articles
 
@@ -45,6 +47,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
+- [OpenClaw: The Viral AI Agent that Broke the Internet](../articles/openclaw-viral-ai-agent-lex-fridman-peter-steinberger.md)
 - [Notes From a Marketer Building a Real CLI With Codex](../articles/notes-from-a-marketer-building-a-real-cli-with-codex.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [How to handle the raw chain of thought in gpt-oss](../articles/handle-raw-cot.md)
@@ -55,6 +58,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 
 - 哪些 state 必須 machine-readable，哪些只要 human-readable 即可
 - learned continual memory, explicit repo artifacts, and raw long context should divide responsibilities how
+- identity files, memory files, and `soul.md`-style artifacts should be versioned, audited, and migrated how if they influence future agent behavior
 - compaction 與 explicit artifact handoff 的責任邊界如何切分
 - artifact 變多之後如何防止 state 腐化與過期
 - `docs/` 與 progress artifact 在不同任務型別下應如何分工

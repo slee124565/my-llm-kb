@@ -35,6 +35,8 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - gpt-oss verification guidance 顯示 harness 的驗證邊界應涵蓋 API shape、reasoning transport 與 eval bundle，而不只是單一 smoke test
 - gpt-oss-safeguard guide 進一步表明，harness 還要把 policy prompt structure、reasoning effort 與 output format 當成可驗證的 control surfaces
 - full fire-and-forget agents likely require continual learning and task-context adaptation; patching together current stateless models can help with subtasks but is not yet a complete long-task harness
+- OpenClaw's agentic-engineering workflow treats the agent like a capable engineer with a partial codebase view: guide it to relevant context, discuss intent, let it build, then ask what should be refactored while the session context is still warm
+- self-aware harnesses can let an agent inspect and modify its own runtime, but that pushes review, rollback, permissioning, and security audit into the harness contract
 
 ## Signals From Recent Articles
 
@@ -48,6 +50,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Harness Design for Long-Running Application Development](../articles/harness-design-for-long-running-application-development.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
+- [OpenClaw: The Viral AI Agent that Broke the Internet](../articles/openclaw-viral-ai-agent-lex-fridman-peter-steinberger.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
 - [OpenAI harmony response format](../articles/openai-harmony.md)
 - [How to handle the raw chain of thought in gpt-oss](../articles/handle-raw-cot.md)
@@ -70,6 +73,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - raw reasoning persistence 和 user-facing safety 之間，應如何設計最小可用的 state handoff contract
 - verification bundle 的最小組合應如何分層，才不會把 smoke test 和 production-grade eval 混為一談
 - safety prompt 的驗證應否成為 harness 的標準步驟，而不是額外手工檢查
+- self-modifying agent runtimes need which minimum review, rollback, and local security evidence before they are safe for non-expert users
 
 ## Related Pages
 

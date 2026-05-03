@@ -16,6 +16,8 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - provider-managed hosted agent 會把 sandbox lifecycle、session recovery、credential routing 與部分 orchestration 收斂到平台，由平台吸收模型快速演化帶來的 runtime churn
 - local personal agent 則更強調 user-owned memory、conversation-first steerability、CLI-first operability 與對本地資料面的直接接觸
 - Hassabis's local/cloud assistant framing adds another runtime split: small on-device models can handle private high-bandwidth perception, while frontier cloud models are called selectively for harder work
+- OpenClaw's Lex interview gives a concrete local-personal runtime stack: gateway, chat client, harness, agent loop, memory, skills, browser/app control, local system access, and a model identity the agent can inspect
+- 當 agent 能理解自己的 source tree、docs、model 與 harness 時，runtime surface 不只是容器，而會變成 agent 可操作、可修改的工作對象
 - 對 repo-local 或 local-personal agent 來說，MCP / connector 常先解決「能不能碰到資料」，但真正影響效果的往往是 operability：能否用 CLI 把搜尋、精讀、下載、草稿寫入與大 payload export 壓成可組合的小命令
 - 當人類用 agent 共同打造自己的 CLI 或資料匯出工具時，真正的控制面不只在 access / operability，還包括 product judgment：defaults、overwrite policy、artifact format 與真實 example testing
 - brain / hands / memory 分離是 hosted runtime 的重要 framing；repo docs / plans / logs 則是 repo-local coding agent 的對應 state surfaces
@@ -29,6 +31,8 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - policy prompts 也是 runtime surface 的一部分：policy length、output format、reasoning effort 與 precedence 規則會直接決定 safety workflow 的品質
 - 在 Trust & Safety 流程中，runtime 不是只有生成答案，而是生成可審計的 policy decision
 - future general agents may be tool-using orchestrators over specialized expert systems, such as AlphaFold-like scientific tools, rather than one giant model that internalizes every domain capability
+- personal-agent runtime security is a product boundary: inbound access, network exposure, browser control, credential storage, local session logs, memory files, plugins, and model strength all define the actual blast radius
+- browser control turns many human-facing apps into slow APIs; product teams can either expose agent-friendly access, resist automation, or accept that agents will route through brittle UI surfaces
 
 ## Signals From Recent Articles
 
@@ -36,6 +40,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [OpenClaw Takes Over The Internet](../articles/openclaw-takes-over-the-internet-peter-steinberger.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
+- [OpenClaw: The Viral AI Agent that Broke the Internet](../articles/openclaw-viral-ai-agent-lex-fridman-peter-steinberger.md)
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
@@ -53,6 +58,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 
 - hosted runtime、repo-local runtime 與 local personal runtime 之間，最小可攜的 state contract 應長什麼樣子
 - local small model, cloud frontier model, multimodal perception layer, and specialized tool should be orchestrated at which boundary
+- self-aware local runtimes should expose source, docs, model identity, permissions, and harness internals to the agent at what granularity
 - 哪些 memory surfaces 應由使用者自己持有，哪些可以安全讓渡給平台
 - conversation-first 介面降低了多少摩擦，又犧牲了多少顯式 controllability 與 auditability
 - MCP / connector 與 CLI surface 的分工邊界應如何定義，才能同時保留 access control 與 operability
@@ -65,6 +71,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - harmony / reasoning / tool-call contract 是否應被視為 runtime surface 的核心層，而非單純的 model-specific adapter
 - verification 的邊界要畫到哪裡：prompt format、response shape、reasoning transport，還是完整 eval bundle
 - safety policy prompts 的控制面要落在 repo 文件、模板還是 runtime library
+- user-authorized personal automation and platform-hostile scraping should be distinguished by which technical and product contracts
 
 ## Related Pages
 

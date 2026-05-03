@@ -1,0 +1,25 @@
+{
+  "contents": [
+    {
+      "parts": [
+        {
+          "fileData": {
+            "fileUri": "https://www.youtube.com/watch?v=YFjfBk8HI5o",
+            "mimeType": "video/*"
+          },
+          "videoMetadata": {
+            "startOffset": "9520s",
+            "endOffset": "10720s"
+          }
+        },
+        {
+          "text": "Process this clipped interval from a public YouTube video and return transcript markdown.\n\nKnown title: OpenClaw: The Viral AI Agent that Broke the Internet - Peter Steinberger | Lex Fridman Podcast #491\nSource URL: https://www.youtube.com/watch?v=YFjfBk8HI5o\nClip interval: 02:38:40 to 02:58:40.\n\nRequirements:\n1. Output in Traditional Chinese markdown.\n2. Use exactly one section: `## Transcript`.\n3. Write one segment per line in the format `HH:MM:SS Speaker: text` when the speaker is clear, or `HH:MM:SS text` otherwise.\n4. Use original-video timestamps, not clip-relative timestamps.\n5. Preserve speaker turns, key names, numbers, technical terms, product names, and policy terms.\n6. If a segment is uncertain, append `[unclear]`. If speech is inaudible, append `[inaudible]`.\n7. Do not invent speakers, timestamps, or facts that are not grounded in the video.\n8. Do not wrap the final answer in a code fence.\n"
+        }
+      ]
+    }
+  ],
+  "generationConfig": {
+    "temperature": 0.2,
+    "mediaResolution": "MEDIA_RESOLUTION_LOW"
+  }
+}

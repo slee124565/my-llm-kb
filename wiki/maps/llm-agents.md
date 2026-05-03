@@ -31,6 +31,7 @@
 - [Effective Harnesses for Long-Running Agents](../articles/effective-harnesses-for-long-running-agents.md)
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
 - [OpenClaw Takes Over The Internet](../articles/openclaw-takes-over-the-internet-peter-steinberger.md)
+- [OpenClaw: The Viral AI Agent that Broke the Internet](../articles/openclaw-viral-ai-agent-lex-fridman-peter-steinberger.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
@@ -69,3 +70,4 @@
 - AI compute stack 的分裂或集中，會如何影響 hosted agent 的成本、可用性、可靠性與 developer ecosystem lock-in
 - context window, externalized memory, and learned continual memory should be composed how if agents are expected to adapt to a user's or task's long-term context
 - future general agents should absorb specialized capabilities into one model, or orchestrate separate expert systems as tools
+- local personal agents with browser/app control should expose which security and agent-facing API contracts before becoming mainstream consumer software

@@ -29,6 +29,7 @@
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [OpenClaw Takes Over The Internet](../articles/openclaw-takes-over-the-internet-peter-steinberger.md)
+- [OpenClaw: The Viral AI Agent that Broke the Internet](../articles/openclaw-viral-ai-agent-lex-fridman-peter-steinberger.md)
 - [Notes From a Marketer Building a Real CLI With Codex](../articles/notes-from-a-marketer-building-a-real-cli-with-codex.md)
 
 ## Key People Or Labs
@@ -47,3 +48,4 @@
 - Codex 類 workflow 可以吸收多少 personal-agent pattern，例如 markdown memory ownership、CLI-first tooling 與 conversation-first steerability
 - 什麼時候應該直接用 connector / MCP，什麼時候應該再往上編譯成 agent-friendly CLI 與 companion skill
 - 在 agent 幫忙做工具時，哪些 product judgment 應該保持在 human loop，而不是被 prompt 或自動化完全吸收
+- OpenClaw-style agentic engineering can transfer which habits to Codex: short conversational prompts, guiding the agent's codebase view, post-build refactor prompts, and designing codebases for fresh-session navigation

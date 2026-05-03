@@ -1,0 +1,159 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=YFjfBk8HI5o",
+  "canonical_url": "https://www.youtube.com/watch?v=YFjfBk8HI5o",
+  "video_id": "YFjfBk8HI5o",
+  "title": "OpenClaw: The Viral AI Agent that Broke the Internet - Peter Steinberger | Lex Fridman Podcast #491",
+  "channel_title": "Lex Fridman",
+  "label": null,
+  "generated_at": "2026-05-02T23:52:25Z",
+  "generation_mode": "sync",
+  "chunked": true,
+  "model": "gemini-2.5-flash",
+  "media_resolution": "MEDIA_RESOLUTION_LOW",
+  "duration_seconds": 11751.758,
+  "chunk_minutes": 20.0,
+  "chunk_overlap_seconds": 10.0,
+  "request_timeout_seconds": 600,
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "end_seconds": 1200,
+      "dir": "chunks/000000-001200"
+    },
+    {
+      "index": 1,
+      "start_seconds": 1190,
+      "end_seconds": 2390,
+      "dir": "chunks/001190-002390"
+    },
+    {
+      "index": 2,
+      "start_seconds": 2380,
+      "end_seconds": 3580,
+      "dir": "chunks/002380-003580"
+    },
+    {
+      "index": 3,
+      "start_seconds": 3570,
+      "end_seconds": 4770,
+      "dir": "chunks/003570-004770"
+    },
+    {
+      "index": 4,
+      "start_seconds": 4760,
+      "end_seconds": 5960,
+      "dir": "chunks/004760-005960"
+    },
+    {
+      "index": 5,
+      "start_seconds": 5950,
+      "end_seconds": 7150,
+      "dir": "chunks/005950-007150"
+    },
+    {
+      "index": 6,
+      "start_seconds": 7140,
+      "end_seconds": 8340,
+      "dir": "chunks/007140-008340"
+    },
+    {
+      "index": 7,
+      "start_seconds": 8330,
+      "end_seconds": 9530,
+      "dir": "chunks/008330-009530"
+    },
+    {
+      "index": 8,
+      "start_seconds": 9520,
+      "end_seconds": 10720,
+      "dir": "chunks/009520-010720"
+    },
+    {
+      "index": 9,
+      "start_seconds": 10710,
+      "end_seconds": 11752,
+      "dir": "chunks/010710-011752"
+    }
+  ],
+  "chunk_statuses": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "end_seconds": 1200,
+      "status": "completed",
+      "dir": "chunks/000000-001200"
+    },
+    {
+      "index": 1,
+      "start_seconds": 1190,
+      "end_seconds": 2390,
+      "status": "completed",
+      "dir": "chunks/001190-002390"
+    },
+    {
+      "index": 2,
+      "start_seconds": 2380,
+      "end_seconds": 3580,
+      "status": "completed",
+      "dir": "chunks/002380-003580"
+    },
+    {
+      "index": 3,
+      "start_seconds": 3570,
+      "end_seconds": 4770,
+      "status": "completed",
+      "dir": "chunks/003570-004770"
+    },
+    {
+      "index": 4,
+      "start_seconds": 4760,
+      "end_seconds": 5960,
+      "status": "completed",
+      "dir": "chunks/004760-005960"
+    },
+    {
+      "index": 5,
+      "start_seconds": 5950,
+      "end_seconds": 7150,
+      "status": "completed",
+      "dir": "chunks/005950-007150"
+    },
+    {
+      "index": 6,
+      "start_seconds": 7140,
+      "end_seconds": 8340,
+      "status": "completed",
+      "dir": "chunks/007140-008340"
+    },
+    {
+      "index": 7,
+      "start_seconds": 8330,
+      "end_seconds": 9530,
+      "status": "completed",
+      "dir": "chunks/008330-009530"
+    },
+    {
+      "index": 8,
+      "start_seconds": 9520,
+      "end_seconds": 10720,
+      "status": "completed",
+      "dir": "chunks/009520-010720"
+    },
+    {
+      "index": 9,
+      "start_seconds": 10710,
+      "end_seconds": 11752,
+      "status": "completed",
+      "dir": "chunks/010710-011752"
+    }
+  ],
+  "package_files": [
+    "README.md",
+    "metadata.json",
+    "transcript.md",
+    "chunks/*/request.json",
+    "chunks/*/response.raw.json",
+    "chunks/*/transcript.md"
+  ]
+}
