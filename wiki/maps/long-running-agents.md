@@ -8,6 +8,7 @@
 
 - [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
+- [Human-Supervised Agent Ops](../concepts/human-supervised-agent-ops.md)
 - [Long-Running Agent Harnesses](../concepts/long-running-agent-harnesses.md)
 - [Repository Knowledge As System Of Record](../concepts/repository-knowledge-as-system-of-record.md)
 
@@ -19,6 +20,7 @@
 - compaction and continuity
 - verification loops
 - tracker-backed orchestration
+- human supervisor plane
 
 ## Key Articles
 
@@ -55,3 +57,4 @@
 - provider-managed runtime 若成為主流，哪些 state artifact 仍必須由使用者自己持有
 - provider-managed long-running agent 若因 serving bug 導致品質退化，production eval、user feedback 與 rollback loop 應算哪一層的 harness contract
 - multi-agent swarms and long autonomous runs should be judged by output value per agent-hour, not only by trace length or autonomy level
+- 哪些 operational loops 可以交給 agent 關閉，哪些必須保留 human supervisor approval，應成為 AI-native harness 的核心設計問題

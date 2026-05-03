@@ -9,6 +9,7 @@
 - [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
 - [Repository Knowledge As System Of Record](../concepts/repository-knowledge-as-system-of-record.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
+- [Human-Supervised Agent Ops](../concepts/human-supervised-agent-ops.md)
 - [Long-Running Agent Harnesses](../concepts/long-running-agent-harnesses.md)
 - [Prompt Migration And Agent Steerability](../concepts/prompt-migration-and-agent-steerability.md)
 
@@ -17,6 +18,7 @@
 - repository knowledge as system of record
 - agent runtime surfaces
 - externalized agent state
+- human-supervised agent ops
 - long-running agent harnesses
 - prompt migration and agent steerability
 - async delegation with verifiable evidence
@@ -56,3 +58,4 @@
 - 在 agent 幫忙做工具時，哪些 product judgment 應該保持在 human loop，而不是被 prompt 或自動化完全吸收
 - OpenClaw-style agentic engineering can transfer which habits to Codex: short conversational prompts, guiding the agent's codebase view, post-build refactor prompts, and designing codebases for fresh-session navigation
 - Codex prompt design should be split across global operating rules, repo-local `AGENTS.md`, task prompts, tool affordances, and validation evidence rather than one ever-growing instruction blob
+- agent-first product work should distinguish building AI-assisted tools for human operators from building agent-operated systems with human supervisor surfaces

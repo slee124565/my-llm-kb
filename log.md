@@ -58,3 +58,4 @@
 - 2026-05-03: added a GPT-3.5-era OpenAI prompt engineering article card from official Help Center, Cookbook, and API docs sources, and linked it into prompt migration, LLM agent, and Codex workflow navigation
 - 2026-05-03: saved the six-question GPT-5.5 outcome-first agent prompt checklist into `prompt-migration-and-agent-steerability` for future query reuse
 - 2026-05-03: recorded the synthesis that GPT-5.5 outcome-first prompting functions as a declarative control layer over harness engineering, splitting task contract responsibility from tools, state, observability, recovery, and verification
+- 2026-05-03: Added `human-supervised-agent-ops` concept capturing the AI-native operational-loop ownership thesis; updated LLM Agents, Long-Running Agents, Codex Workflows, runtime surfaces, long-running harnesses, and index links.

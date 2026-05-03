@@ -10,6 +10,7 @@
 - [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
 - [AI Compute Infrastructure](../concepts/ai-compute-infrastructure.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
+- [Human-Supervised Agent Ops](../concepts/human-supervised-agent-ops.md)
 - [Long-Running Agent Harnesses](../concepts/long-running-agent-harnesses.md)
 - [Prompt Migration And Agent Steerability](../concepts/prompt-migration-and-agent-steerability.md)
 - [Repository Knowledge As System Of Record](../concepts/repository-knowledge-as-system-of-record.md)
@@ -20,6 +21,7 @@
 - agent runtime surfaces
 - AI compute infrastructure
 - externalized agent state
+- human-supervised agent ops
 - long-running agent harnesses
 - prompt migration and agent steerability
 - repository knowledge as system of record
@@ -78,3 +80,4 @@
 - future general agents should absorb specialized capabilities into one model, or orchestrate separate expert systems as tools
 - local personal agents with browser/app control should expose which security and agent-facing API contracts before becoming mainstream consumer software
 - model upgrades should trigger prompt simplification, eval-backed reasoning-effort choices, and stricter runtime contracts rather than unbounded prompt accumulation
+- AI-native application design should be judged by whether agents own operational loops under human governance, not merely whether AI assists a human-operated UI

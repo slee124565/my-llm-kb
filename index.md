@@ -12,6 +12,7 @@
 - [AI Compute Infrastructure](wiki/concepts/ai-compute-infrastructure.md)
 - [Agent Runtime Surfaces](wiki/concepts/agent-runtime-surfaces.md)
 - [Externalized Agent State](wiki/concepts/externalized-agent-state.md)
+- [Human-Supervised Agent Ops](wiki/concepts/human-supervised-agent-ops.md)
 - [Long-Running Agent Harnesses](wiki/concepts/long-running-agent-harnesses.md)
 - [Prompt Migration And Agent Steerability](wiki/concepts/prompt-migration-and-agent-steerability.md)
 - [Repository Knowledge As System Of Record](wiki/concepts/repository-knowledge-as-system-of-record.md)

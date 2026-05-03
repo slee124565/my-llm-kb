@@ -34,6 +34,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - future general agents may be tool-using orchestrators over specialized expert systems, such as AlphaFold-like scientific tools, rather than one giant model that internalizes every domain capability
 - personal-agent runtime security is a product boundary: inbound access, network exposure, browser control, credential storage, local session logs, memory files, plugins, and model strength all define the actual blast radius
 - browser control turns many human-facing apps into slow APIs; product teams can either expose agent-friendly access, resist automation, or accept that agents will route through brittle UI surfaces
+- human-supervised agent ops reframes runtime surface design: human-facing apps become supervisor planes, while the primary runtime should expose state, actions, evidence, policy gates, and rollback surfaces for agent operation
 
 ## Signals From Recent Articles
 
@@ -77,11 +78,13 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - safety policy prompts 的控制面要落在 repo 文件、模板還是 runtime library
 - prompt guidance 的哪些部分應由 API runtime 強制處理，哪些應留給 repo-local prompt / skill / task contract
 - user-authorized personal automation and platform-hostile scraping should be distinguished by which technical and product contracts
+- AI-native products should expose which surfaces to agents as operator hands and which surfaces to humans as supervisor controls
 
 ## Related Pages
 
 - [Externalized Agent State](externalized-agent-state.md)
 - [Long-Running Agent Harnesses](long-running-agent-harnesses.md)
+- [Human-Supervised Agent Ops](human-supervised-agent-ops.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)
 - [Prompt Migration And Agent Steerability](prompt-migration-and-agent-steerability.md)
 - [LLM Agents](../maps/llm-agents.md)

@@ -39,6 +39,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - full fire-and-forget agents likely require continual learning and task-context adaptation; patching together current stateless models can help with subtasks but is not yet a complete long-task harness
 - OpenClaw's agentic-engineering workflow treats the agent like a capable engineer with a partial codebase view: guide it to relevant context, discuss intent, let it build, then ask what should be refactored while the session context is still warm
 - self-aware harnesses can let an agent inspect and modify its own runtime, but that pushes review, rollback, permissioning, and security audit into the harness contract
+- AI-native harnesses should be evaluated by operational loop ownership: whether agents can observe, decide, act, verify, record evidence, and escalate under human governance, rather than merely assisting a human-operated UI
 
 ## Signals From Recent Articles
 
@@ -80,11 +81,13 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - safety prompt 的驗證應否成為 harness 的標準步驟，而不是額外手工檢查
 - preamble / phase / final-answer separation 應作為所有 long-running Responses workflow 的基礎 contract，還是只在 tool-heavy agent 中使用
 - self-modifying agent runtimes need which minimum review, rollback, and local security evidence before they are safe for non-expert users
+- 哪些 loops 應由 agent 擁有，哪些應由 human supervisor approval 保留，應如何用 confidence、risk、source lineage 與 reversibility 分層
 
 ## Related Pages
 
 - [Agent Runtime Surfaces](agent-runtime-surfaces.md)
 - [Externalized Agent State](externalized-agent-state.md)
+- [Human-Supervised Agent Ops](human-supervised-agent-ops.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)
 - [Prompt Migration And Agent Steerability](prompt-migration-and-agent-steerability.md)
 - [Long-Running Agents](../maps/long-running-agents.md)
