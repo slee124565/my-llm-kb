@@ -37,6 +37,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - human-supervised agent ops reframes runtime surface design: human-facing apps become supervisor planes, while the primary runtime should expose state, actions, evidence, policy gates, and rollback surfaces for agent operation
 - Codex on Windows shows sandboxing itself as a runtime surface: the useful boundary is not just whether an agent can run commands, but which OS principal owns the process tree, which filesystem roots pass write checks, which network path is blocked by firewall policy, and which setup artifacts require elevation
 - Environment-variable network suppression is only an advisory runtime convention; for local coding agents that execute arbitrary developer tools, network containment needs an OS-enforced boundary that applies to descendant processes, not just to the harness binary
+- Anthropic's founder playbook offers a startup-stage surface split: Chat for quick conversational work, Claude Cowork for longer knowledge and operational workflows across connected tools, and Claude Code for codebase work. The useful abstraction is not the product names, but the fact that each surface carries different context, tools, permissions, persistence, and verification responsibilities.
 
 ## Signals From Recent Articles
 
@@ -61,6 +62,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [OpenAI Prompt Guidance - GPT-5.5](../articles/openai-prompt-guidance-gpt-5-5.md)
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
+- [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
 
 ## Open Questions
 

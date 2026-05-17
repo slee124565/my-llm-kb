@@ -30,7 +30,7 @@ This default mode allows Codex to read files almost anywhere and write files wit
 
 A sandbox is a constrained execution environment. When a developer uses Codex, their computer's operating system launches a command with reduced permissions, and those constraints propagate down the process tree. Every Codex command is sandboxed from the start, and every descendant process stays inside the same boundary.
 
-![Diagram showing Codex sandbox operating-system isolation boundaries.](https://images.ctfassets.net/kftzwdyauwt9/56B8qHwAm6RxoAfKTqdadL/d81df6031422dd5495e9a50d8dce8616/Diagram1-10column-desktop-light.svg?w=3840&q=90)
+![Diagram showing Codex sandbox operating-system isolation boundaries.](https://images.ctfassets.net/kftzwdyauwt9/56B8qHwAm6RxoAfKTqdadL/d81df6031422dd5495e9a50d8dce8616/Diagram1-10column-desktop-light.svg)
 
 Codex needs isolation features enforced by the computer's operating system to implement an effective sandbox. Some operating systems provide utilities that do this well (e.g., Seatbelt on MacOs, seccomp or bubblewrap on Linux); however, Windows doesn't currently provide this type of capability out of the box.
 
@@ -85,7 +85,7 @@ In order for a write to succeed, two checks must pass:
 1. The normal user identity (the token "owner") must be allowed to do it
 2. At least one SID in the token's restricted SID list must also be granted access
 
-![Diagram titled Sandbox write requires both regular user access and sandbox-write SID access.](https://images.ctfassets.net/kftzwdyauwt9/2KlFO4wcJ2hJICaARcf7ty/62ea40d3f87215fce5f9668dd0abbfaf/Diagram2-10column-desktop-light.svg?w=3840&q=90)
+![Diagram titled Sandbox write requires both regular user access and sandbox-write SID access.](https://images.ctfassets.net/kftzwdyauwt9/2KlFO4wcJ2hJICaARcf7ty/62ea40d3f87215fce5f9668dd0abbfaf/Diagram2-10column-desktop-light.svg)
 
 In practice, these checks let us use ACLs to define exactly where the sandbox could modify the filesystem, which offered the granularity we needed around write operations.
 
@@ -119,7 +119,7 @@ For example, here are some of the specific environment overrides we used to limi
 - `NO_PROXY=localhost,127.0.0.1,::1`
 - `GIT_SSH_COMMAND=cmd /c exit 1`
 
-![Diagram showing the elevated sandbox architecture with firewall rules and a dedicated Windows user.](https://images.ctfassets.net/kftzwdyauwt9/75Js1VkWKm67h9sHF1X6N0/050188fe9938ae1247a80dccc989a5ca/Diagram4-10column-desktop-light.svg?w=3840&q=90)
+![Diagram showing the elevated sandbox architecture with firewall rules and a dedicated Windows user.](https://images.ctfassets.net/kftzwdyauwt9/75Js1VkWKm67h9sHF1X6N0/050188fe9938ae1247a80dccc989a5ca/Diagram4-10column-desktop-light.svg)
 
 That caught a lot of normal tool-driven traffic, but it was still only advisory. A process could ignore the environment, bypass PATH, or just open sockets directly-too risky.
 
@@ -159,7 +159,7 @@ It still runs child processes under a restricted token-similarly a `write_restri
 
 This seemingly small detail actually has big implications for the sandbox, who can use it, and the complexity of its setup and runtime execution.
 
-![Diagram showing network environment overrides for the unelevated sandbox.](https://images.ctfassets.net/kftzwdyauwt9/5eGlraTLEirbaMwaM74UOD/f0f6e41e99894a0e6a4ffdd2d965fdcb/Diagram3-10column-desktop-light.svg?w=3840&q=90)
+![Diagram showing network environment overrides for the unelevated sandbox.](https://images.ctfassets.net/kftzwdyauwt9/5eGlraTLEirbaMwaM74UOD/f0f6e41e99894a0e6a4ffdd2d965fdcb/Diagram3-10column-desktop-light.svg)
 
 It's visually similar to the unelevated prototype, with the introduction of firewall rules and a dedicated Windows user, which actually runs the commands. (However, the introduction of these new concepts, means that there is more setup work to do before the sandbox can start running and protecting commands.)
 
@@ -195,7 +195,7 @@ We encapsulated the setup logic in its own binary partly to cross the UAC bounda
 
 Keeping the sandbox setup logic in a dedicated binary let `codex.exe` stay a normal, unelevated harness; kept the Windows-only setup machinery from bloating `codex.exe` on other platforms; decoupled longer-running setup work from the lifetime of the main process; and gave us one place to handle the different setup paths the sandbox needed.
 
-![Diagram showing the first-class elevated sandbox setup step.](https://images.ctfassets.net/kftzwdyauwt9/1L0jHduyQ5wiNbQ9hAVXaz/b2e2c5871a5a8feb378fc10b70d08a1c/Diagram5-10column-desktop-light.svg?w=3840&q=90)
+![Diagram showing the first-class elevated sandbox setup step.](https://images.ctfassets.net/kftzwdyauwt9/1L0jHduyQ5wiNbQ9hAVXaz/b2e2c5871a5a8feb378fc10b70d08a1c/Diagram5-10column-desktop-light.svg)
 
 #### The command runner is a new binary that actually runs user commands
 
@@ -220,7 +220,7 @@ That requirement led to `codex-command-runner.exe`, a new binary whose only job 
 - The runner calls `GetTokenInformation(...)` to extract the sandbox logon SID, then `CreateRestrictedToken(...)` to build the final restricted token.
 - Still inside the runner, it calls `CreateProcessAsUserW(...)` with that restricted token to launch the real child.
 
-![Diagram showing the command runner flow for spawning restricted commands.](https://images.ctfassets.net/kftzwdyauwt9/3D3UDLteywxw2R6tFbrzRH/afafb32a8d8f39fbc1a35f4f576cf787/Diagram6-8column-desktop-light.svg?w=3840&q=90)
+![Diagram showing the command runner flow for spawning restricted commands.](https://images.ctfassets.net/kftzwdyauwt9/3D3UDLteywxw2R6tFbrzRH/afafb32a8d8f39fbc1a35f4f576cf787/Diagram6-8column-desktop-light.svg)
 
 #### The full picture
 
@@ -237,7 +237,7 @@ As I learned more about the specific tools that Windows provides, and through do
 
 It's not a particularly simple system, but each piece of complexity was added out of necessity, to build a sandbox that is both safe and, as much as possible, not in the user's way.
 
-![Diagram showing the final Windows sandbox architecture.](https://images.ctfassets.net/kftzwdyauwt9/d2zAquU2z95UFB0cqNgCs/4a45909b0c9c3e8d44fc416b2da8050c/Diagram7-12column-desktop-light.svg?w=3840&q=90)
+![Diagram showing the final Windows sandbox architecture.](https://images.ctfassets.net/kftzwdyauwt9/d2zAquU2z95UFB0cqNgCs/4a45909b0c9c3e8d44fc416b2da8050c/Diagram7-12column-desktop-light.svg)
 
 ## Balancing safety with actual usefulness
 

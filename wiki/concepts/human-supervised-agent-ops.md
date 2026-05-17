@@ -107,6 +107,19 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - 當 agent 擁有 operational loop 時，policy、KB、eval、rollback 與 audit 應如何分層，才不會讓 human supervisor 失去真實控制
 - human supervisor 與 coding agent 共同推進 AI-native 系統時，哪些 planning artifacts 應成為 durable operating contract，哪些只是暫時探索，應避免升級成新的 milestone
 
+## Startup Operating Pattern
+
+Anthropic 的 `The Founder's Playbook` 把 human-supervised agent ops 放進 startup lifecycle 裡：AI-native founder 的核心工作不再是逐步執行 research、coding、ops、support、reporting，而是判斷哪些 loop 可以交給 agent 或 automation layer 關閉，哪些 evidence 足以授權下一步，哪些例外必須升級回 founder。
+
+對 startup 來說，這個轉換有 stage boundary：
+
+- Idea stage：AI 可以做 research、競品整理、訪談設計與反方壓力測試，但 founder 不能把 prototype 或 supportive research 當成 validation。真正 evidence 仍來自明確 target profile、disconfirming evidence 與使用者訪談。
+- MVP stage：Claude Code 類 coding agent 可以加速建構，但必須被 architecture doc、scope doc、security review、measurement framework 與 session log 約束，否則 agentic technical debt 會在每次 session 重推決策時累積。
+- Launch stage：founder 必須把 support、bug triage、reporting、product management cadence 與 compliance workstream 系統化，否則早期 founder-in-the-loop 會變成 growth bottleneck。
+- Scale stage：AI operational layer 需要可交接、可審計、可例外處理；founder 的工作轉向 product narrative、enterprise deals、board relationships 與少數高判斷任務。
+
+這補強了本頁的判準：AI-native startup 不是用 AI 幫 founder 更快手動操作，而是把公司運作改造成 agent-legible、evidence-backed、human-governed 的 operating system。
+
 ## Related Pages
 
 - [Long-Running Agent Harnesses](long-running-agent-harnesses.md)

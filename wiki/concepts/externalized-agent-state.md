@@ -33,6 +33,8 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - 當 AI 對話需要成為後續可重用的工作 artifact 時，匯出成 markdown、PDF 或 repo file 就不只是備份，而是把 state 從聊天 UI 外部化
 - policy taxonomy、decision label 與 output schema 也是外部化狀態；若它們只留在 prompt 裡而沒有版本化，就很難做後續審計或回放
 - self-aware agent runtimes add another state layer: source tree, docs, model identity, permissions, and harness structure become artifacts the agent can reload and modify
+- `The Founder's Playbook` applies the same principle to AI-native startups: architecture files, scope definitions, metrics frameworks, customer discovery notes, security findings, workflow specs, and institutional knowledge become the persistent context that keeps Claude Code / Claude Cowork-style work from drifting across stages
+- AI technical debt is partly state debt: if product decisions, architectural constraints, validation criteria, and tradeoffs live only in the founder's head or a chat transcript, each agent session can re-derive a different mental model
 
 ## Signals From Recent Articles
 
@@ -53,6 +55,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [How to handle the raw chain of thought in gpt-oss](../articles/handle-raw-cot.md)
 - [Verifying gpt-oss implementations](../articles/verifying-implementations.md)
 - [User Guide For Gpt-Oss-Safeguard](../articles/gpt-oss-safeguard-guide.md)
+- [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
 
 ## Open Questions
 

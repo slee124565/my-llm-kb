@@ -48,6 +48,7 @@
 - [OpenAI Prompt Guidance - GPT-5.5](../articles/openai-prompt-guidance-gpt-5-5.md)
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
+- [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
 
 ## Key People Or Labs
 
@@ -81,3 +82,4 @@
 - local personal agents with browser/app control should expose which security and agent-facing API contracts before becoming mainstream consumer software
 - model upgrades should trigger prompt simplification, eval-backed reasoning-effort choices, and stricter runtime contracts rather than unbounded prompt accumulation
 - AI-native application design should be judged by whether agents own operational loops under human governance, not merely whether AI assists a human-operated UI
+- AI-native startup design should preserve stage-specific evidence gates: faster research, coding, and automation only help if validation, scope, security, metrics, and handoff state stay ahead of execution speed

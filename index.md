@@ -34,6 +34,7 @@
 - [OpenAI Prompt Guidance - GPT-5.5](wiki/articles/openai-prompt-guidance-gpt-5-5.md)
 - [OpenAI Prompt Guidance - GPT-5.4](wiki/articles/openai-prompt-guidance-gpt-5-4.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](wiki/articles/openai-prompt-guidance-gpt-5-3-codex.md)
+- [The Founder's Playbook: Building an AI-Native Startup](wiki/articles/claude-the-founders-playbook.md)
 
 ## Working Assets
 
