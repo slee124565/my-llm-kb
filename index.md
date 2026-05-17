@@ -27,6 +27,7 @@
 - [Jensen Huang - TPU Competition, China Chips, and Nvidia's Supply Chain Moat](wiki/articles/jensen-huang-tpu-china-chips-nvidia-supply-chain-moat.md)
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](wiki/articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [Introducing Codex](wiki/articles/introducing-codex.md)
+- [Building a Safe, Effective Sandbox to Enable Codex on Windows](wiki/articles/openai-building-codex-windows-sandbox.md)
 - [Bespoke CLIs for Codex](wiki/articles/bespoke-clis-for-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](wiki/articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](wiki/articles/openai-prompt-engineering-gpt-3-5-era.md)

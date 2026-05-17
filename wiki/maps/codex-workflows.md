@@ -24,10 +24,12 @@
 - async delegation with verifiable evidence
 - ticket tracker as agent control plane
 - CLI-first operability plus companion skills for repeated noisy data surfaces
+- OS-enforced local sandboxing for agent command execution
 
 ## Key Articles
 
 - [Introducing Codex](../articles/introducing-codex.md)
+- [Building a Safe, Effective Sandbox to Enable Codex on Windows](../articles/openai-building-codex-windows-sandbox.md)
 - [Bespoke CLIs for Codex](../articles/bespoke-clis-for-codex.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
@@ -59,3 +61,4 @@
 - OpenClaw-style agentic engineering can transfer which habits to Codex: short conversational prompts, guiding the agent's codebase view, post-build refactor prompts, and designing codebases for fresh-session navigation
 - Codex prompt design should be split across global operating rules, repo-local `AGENTS.md`, task prompts, tool affordances, and validation evidence rather than one ever-growing instruction blob
 - agent-first product work should distinguish building AI-assisted tools for human operators from building agent-operated systems with human supervisor surfaces
+- local Codex workflows need a visible sandbox health contract: setup, firewall policy, writable roots, network mode, and command-runner evidence are part of the workflow surface, not background implementation detail
