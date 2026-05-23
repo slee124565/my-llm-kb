@@ -42,6 +42,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - self-aware harnesses can let an agent inspect and modify its own runtime, but that pushes review, rollback, permissioning, and security audit into the harness contract
 - AI-native harnesses should be evaluated by operational loop ownership: whether agents can observe, decide, act, verify, record evidence, and escalate under human governance, rather than merely assisting a human-operated UI
 - Codex's Windows sandbox adds a local-machine harness pattern: practical agent safety may require composing OS primitives, dedicated users, firewall rules, restricted tokens, ACLs, setup binaries, and command runners because no single primitive maps cleanly to autonomous coding-agent work
+- Codex app primitives split long-running work into three productized harness modes: durable pinned threads for continuity, thread automations for periodic wakeups inside the same context, and Goals for tasks with a measurable verifier and stopping condition.
 
 ## Signals From Recent Articles
 
@@ -66,6 +67,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [OpenAI Prompt Guidance - GPT-5.5](../articles/openai-prompt-guidance-gpt-5-5.md)
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
+- [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 
 ## Open Questions
 
@@ -87,6 +89,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - self-modifying agent runtimes need which minimum review, rollback, and local security evidence before they are safe for non-expert users
 - 哪些 loops 應由 agent 擁有，哪些應由 human supervisor approval 保留，應如何用 confidence、risk、source lineage 與 reversibility 分層
 - when sandbox setup modifies host security state, which receipts, health checks, and rollback paths should the harness expose before users trust long-running local agent work
+- scheduled automations、thread automations 與 Goals 應如何分層，才能同時保留 continuity、bounded execution、evidence 與 human approval
 
 ## Related Pages
 

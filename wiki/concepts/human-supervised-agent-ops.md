@@ -26,6 +26,7 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - Slack、issue tracker、admin console 這類 human-facing surface，在 AI-native ops 中通常應被設計成 supervisor plane，而不是 primary operator UI
 - 與 coding agent 共同開發 human-supervised agent ops 系統時，開發流程本身也需要 supervisor discipline：每個 milestone 要問 agent 多擁有哪一小段 loop、需要哪些 evidence、哪個 gate 沒過就停，而不是讓 `PLANS.md` 無限延伸成 design/implement loop
 - Karpathy 對 future agents 的 human-to-agent ratio framing，補強了這個概念的需求來源：更長的 autonomous run 會把人推向 supervisor role，但 supervision 必須靠 evidence、approval、rollback 與 risk boundary 實作，而不是只靠人「看著」agent
+- Codex steering、queuing、side-panel review、thread automation 與 mobile approval 共同提供了個人版 supervisor loop：人類不一定逐步操作，但可以中途改向、安排下一步、檢查 artifact、批准敏感操作，並要求 agent 把重要 context 寫回可接手 memory。
 
 ## Working Thesis
 
@@ -97,6 +98,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Harness Design for Long-Running Application Development](../articles/harness-design-for-long-running-application-development.md)
 - [Introducing Codex](../articles/introducing-codex.md)
+- [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 
 ## Open Questions
 
@@ -106,6 +108,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - AI-native application 的 product analytics 應如何衡量 agent loop closure，而不只是回覆速度或自動化比例
 - 當 agent 擁有 operational loop 時，policy、KB、eval、rollback 與 audit 應如何分層，才不會讓 human supervisor 失去真實控制
 - human supervisor 與 coding agent 共同推進 AI-native 系統時，哪些 planning artifacts 應成為 durable operating contract，哪些只是暫時探索，應避免升級成新的 milestone
+- steering / queuing / approval / side-panel annotation 這些 interactive controls 應如何轉成 durable evidence，而不是只留在短暫 UI 狀態中
 
 ## Startup Operating Pattern
 

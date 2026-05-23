@@ -34,6 +34,7 @@
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
+- [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](../articles/openai-prompt-engineering-gpt-3-5-era.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
@@ -62,3 +63,4 @@
 - Codex prompt design should be split across global operating rules, repo-local `AGENTS.md`, task prompts, tool affordances, and validation evidence rather than one ever-growing instruction blob
 - agent-first product work should distinguish building AI-assisted tools for human operators from building agent-operated systems with human supervisor surfaces
 - local Codex workflows need a visible sandbox health contract: setup, firewall policy, writable roots, network mode, and command-runner evidence are part of the workflow surface, not background implementation detail
+- Codex app workflow now has a broader operating pattern: durable pinned threads carry continuity, side panel carries artifact review, browser/Chrome/computer-use/MCP/connectors carry reach, thread automations/Goals carry continuation, and vault/repo memory carries cross-thread state
