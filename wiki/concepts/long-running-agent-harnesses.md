@@ -43,10 +43,12 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - AI-native harnesses should be evaluated by operational loop ownership: whether agents can observe, decide, act, verify, record evidence, and escalate under human governance, rather than merely assisting a human-operated UI
 - Codex's Windows sandbox adds a local-machine harness pattern: practical agent safety may require composing OS primitives, dedicated users, firewall rules, restricted tokens, ACLs, setup binaries, and command runners because no single primitive maps cleanly to autonomous coding-agent work
 - Codex app primitives split long-running work into three productized harness modes: durable pinned threads for continuity, thread automations for periodic wakeups inside the same context, and Goals for tasks with a measurable verifier and stopping condition.
+- Tax AI shows a production self-improvement harness pattern: practitioner corrections are captured as structured review rows, grouped into recurring findings, converted into targeted evals, and then handed to Codex inside a bounded repo / trace / eval / skill environment.
 
 ## Signals From Recent Articles
 
 - [Building a Safe, Effective Sandbox to Enable Codex on Windows](../articles/openai-building-codex-windows-sandbox.md)
+- [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [Effective Harnesses for Long-Running Agents](../articles/effective-harnesses-for-long-running-agents.md)
 - [Shell + Skills + Compaction](../articles/shell-skills-compaction-long-running-agents.md)
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
@@ -90,6 +92,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - 哪些 loops 應由 agent 擁有，哪些應由 human supervisor approval 保留，應如何用 confidence、risk、source lineage 與 reversibility 分層
 - when sandbox setup modifies host security state, which receipts, health checks, and rollback paths should the harness expose before users trust long-running local agent work
 - scheduled automations、thread automations 與 Goals 應如何分層，才能同時保留 continuity、bounded execution、evidence 與 human approval
+- production trace schema、review taxonomy、targeted evals 與 regression suites 的最小組合是什麼，才能讓 Codex safely close an improvement loop
 
 ## Related Pages
 

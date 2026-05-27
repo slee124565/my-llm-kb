@@ -28,6 +28,7 @@
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](wiki/articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [Introducing Codex](wiki/articles/introducing-codex.md)
 - [Building a Safe, Effective Sandbox to Enable Codex on Windows](wiki/articles/openai-building-codex-windows-sandbox.md)
+- [Building Self-Improving Tax Agents With Codex](wiki/articles/building-self-improving-tax-agents-with-codex.md)
 - [Bespoke CLIs for Codex](wiki/articles/bespoke-clis-for-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](wiki/articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Getting The Most Out Of Codex](wiki/articles/getting-the-most-out-of-codex.md)

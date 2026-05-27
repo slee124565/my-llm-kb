@@ -30,6 +30,7 @@
 
 - [Introducing Codex](../articles/introducing-codex.md)
 - [Building a Safe, Effective Sandbox to Enable Codex on Windows](../articles/openai-building-codex-windows-sandbox.md)
+- [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [Bespoke CLIs for Codex](../articles/bespoke-clis-for-codex.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
@@ -64,3 +65,4 @@
 - agent-first product work should distinguish building AI-assisted tools for human operators from building agent-operated systems with human supervisor surfaces
 - local Codex workflows need a visible sandbox health contract: setup, firewall policy, writable roots, network mode, and command-runner evidence are part of the workflow surface, not background implementation detail
 - Codex app workflow now has a broader operating pattern: durable pinned threads carry continuity, side panel carries artifact review, browser/Chrome/computer-use/MCP/connectors carry reach, thread automations/Goals carry continuation, and vault/repo memory carries cross-thread state
+- production systems can manufacture high-quality Codex tasks when they preserve traces, review human corrections, group repeated failures, and convert them into targeted evals with explicit regression gates

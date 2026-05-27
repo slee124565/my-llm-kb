@@ -31,6 +31,7 @@
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
+- [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Harness Design for Long-Running Application Development](../articles/harness-design-for-long-running-application-development.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
@@ -62,3 +63,4 @@
 - multi-agent swarms and long autonomous runs should be judged by output value per agent-hour, not only by trace length or autonomy level
 - longer context windows do not by themselves solve long-running multimodal task memory; harnesses still need relevance selection, evidence, supervision, and recovery
 - 哪些 operational loops 可以交給 agent 關閉，哪些必須保留 human supervisor approval，應成為 AI-native harness 的核心設計問題
+- self-improving agents need a durable path from production correction to reviewed finding, eval target, scoped task, validation result, and shipped improvement

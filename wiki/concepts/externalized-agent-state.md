@@ -36,6 +36,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - `The Founder's Playbook` applies the same principle to AI-native startups: architecture files, scope definitions, metrics frameworks, customer discovery notes, security findings, workflow specs, and institutional knowledge become the persistent context that keeps Claude Code / Claude Cowork-style work from drifting across stages
 - AI technical debt is partly state debt: if product decisions, architectural constraints, validation criteria, and tradeoffs live only in the founder's head or a chat transcript, each agent session can re-derive a different mental model
 - Codex shared-memory guidance adds a personal-ops version of the same principle: durable threads help preserve working context, but people/projects/decisions/TODOs/blockers/links that must survive across threads should be written into user-owned files such as a vault or repo, with `AGENTS.md` defining when the agent may update them.
+- Tax AI's self-improvement loop makes production traces a first-class state surface: source documents, extracted fields, citations, tax-engine mappings, practitioner corrections, filed-return values, grouped findings, and eval datasets are the state that lets Codex investigate failures across sessions.
 
 ## Signals From Recent Articles
 
@@ -58,6 +59,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [User Guide For Gpt-Oss-Safeguard](../articles/gpt-oss-safeguard-guide.md)
 - [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
+- [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 
 ## Open Questions
 
@@ -77,6 +79,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - tracker-backed state 與 repo-backed state 之間，哪些欄位應雙寫、哪些應單一來源，才不會造成狀態漂移
 - policy prompt 的版本化與 replayable evidence 應如何保存
 - pinned thread、official memory、vault/repo files 三者應如何分工，才不會讓 useful context 被鎖在單一 UI 或變成不可審計的隱性偏好
+- production corrections should be stored at what granularity so they are useful for eval generation without overfitting to incidental workflow noise
 
 ## Related Pages
 

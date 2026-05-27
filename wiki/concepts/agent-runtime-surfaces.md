@@ -39,6 +39,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Environment-variable network suppression is only an advisory runtime convention; for local coding agents that execute arbitrary developer tools, network containment needs an OS-enforced boundary that applies to descendant processes, not just to the harness binary
 - Anthropic's founder playbook offers a startup-stage surface split: Chat for quick conversational work, Claude Cowork for longer knowledge and operational workflows across connected tools, and Claude Code for codebase work. The useful abstraction is not the product names, but the fact that each surface carries different context, tools, permissions, persistence, and verification responsibilities.
 - Codex app 的 durable threads、side panel、browser/Chrome/computer-use、MCP/connectors、Skills、thread automations、Goals 與 memory 組成一個 composite work runtime；它的 runtime surface 不再只是 code execution，而是「持久 thread + tool reach + artifact review + scheduled continuation + external memory」的組合。
+- Tax AI's Codex loop splits runtime surfaces deliberately: writable product repo, read-only production trace / source artifact context, scoped domain tools, targeted evals, regression suites, and human practitioner review each carry different authority.
 
 ## Signals From Recent Articles
 
@@ -65,6 +66,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
+- [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 
 ## Open Questions
 
@@ -88,6 +90,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - AI-native products should expose which surfaces to agents as operator hands and which surfaces to humans as supervisor controls
 - local agent sandbox setup state should be exposed to users at what level: raw OS objects, health checks, repair commands, or only product-level safety modes
 - durable thread、repo/vault memory 與 platform memory 之間，哪些 context 應由誰持有、誰壓縮、誰審計
+- product runtimes should expose production evidence to Codex through which read-only, privacy-preserving surfaces rather than handing agents raw operational access
 
 ## Related Pages
 

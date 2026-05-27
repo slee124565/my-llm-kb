@@ -38,6 +38,7 @@
 - [OpenClaw: The Viral AI Agent that Broke the Internet](../articles/openclaw-viral-ai-agent-lex-fridman-peter-steinberger.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
+- [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [What Happens After Coding Is Solved](../articles/what-happens-after-coding-is-solved-boris-cherny.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
@@ -83,3 +84,4 @@
 - model upgrades should trigger prompt simplification, eval-backed reasoning-effort choices, and stricter runtime contracts rather than unbounded prompt accumulation
 - AI-native application design should be judged by whether agents own operational loops under human governance, not merely whether AI assists a human-operated UI
 - AI-native startup design should preserve stage-specific evidence gates: faster research, coding, and automation only help if validation, scope, security, metrics, and handoff state stay ahead of execution speed
+- self-improving agent claims should be evaluated by whether production feedback becomes structured, replayable, eval-backed improvement work rather than informal prompt tweaking
