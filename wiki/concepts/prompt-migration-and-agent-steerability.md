@@ -21,6 +21,7 @@ Prompt migration and agent steerability 指的是：當模型能力、API runtim
 - Migration should happen one change at a time, with evals or targeted validation proving that the new prompt preserves required behavior.
 - Repo-local instruction surfaces such as `AGENTS.md`, `docs/`, prompt assets, and templates prevent global prompts from becoming overloaded with domain workflow detail.
 - The six-question GPT-5.5 checklist can also be used as a milestone intake gate for coding-agent collaboration: in the Shopee CS harness case, it turns "design the next plan" into "define the next operational-loop ownership delta, evidence threshold, stop gate, and handoff shape."
+- `After Automation` makes prompt framing part of eval interpretation: changing a prompt can raise or lower a benchmark score because the prompt defines the frame in which model capability is observed.
 
 ## GPT-5.5 Outcome-First Prompt Checklist
 
@@ -61,6 +62,7 @@ Prompt 負責定義 intent、success criteria、constraints、evidence policy、
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI harmony response format](../articles/openai-harmony.md)
+- [After Automation](../articles/every-after-automation.md)
 
 ## Open Questions
 
@@ -70,6 +72,7 @@ Prompt 負責定義 intent、success criteria、constraints、evidence policy、
 - repo-local `AGENTS.md`、global model prompt、skill prompt、task prompt 之間，哪些規則應放在哪一層
 - preamble / phase / final-answer separation 應在 prompt、runtime adapter 還是 product UI 裡負責
 - 當模型變得更強，哪些 harness rules 可以收斂成 outcome-first success criteria，哪些必須保持硬性規則
+- prompt benchmarks should report what intelligence is supplied by the prompt frame versus what is supplied by the model response
 
 ## Related Pages
 

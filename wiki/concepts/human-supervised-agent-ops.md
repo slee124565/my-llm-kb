@@ -28,6 +28,7 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - Karpathy 對 future agents 的 human-to-agent ratio framing，補強了這個概念的需求來源：更長的 autonomous run 會把人推向 supervisor role，但 supervision 必須靠 evidence、approval、rollback 與 risk boundary 實作，而不是只靠人「看著」agent
 - Codex steering、queuing、side-panel review、thread automation 與 mobile approval 共同提供了個人版 supervisor loop：人類不一定逐步操作，但可以中途改向、安排下一步、檢查 artifact、批准敏感操作，並要求 agent 把重要 context 寫回可接手 memory。
 - Tax AI / Crete 的 self-improving loop 補上一個 production-domain pattern：human experts do not merely approve agent output; their corrections become structured evidence, reviewed findings, targeted evals, and bounded Codex engineering tasks.
+- Dan Shipper's `After Automation` adds a demand-side mechanism: as agents make framed competence cheap, human work moves to framing, taste, review, maintenance, escalation, and building systems that turn abundant first attempts into differentiated work.
 
 ## Working Thesis
 
@@ -40,6 +41,13 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - knowledge 不再只是人查的 FAQ，而要成為 agent 可檢索、可引用、可回寫的 memory
 - review 不再是人手逐條看所有輸出，而是抽查、例外審核、品質校準與 rollback
 - UI 不再是所有操作的主入口，而是 evidence、approval、override、handoff 與 observability surface
+
+`After Automation` sharpens this distinction with two runtime modes:
+
+- `agent employees`: delegated coworker or embedded agents that produce answers, actions, reports, drafts, triage decisions, or support resolutions inside a bounded job
+- `collaborative work OS`: Codex / Claude Code / Claude Cowork-style surfaces where a human and one or more agents share tools, computer context, source material, and interruption points for complex work that cannot be cleanly delegated
+
+Both modes still need human ownership, but the ownership differs. Agent employees need maintainers, skills, freshness, and quality loops. Collaborative work surfaces need human framing at the start and human judgment at the end, because the agent collapses a task only after a human has made the situation legible.
 
 ## Example: Shopee Customer Service Harness
 
@@ -101,6 +109,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - [Introducing Codex](../articles/introducing-codex.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
+- [After Automation](../articles/every-after-automation.md)
 
 ## Open Questions
 
@@ -112,6 +121,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - human supervisor 與 coding agent 共同推進 AI-native 系統時，哪些 planning artifacts 應成為 durable operating contract，哪些只是暫時探索，應避免升級成新的 milestone
 - steering / queuing / approval / side-panel annotation 這些 interactive controls 應如何轉成 durable evidence，而不是只留在短暫 UI 狀態中
 - production corrections 何時足以成為 Codex 可執行的 eval target，何時仍只是 domain expert judgment 或 workflow noise
+- when automation increases output volume, what supervisor metrics distinguish real differentiated work from abundant generic work
 
 ## Startup Operating Pattern
 

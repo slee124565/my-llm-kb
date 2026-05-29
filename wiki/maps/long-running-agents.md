@@ -37,6 +37,7 @@
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
+- [After Automation](../articles/every-after-automation.md)
 
 ## Key People Or Labs
 
@@ -64,3 +65,4 @@
 - longer context windows do not by themselves solve long-running multimodal task memory; harnesses still need relevance selection, evidence, supervision, and recovery
 - 哪些 operational loops 可以交給 agent 關閉，哪些必須保留 human supervisor approval，應成為 AI-native harness 的核心設計問題
 - self-improving agents need a durable path from production correction to reviewed finding, eval target, scoped task, validation result, and shipped improvement
+- benchmark time horizons and task-success curves should be read as performance inside a chosen frame; long-running agent design still needs a human or system layer that chooses, revises, and audits the frame

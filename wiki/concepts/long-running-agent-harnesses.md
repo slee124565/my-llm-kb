@@ -44,6 +44,8 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Codex's Windows sandbox adds a local-machine harness pattern: practical agent safety may require composing OS primitives, dedicated users, firewall rules, restricted tokens, ACLs, setup binaries, and command runners because no single primitive maps cleanly to autonomous coding-agent work
 - Codex app primitives split long-running work into three productized harness modes: durable pinned threads for continuity, thread automations for periodic wakeups inside the same context, and Goals for tasks with a measurable verifier and stopping condition.
 - Tax AI shows a production self-improvement harness pattern: practitioner corrections are captured as structured review rows, grouped into recurring findings, converted into targeted evals, and then handed to Codex inside a bounded repo / trace / eval / skill environment.
+- `After Automation` reframes benchmarks and evals as frame-dependent harness artifacts: a model's score measures performance inside a chosen prompt, verifier, and task boundary, so benchmark saturation should lead to frame analysis rather than simple replacement conclusions.
+- abundant AI output makes harness design more valuable, not less: review queues, evals, repo rules, CI, permissions, rollback paths, and workflow gates are how experts absorb the flood of cheap first attempts.
 
 ## Signals From Recent Articles
 
@@ -70,6 +72,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
+- [After Automation](../articles/every-after-automation.md)
 
 ## Open Questions
 
@@ -93,6 +96,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - when sandbox setup modifies host security state, which receipts, health checks, and rollback paths should the harness expose before users trust long-running local agent work
 - scheduled automations、thread automations 與 Goals 應如何分層，才能同時保留 continuity、bounded execution、evidence 與 human approval
 - production trace schema、review taxonomy、targeted evals 與 regression suites 的最小組合是什麼，才能讓 Codex safely close an improvement loop
+- benchmark reports should expose which parts of apparent capability come from model weights, prompt framing, harness scaffolding, verifier design, and human scoring judgment
 
 ## Related Pages
 

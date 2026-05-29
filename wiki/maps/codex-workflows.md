@@ -43,6 +43,7 @@
 - [OpenClaw Takes Over The Internet](../articles/openclaw-takes-over-the-internet-peter-steinberger.md)
 - [OpenClaw: The Viral AI Agent that Broke the Internet](../articles/openclaw-viral-ai-agent-lex-fridman-peter-steinberger.md)
 - [Notes From a Marketer Building a Real CLI With Codex](../articles/notes-from-a-marketer-building-a-real-cli-with-codex.md)
+- [After Automation](../articles/every-after-automation.md)
 
 ## Key People Or Labs
 
@@ -66,3 +67,4 @@
 - local Codex workflows need a visible sandbox health contract: setup, firewall policy, writable roots, network mode, and command-runner evidence are part of the workflow surface, not background implementation detail
 - Codex app workflow now has a broader operating pattern: durable pinned threads carry continuity, side panel carries artifact review, browser/Chrome/computer-use/MCP/connectors carry reach, thread automations/Goals carry continuation, and vault/repo memory carries cross-thread state
 - production systems can manufacture high-quality Codex tasks when they preserve traces, review human corrections, group repeated failures, and convert them into targeted evals with explicit regression gates
+- Codex as a work OS shifts the human role toward sandwiching agent work: set the frame, let agents collapse the task, then judge, redirect, and turn the result into the next useful slice

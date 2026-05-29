@@ -40,6 +40,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Anthropic's founder playbook offers a startup-stage surface split: Chat for quick conversational work, Claude Cowork for longer knowledge and operational workflows across connected tools, and Claude Code for codebase work. The useful abstraction is not the product names, but the fact that each surface carries different context, tools, permissions, persistence, and verification responsibilities.
 - Codex app 的 durable threads、side panel、browser/Chrome/computer-use、MCP/connectors、Skills、thread automations、Goals 與 memory 組成一個 composite work runtime；它的 runtime surface 不再只是 code execution，而是「持久 thread + tool reach + artifact review + scheduled continuation + external memory」的組合。
 - Tax AI's Codex loop splits runtime surfaces deliberately: writable product repo, read-only production trace / source artifact context, scoped domain tools, targeted evals, regression suites, and human practitioner review each carry different authority.
+- Every's `After Automation` separates delegated agent-employee surfaces from collaborative work-OS surfaces. In the first, the agent receives a bounded job and needs a maintainer; in the second, humans and agents share a computer, data sources, interruptions, and judgment loops for work that stays too live to fully delegate.
 
 ## Signals From Recent Articles
 
@@ -67,6 +68,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
+- [After Automation](../articles/every-after-automation.md)
 
 ## Open Questions
 
@@ -91,6 +93,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - local agent sandbox setup state should be exposed to users at what level: raw OS objects, health checks, repair commands, or only product-level safety modes
 - durable thread、repo/vault memory 與 platform memory 之間，哪些 context 應由誰持有、誰壓縮、誰審計
 - product runtimes should expose production evidence to Codex through which read-only, privacy-preserving surfaces rather than handing agents raw operational access
+- agent-employee surfaces and collaborative work-OS surfaces should expose different ownership, freshness, interruption, and review contracts
 
 ## Related Pages
 

@@ -50,6 +50,7 @@
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
+- [After Automation](../articles/every-after-automation.md)
 
 ## Key People Or Labs
 
@@ -85,3 +86,4 @@
 - AI-native application design should be judged by whether agents own operational loops under human governance, not merely whether AI assists a human-operated UI
 - AI-native startup design should preserve stage-specific evidence gates: faster research, coding, and automation only help if validation, scope, security, metrics, and handoff state stay ahead of execution speed
 - self-improving agent claims should be evaluated by whether production feedback becomes structured, replayable, eval-backed improvement work rather than informal prompt tweaking
+- automation cheapens already-framed competence and pushes the scarce human role toward framing, taste, review, harness design, and deciding what should matter now
