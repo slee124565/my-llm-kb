@@ -41,6 +41,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Codex app 的 durable threads、side panel、browser/Chrome/computer-use、MCP/connectors、Skills、thread automations、Goals 與 memory 組成一個 composite work runtime；它的 runtime surface 不再只是 code execution，而是「持久 thread + tool reach + artifact review + scheduled continuation + external memory」的組合。
 - Tax AI's Codex loop splits runtime surfaces deliberately: writable product repo, read-only production trace / source artifact context, scoped domain tools, targeted evals, regression suites, and human practitioner review each carry different authority.
 - Every's `After Automation` separates delegated agent-employee surfaces from collaborative work-OS surfaces. In the first, the agent receives a bounded job and needs a maintainer; in the second, humans and agents share a computer, data sources, interruptions, and judgment loops for work that stays too live to fully delegate.
+- Agent eval design is also runtime-surface dependent: coding agents, conversational agents, research agents, and computer-use agents need different task environments, transcript artifacts, outcome checks, graders, and production-monitoring complements.
 
 ## Signals From Recent Articles
 
@@ -69,6 +70,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [After Automation](../articles/every-after-automation.md)
+- [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 
 ## Open Questions
 
@@ -94,10 +96,12 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - durable thread、repo/vault memory 與 platform memory 之間，哪些 context 應由誰持有、誰壓縮、誰審計
 - product runtimes should expose production evidence to Codex through which read-only, privacy-preserving surfaces rather than handing agents raw operational access
 - agent-employee surfaces and collaborative work-OS surfaces should expose different ownership, freshness, interruption, and review contracts
+- eval environments should mirror production runtime closely enough to be meaningful while still isolating trials so shared state does not inflate or corrupt measured performance
 
 ## Related Pages
 
 - [Externalized Agent State](externalized-agent-state.md)
+- [Agent Evaluations](agent-evaluations.md)
 - [Long-Running Agent Harnesses](long-running-agent-harnesses.md)
 - [Human-Supervised Agent Ops](human-supervised-agent-ops.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)

@@ -9,6 +9,7 @@
 ## Core Concepts
 
 - [Agent Knowledge Compilation](wiki/concepts/agent-knowledge-compilation.md)
+- [Agent Evaluations](wiki/concepts/agent-evaluations.md)
 - [AI Compute Infrastructure](wiki/concepts/ai-compute-infrastructure.md)
 - [Agent Runtime Surfaces](wiki/concepts/agent-runtime-surfaces.md)
 - [Externalized Agent State](wiki/concepts/externalized-agent-state.md)
@@ -38,6 +39,7 @@
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](wiki/articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [The Founder's Playbook: Building an AI-Native Startup](wiki/articles/claude-the-founders-playbook.md)
 - [After Automation](wiki/articles/every-after-automation.md)
+- [Demystifying Evals For AI Agents](wiki/articles/demystifying-evals-for-ai-agents.md)
 
 ## Working Assets
 

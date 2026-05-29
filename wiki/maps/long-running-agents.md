@@ -7,6 +7,7 @@
 ## Entry Points
 
 - [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
+- [Agent Evaluations](../concepts/agent-evaluations.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
 - [Human-Supervised Agent Ops](../concepts/human-supervised-agent-ops.md)
 - [Long-Running Agent Harnesses](../concepts/long-running-agent-harnesses.md)
@@ -15,6 +16,7 @@
 ## Core Concepts
 
 - progress artifacts
+- agent evaluations
 - hosted vs local runtime surfaces
 - task contracts
 - compaction and continuity
@@ -38,6 +40,7 @@
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
 - [After Automation](../articles/every-after-automation.md)
+- [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 
 ## Key People Or Labs
 
@@ -66,3 +69,4 @@
 - 哪些 operational loops 可以交給 agent 關閉，哪些必須保留 human supervisor approval，應成為 AI-native harness 的核心設計問題
 - self-improving agents need a durable path from production correction to reviewed finding, eval target, scoped task, validation result, and shipped improvement
 - benchmark time horizons and task-success curves should be read as performance inside a chosen frame; long-running agent design still needs a human or system layer that chooses, revises, and audits the frame
+- long-running evals need isolated trial environments, transcript review, outcome verification, and reliability metrics that distinguish one successful attempt from repeatable task completion
