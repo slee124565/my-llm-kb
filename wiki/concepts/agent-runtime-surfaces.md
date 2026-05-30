@@ -42,6 +42,8 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Tax AI's Codex loop splits runtime surfaces deliberately: writable product repo, read-only production trace / source artifact context, scoped domain tools, targeted evals, regression suites, and human practitioner review each carry different authority.
 - Every's `After Automation` separates delegated agent-employee surfaces from collaborative work-OS surfaces. In the first, the agent receives a bounded job and needs a maintainer; in the second, humans and agents share a computer, data sources, interruptions, and judgment loops for work that stays too live to fully delegate.
 - Agent eval design is also runtime-surface dependent: coding agents, conversational agents, research agents, and computer-use agents need different task environments, transcript artifacts, outcome checks, graders, and production-monitoring complements.
+- Hermes Agent is a concrete local personal-agent runtime surface: one core AIAgent loop can be entered through CLI, messaging gateway, batch runner, IDE integration, profiles, cron, and multiple execution backends, while state lives under user-owned local files and SQLite.
+- Runtime-level profiles are stronger than persona prompts. If each profile owns its own config, memory, skills, sessions, and SOUL.md, multi-agent specialization becomes an isolation problem, not only a prompt-design problem.
 
 ## Signals From Recent Articles
 
@@ -71,6 +73,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [After Automation](../articles/every-after-automation.md)
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
+- [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 
 ## Open Questions
 
@@ -97,6 +100,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - product runtimes should expose production evidence to Codex through which read-only, privacy-preserving surfaces rather than handing agents raw operational access
 - agent-employee surfaces and collaborative work-OS surfaces should expose different ownership, freshness, interruption, and review contracts
 - eval environments should mirror production runtime closely enough to be meaningful while still isolating trials so shared state does not inflate or corrupt measured performance
+- personal-agent runtimes should expose profile isolation, memory provider selection, skill source, scheduler state, logs, and execution backend clearly enough for users to understand blast radius
 
 ## Related Pages
 

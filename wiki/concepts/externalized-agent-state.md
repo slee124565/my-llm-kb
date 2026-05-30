@@ -37,6 +37,8 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - AI technical debt is partly state debt: if product decisions, architectural constraints, validation criteria, and tradeoffs live only in the founder's head or a chat transcript, each agent session can re-derive a different mental model
 - Codex shared-memory guidance adds a personal-ops version of the same principle: durable threads help preserve working context, but people/projects/decisions/TODOs/blockers/links that must survive across threads should be written into user-owned files such as a vault or repo, with `AGENTS.md` defining when the agent may update them.
 - Tax AI's self-improvement loop makes production traces a first-class state surface: source documents, extracted fields, citations, tax-engine mappings, practitioner corrections, filed-return values, grouped findings, and eval datasets are the state that lets Codex investigate failures across sessions.
+- Hermes Agent makes local personal-agent state more explicit: SOUL.md carries identity, MEMORY.md / USER.md carry compact always-in-context facts, SQLite session history carries searchable prior conversations, external providers carry deeper memory, and skills carry reusable procedures.
+- Procedural memory should be treated as externalized state too. A skill file can change future agent behavior as much as a preference file, so it needs provenance, curation, rollback, and evaluation evidence instead of being treated as disposable prompt text.
 
 ## Signals From Recent Articles
 
@@ -60,6 +62,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
+- [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 
 ## Open Questions
 
@@ -80,6 +83,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - policy prompt 的版本化與 replayable evidence 應如何保存
 - pinned thread、official memory、vault/repo files 三者應如何分工，才不會讓 useful context 被鎖在單一 UI 或變成不可審計的隱性偏好
 - production corrections should be stored at what granularity so they are useful for eval generation without overfitting to incidental workflow noise
+- identity files, compact memory, searchable transcript history, external memory providers, and skill catalogs should be migrated and audited together how when they jointly steer future agent behavior
 
 ## Related Pages
 

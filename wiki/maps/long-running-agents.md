@@ -29,6 +29,7 @@
 
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Shell + Skills + Compaction](../articles/shell-skills-compaction-long-running-agents.md)
+- [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Effective Harnesses for Long-Running Agents](../articles/effective-harnesses-for-long-running-agents.md)
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
@@ -52,6 +53,8 @@
 - Ryan Lopopolo
 - Prithvi Rajasekaran
 - Demis Hassabis
+- Akshay Pachaar
+- Nous Research
 
 ## Open Threads
 
@@ -70,3 +73,4 @@
 - self-improving agents need a durable path from production correction to reviewed finding, eval target, scoped task, validation result, and shipped improvement
 - benchmark time horizons and task-success curves should be read as performance inside a chosen frame; long-running agent design still needs a human or system layer that chooses, revises, and audits the frame
 - long-running evals need isolated trial environments, transcript review, outcome verification, and reliability metrics that distinguish one successful attempt from repeatable task completion
+- personal-agent profiles, cron jobs, memory files, skills, and execution traces need explicit isolation and review rules before they can support always-on multi-agent work

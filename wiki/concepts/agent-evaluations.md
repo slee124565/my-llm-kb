@@ -23,6 +23,8 @@ For this repo, evals are part of harness design. They define success, preserve e
 - Automated evals are one layer in a broader quality system with production monitoring, A/B tests, user feedback, manual transcript review, and systematic human studies.
 - Production self-improvement loops work only when traces, corrections, reviewed findings, targeted evals, and regression suites are connected into a durable evidence chain.
 - Benchmark scores should be read as performance inside a frame: model weights, prompt, scaffold, task distribution, environment, verifier, scoring policy, and human judgment all contribute.
+- GEPA-style skill optimization extends agent evals into procedural memory: execution traces identify failure points, candidate skill variants are evaluated with rubric-based judges, constraint gates prevent drift, and winning changes move through PRs rather than direct runtime mutation.
+- Self-evaluation by the same agent that wrote the skill is weak evidence. The stronger pattern is to separate the runtime that generated experience from the offline harness that reviews traces, constructs eval data, scores variants, enforces constraints, and records the change.
 
 ## Signals From Recent Articles
 
@@ -32,6 +34,7 @@ For this repo, evals are part of harness design. They define success, preserve e
 - [After Automation](../articles/every-after-automation.md): frames benchmarks and evals as artifacts inside a chosen task frame, not neutral proof of capability outside that frame.
 - [Verifying gpt-oss implementations](../articles/verifying-implementations.md): treats smoke tests, API-shape checks, and eval bundles as layered verification rather than a single pass/fail event.
 - [OpenAI Prompt Guidance - GPT-5.5](../articles/openai-prompt-guidance-gpt-5-5.md): pushes prompt migration and reasoning-effort choices toward eval-backed decisions.
+- [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md): frames GEPA as an offline trace-based optimizer for agent-authored skills, with eval data, rubric scoring, constraint gates, and PR-based change flow.
 
 ## Open Questions
 
@@ -41,6 +44,7 @@ For this repo, evals are part of harness design. They define success, preserve e
 - How should teams calibrate LLM-as-judge graders without making human review the bottleneck for every iteration?
 - What anti-gaming checks should be standard in agent evals where the agent can inspect files, environment state, or grader-adjacent artifacts?
 - How can benchmark reports clearly separate model capability from prompt framing, scaffold design, verifier choices, and task distribution?
+- When a skill is improved from session traces, what evidence proves the new variant generalizes instead of overfitting to one user's recent failures?
 
 ## Related Pages
 

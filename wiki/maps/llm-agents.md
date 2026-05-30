@@ -38,6 +38,7 @@
 - [Shipping at Inference-Speed](../articles/shipping-at-inference-speed-peter-steinberger.md)
 - [OpenClaw Takes Over The Internet](../articles/openclaw-takes-over-the-internet-peter-steinberger.md)
 - [OpenClaw: The Viral AI Agent that Broke the Internet](../articles/openclaw-viral-ai-agent-lex-fridman-peter-steinberger.md)
+- [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
@@ -67,6 +68,8 @@
 - Peter Steinberger
 - Aaron Friel
 - Ryan Lopopolo
+- Akshay Pachaar
+- Nous Research
 
 ## Open Threads
 
@@ -91,3 +94,4 @@
 - self-improving agent claims should be evaluated by whether production feedback becomes structured, replayable, eval-backed improvement work rather than informal prompt tweaking
 - automation cheapens already-framed competence and pushes the scarce human role toward framing, taste, review, harness design, and deciding what should matter now
 - agent eval reports should separate the model, scaffold, task spec, environment, transcript, outcome, grader, aggregation metric, and production-monitoring layer instead of collapsing them into one score
+- self-evolving personal-agent runtimes should be judged by whether memory, skills, traces, evals, curator decisions, and rollback paths form an auditable improvement loop

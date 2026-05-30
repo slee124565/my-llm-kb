@@ -47,6 +47,8 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - `After Automation` reframes benchmarks and evals as frame-dependent harness artifacts: a model's score measures performance inside a chosen prompt, verifier, and task boundary, so benchmark saturation should lead to frame analysis rather than simple replacement conclusions.
 - abundant AI output makes harness design more valuable, not less: review queues, evals, repo rules, CI, permissions, rollback paths, and workflow gates are how experts absorb the flood of cheap first attempts.
 - agent eval harnesses must be treated as part of the long-running harness: tasks, trials, graders, transcripts, outcomes, environment isolation, repeated-run metrics, and transcript review determine whether the system is actually improving.
+- Hermes Agent shows a local personal-agent version of the long-running harness: a bounded ReAct loop, turn caps, interruptible tool calls, layered memory, self-authored skills, background skill curation, offline GEPA optimization, isolated profiles, messaging gateways, and cron jobs.
+- Self-evolving skill loops are harnesses only if they include reviewable artifacts: skill diffs, execution traces, eval datasets, rubric scores, constraint gates, snapshots, PR flow, and rollback. Without those, skill writing can become unbounded prompt drift.
 
 ## Signals From Recent Articles
 
@@ -75,6 +77,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [After Automation](../articles/every-after-automation.md)
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
+- [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 
 ## Open Questions
 
@@ -100,6 +103,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - production trace schema、review taxonomy、targeted evals 與 regression suites 的最小組合是什麼，才能讓 Codex safely close an improvement loop
 - benchmark reports should expose which parts of apparent capability come from model weights, prompt framing, harness scaffolding, verifier design, and human scoring judgment
 - agent reliability metrics should distinguish `pass@k` style opportunity for one success from `pass^k` style consistency across repeated runs
+- always-on personal agents need profile isolation, schedule visibility, secret boundaries, skill versioning, and curator / optimizer audit logs before cron-driven autonomy is safe
 
 ## Related Pages
 
