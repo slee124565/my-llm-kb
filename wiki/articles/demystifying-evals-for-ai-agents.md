@@ -7,7 +7,7 @@
 - Published: 2026-01-09
 - Captured: 2026-04-14
 - Raw file: `raw/sources/2026/2026-04-14-demystifying-evals-for-ai-agents.md`
-- Workspace provenance: copied from `refs/my-blog-kb/raw/sources/2026/2026-04-14-demystifying-evals-for-ai-agents/2026-04-14-demystifying-evals-for-ai-agents.md`
+- Workspace provenance: copied from `my-blog-kb/raw/sources/2026/2026-04-14-demystifying-evals-for-ai-agents/2026-04-14-demystifying-evals-for-ai-agents.md`
 
 ## Main Claims
 

@@ -7,7 +7,7 @@
 - Published: 2026-05-06 in the imported PDF metadata; official Claude blog page dated 2026-05-14
 - Captured: 2026-05-17
 - Raw file: `raw/sources/2026/2026-05-06-claude-the-founders-playbook.md`
-- Workspace provenance: copied from `refs/my-blog-kb/raw/sources/2026/Claude_The-Founders-Playbook-20260506_v3.md`; converted from `/Users/lee/Downloads/Claude_The-Founders-Playbook-20260506_v3.pdf`
+- Workspace provenance: copied from `my-blog-kb/raw/sources/2026/Claude_The-Founders-Playbook-20260506_v3.md`; converted from `/Users/lee/Downloads/Claude_The-Founders-Playbook-20260506_v3.pdf`
 
 ## Main Claims
 

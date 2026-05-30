@@ -7,7 +7,7 @@
 - Published: unknown
 - Captured: 2026-05-15T22:53:52+08:00
 - Raw file: `raw/sources/2026/2026-05-15-hermes-agent-masterclass.md`
-- Imported from workspace path: `refs/my-blog-kb/raw/sources/2026/2026-05-15-hermes-agent-masterclass.md`
+- Imported from workspace path: `my-blog-kb/raw/sources/2026/2026-05-15-hermes-agent-masterclass.md`
 - Source note: X.com article/thread export about Nous Research `Hermes Agent`; source metadata has empty `language`, `published`, `topic_hint`, and `why_it_matters` fields.
 
 ## Main Claims

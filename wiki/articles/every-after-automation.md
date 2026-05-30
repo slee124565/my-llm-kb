@@ -8,7 +8,7 @@
 - Published: 2026-05-21
 - Captured: 2026-05-27
 - Raw file: `raw/sources/2026/2026-05-21-every-after-automation.md`
-- Workspace provenance: copied from `refs/my-blog-kb/raw/inbox/every-after-automation.md`
+- Workspace provenance: copied from `my-blog-kb/raw/inbox/every-after-automation.md`
 
 ## Main Claims
 
