@@ -48,6 +48,9 @@ tags:
 3. 是否應新增 article card，或只更新既有頁面
 4. 哪些 provenance 必須保留
 
+建立或更新 article card 時，請遵守 `docs/compile.md` 的 Article Card Rendering Contract：
+section headings 維持英文，說明內容使用繁體中文導讀式編譯風格。
+
 如果外部檔名、標題、正文內容彼此不一致，請明確標示，不要直接沿用錯誤命名。
 ```
 

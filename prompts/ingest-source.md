@@ -46,6 +46,9 @@ tags:
 - 指出它最應該連到哪些既有 concept / map
 - 明確標出哪些觀察只是 article-level，哪些值得 merge
 
+建立或更新 article card 時，請遵守 `docs/compile.md` 的 Article Card Rendering Contract：
+section headings 維持英文，說明內容使用繁體中文導讀式編譯風格。
+
 不要只做摘要。請把重點放在：
 1. 這篇的新增價值
 2. 它與既有知識庫的關係
