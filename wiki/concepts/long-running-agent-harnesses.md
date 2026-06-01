@@ -43,6 +43,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - AI-native harnesses should be evaluated by operational loop ownership: whether agents can observe, decide, act, verify, record evidence, and escalate under human governance, rather than merely assisting a human-operated UI
 - Codex's Windows sandbox adds a local-machine harness pattern: practical agent safety may require composing OS primitives, dedicated users, firewall rules, restricted tokens, ACLs, setup binaries, and command runners because no single primitive maps cleanly to autonomous coding-agent work
 - Codex app primitives split long-running work into three productized harness modes: durable pinned threads for continuity, thread automations for periodic wakeups inside the same context, and Goals for tasks with a measurable verifier and stopping condition.
+- Codex `/goal` becomes more reliable when its persistent objective is backed by a concrete local artifact: a small status checklist for batch work, or a design doc with phases, acceptance criteria, tests, and commit gates for refactors.
 - Tax AI shows a production self-improvement harness pattern: practitioner corrections are captured as structured review rows, grouped into recurring findings, converted into targeted evals, and then handed to Codex inside a bounded repo / trace / eval / skill environment.
 - `After Automation` reframes benchmarks and evals as frame-dependent harness artifacts: a model's score measures performance inside a chosen prompt, verifier, and task boundary, so benchmark saturation should lead to frame analysis rather than simple replacement conclusions.
 - abundant AI output makes harness design more valuable, not less: review queues, evals, repo rules, CI, permissions, rollback paths, and workflow gates are how experts absorb the flood of cheap first attempts.
@@ -75,6 +76,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
+- [Codex /goal Playbook](../articles/codex-goal-playbook.md)
 - [After Automation](../articles/every-after-automation.md)
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)

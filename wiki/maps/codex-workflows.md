@@ -36,6 +36,7 @@
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
+- [Codex /goal Playbook](../articles/codex-goal-playbook.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](../articles/openai-prompt-engineering-gpt-3-5-era.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
@@ -68,3 +69,4 @@
 - Codex app workflow now has a broader operating pattern: durable pinned threads carry continuity, side panel carries artifact review, browser/Chrome/computer-use/MCP/connectors carry reach, thread automations/Goals carry continuation, and vault/repo memory carries cross-thread state
 - production systems can manufacture high-quality Codex tasks when they preserve traces, review human corrections, group repeated failures, and convert them into targeted evals with explicit regression gates
 - Codex as a work OS shifts the human role toward sandwiching agent work: set the frame, let agents collapse the task, then judge, redirect, and turn the result into the next useful slice
+- `/goal` work should be paired with a visible execution artifact: checklist for batch work, design doc plus phases for refactors, acceptance criteria for each phase, and commit/test gates after verified progress

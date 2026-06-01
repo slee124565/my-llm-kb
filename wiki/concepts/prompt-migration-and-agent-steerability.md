@@ -21,6 +21,7 @@ Prompt migration and agent steerability 指的是：當模型能力、API runtim
 - Migration should happen one change at a time, with evals or targeted validation proving that the new prompt preserves required behavior.
 - Repo-local instruction surfaces such as `AGENTS.md`, `docs/`, prompt assets, and templates prevent global prompts from becoming overloaded with domain workflow detail.
 - The six-question GPT-5.5 checklist can also be used as a milestone intake gate for coding-agent collaboration: in the Shopee CS harness case, it turns "design the next plan" into "define the next operational-loop ownership delta, evidence threshold, stop gate, and handoff shape."
+- Codex `/goal` prompt design should avoid vague "keep working until done" framing; a goal should point at a checklist, task JSON, design doc, phase gate, or measurable verifier that lets Codex decide whether progress is real.
 - `After Automation` makes prompt framing part of eval interpretation: changing a prompt can raise or lower a benchmark score because the prompt defines the frame in which model capability is observed.
 
 ## GPT-5.5 Outcome-First Prompt Checklist
@@ -60,6 +61,7 @@ Prompt 負責定義 intent、success criteria、constraints、evidence policy、
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
+- [Codex /goal Playbook](../articles/codex-goal-playbook.md)
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI harmony response format](../articles/openai-harmony.md)
 - [After Automation](../articles/every-after-automation.md)

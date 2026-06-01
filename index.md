@@ -34,6 +34,7 @@
 - [Bespoke CLIs for Codex](wiki/articles/bespoke-clis-for-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](wiki/articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Getting The Most Out Of Codex](wiki/articles/getting-the-most-out-of-codex.md)
+- [Codex /goal Playbook](wiki/articles/codex-goal-playbook.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](wiki/articles/openai-prompt-engineering-gpt-3-5-era.md)
 - [OpenAI Prompt Guidance - GPT-5.5](wiki/articles/openai-prompt-guidance-gpt-5-5.md)
 - [OpenAI Prompt Guidance - GPT-5.4](wiki/articles/openai-prompt-guidance-gpt-5-4.md)

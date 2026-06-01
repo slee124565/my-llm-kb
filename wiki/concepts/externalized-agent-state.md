@@ -36,6 +36,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - `The Founder's Playbook` applies the same principle to AI-native startups: architecture files, scope definitions, metrics frameworks, customer discovery notes, security findings, workflow specs, and institutional knowledge become the persistent context that keeps Claude Code / Claude Cowork-style work from drifting across stages
 - AI technical debt is partly state debt: if product decisions, architectural constraints, validation criteria, and tradeoffs live only in the founder's head or a chat transcript, each agent session can re-derive a different mental model
 - Codex shared-memory guidance adds a personal-ops version of the same principle: durable threads help preserve working context, but people/projects/decisions/TODOs/blockers/links that must survive across threads should be written into user-owned files such as a vault or repo, with `AGENTS.md` defining when the agent may update them.
+- Codex `/goal` playbooks add a task-level pattern: use checklists, task JSON, design docs, phase acceptance criteria, and commit boundaries to externalize progress so the workflow can be read and resumed instead of remembered.
 - Tax AI's self-improvement loop makes production traces a first-class state surface: source documents, extracted fields, citations, tax-engine mappings, practitioner corrections, filed-return values, grouped findings, and eval datasets are the state that lets Codex investigate failures across sessions.
 - Hermes Agent makes local personal-agent state more explicit: SOUL.md carries identity, MEMORY.md / USER.md carry compact always-in-context facts, SQLite session history carries searchable prior conversations, external providers carry deeper memory, and skills carry reusable procedures.
 - Procedural memory should be treated as externalized state too. A skill file can change future agent behavior as much as a preference file, so it needs provenance, curation, rollback, and evaluation evidence instead of being treated as disposable prompt text.
@@ -61,6 +62,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [User Guide For Gpt-Oss-Safeguard](../articles/gpt-oss-safeguard-guide.md)
 - [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
+- [Codex /goal Playbook](../articles/codex-goal-playbook.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 
