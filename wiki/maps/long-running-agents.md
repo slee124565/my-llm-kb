@@ -27,6 +27,7 @@
 
 ## Key Articles
 
+- [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Shell + Skills + Compaction](../articles/shell-skills-compaction-long-running-agents.md)
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
@@ -74,3 +75,4 @@
 - benchmark time horizons and task-success curves should be read as performance inside a chosen frame; long-running agent design still needs a human or system layer that chooses, revises, and audits the frame
 - long-running evals need isolated trial environments, transcript review, outcome verification, and reliability metrics that distinguish one successful attempt from repeatable task completion
 - personal-agent profiles, cron jobs, memory files, skills, and execution traces need explicit isolation and review rules before they can support always-on multi-agent work
+- local coding-agent session hygiene should be treated as part of long-running harness design: context clearing, compaction, verifier-first prompts, subagent investigation, and fresh reviewer sessions are continuity controls, not just personal preferences

@@ -44,6 +44,8 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Agent eval design is also runtime-surface dependent: coding agents, conversational agents, research agents, and computer-use agents need different task environments, transcript artifacts, outcome checks, graders, and production-monitoring complements.
 - Hermes Agent is a concrete local personal-agent runtime surface: one core AIAgent loop can be entered through CLI, messaging gateway, batch runner, IDE integration, profiles, cron, and multiple execution backends, while state lives under user-owned local files and SQLite.
 - Runtime-level profiles are stronger than persona prompts. If each profile owns its own config, memory, skills, sessions, and SOUL.md, multi-agent specialization becomes an isolation problem, not only a prompt-design problem.
+- Claude Code exposes a local terminal coding-agent surface where the user controls context, permissions, sandboxing, CLI tools, MCP servers, hooks, skills, subagents, plugins, checkpoints, and parallel sessions. These are separate control surfaces: some grant reach, some enforce invariants, some preserve reusable knowledge, and some isolate investigation or review context.
+- Hooks are a runtime guarantee rather than a prompt convention. When a behavior must happen every time, such as linting after edits or blocking writes to sensitive paths, it belongs closer to runtime policy than to advisory instructions.
 
 ## Signals From Recent Articles
 
@@ -74,6 +76,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [After Automation](../articles/every-after-automation.md)
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
+- [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 
 ## Open Questions
 

@@ -50,6 +50,9 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - agent eval harnesses must be treated as part of the long-running harness: tasks, trials, graders, transcripts, outcomes, environment isolation, repeated-run metrics, and transcript review determine whether the system is actually improving.
 - Hermes Agent shows a local personal-agent version of the long-running harness: a bounded ReAct loop, turn caps, interruptible tool calls, layered memory, self-authored skills, background skill curation, offline GEPA optimization, isolated profiles, messaging gateways, and cron jobs.
 - Self-evolving skill loops are harnesses only if they include reviewable artifacts: skill diffs, execution traces, eval datasets, rubric scores, constraint gates, snapshots, PR flow, and rollback. Without those, skill writing can become unbounded prompt drift.
+- Claude Code best practices frame context as a scarce harness resource: long sessions should actively manage file reads, command output, compaction, `/clear`, subagent investigation, and fresh reviewer sessions instead of assuming one growing conversation remains reliable.
+- Verifier-first prompting is a user-level harness pattern. Tests, screenshots, expected outputs, lint/build commands, and root-cause acceptance criteria let the agent close a smaller loop before asking the human to judge.
+- Plan Mode is a risk-management primitive, not a universal ritual: use it when scope is uncertain, multi-file, or unfamiliar; skip it when the desired diff can be described directly and verified cheaply.
 
 ## Signals From Recent Articles
 
@@ -80,6 +83,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [After Automation](../articles/every-after-automation.md)
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
+- [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 
 ## Open Questions
 

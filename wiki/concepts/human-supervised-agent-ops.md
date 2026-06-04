@@ -29,6 +29,7 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - Codex steering、queuing、side-panel review、thread automation 與 mobile approval 共同提供了個人版 supervisor loop：人類不一定逐步操作，但可以中途改向、安排下一步、檢查 artifact、批准敏感操作，並要求 agent 把重要 context 寫回可接手 memory。
 - Tax AI / Crete 的 self-improving loop 補上一個 production-domain pattern：human experts do not merely approve agent output; their corrections become structured evidence, reviewed findings, targeted evals, and bounded Codex engineering tasks.
 - Dan Shipper's `After Automation` adds a demand-side mechanism: as agents make framed competence cheap, human work moves to framing, taste, review, maintenance, escalation, and building systems that turn abundant first attempts into differentiated work.
+- Claude Code best practices show the same supervisor pattern at the local coding-workflow level: the human frames tasks with verification, interrupts early when direction drifts, rewinds bad paths, clears polluted context, and uses fresh reviewer sessions instead of acting as the agent's only test harness.
 
 ## Working Thesis
 
@@ -110,6 +111,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [After Automation](../articles/every-after-automation.md)
+- [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 
 ## Open Questions
 

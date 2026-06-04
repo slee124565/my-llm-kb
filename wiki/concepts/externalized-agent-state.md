@@ -40,6 +40,8 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - Tax AI's self-improvement loop makes production traces a first-class state surface: source documents, extracted fields, citations, tax-engine mappings, practitioner corrections, filed-return values, grouped findings, and eval datasets are the state that lets Codex investigate failures across sessions.
 - Hermes Agent makes local personal-agent state more explicit: SOUL.md carries identity, MEMORY.md / USER.md carry compact always-in-context facts, SQLite session history carries searchable prior conversations, external providers carry deeper memory, and skills carry reusable procedures.
 - Procedural memory should be treated as externalized state too. A skill file can change future agent behavior as much as a preference file, so it needs provenance, curation, rollback, and evaluation evidence instead of being treated as disposable prompt text.
+- Claude Code's `CLAUDE.md` / skills split is a concrete state-partitioning pattern: broad, stable project invariants belong in a short entry file; narrower domain workflows, repeatable procedures, hooks, subagents, and specs belong in separate artifacts that can be loaded, reviewed, and changed independently.
+- Compaction instructions, session names, specs, and review packets are also externalized state surfaces. They decide what survives context reset or handoff, so they need the same hygiene as code docs: concise wording, clear ownership, and evidence that the next session can resume correctly.
 
 ## Signals From Recent Articles
 
@@ -65,6 +67,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Codex /goal Playbook](../articles/codex-goal-playbook.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
+- [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 
 ## Open Questions
 
