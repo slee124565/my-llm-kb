@@ -50,6 +50,7 @@ tags:
 
 建立或更新 article card 時，請遵守 `docs/compile.md` 的 Article Card Rendering Contract：
 section headings 維持英文，說明內容使用繁體中文導讀式編譯風格。
+中文表達風格以 `docs/compile.md` 的 Guided Reading Style 為準。
 
 如果外部檔名、標題、正文內容彼此不一致，請明確標示，不要直接沿用錯誤命名。
 ```

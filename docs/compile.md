@@ -27,6 +27,18 @@
 - `Main Claims` 的 bullet 不應只是短句翻譯；每個 bullet 應說清楚這個主張對 agent、產品品質、workflow 或工程管理的意義。
 - `Merge Candidates` 也使用繁體中文表述，但保留必要英文術語，方便未來 merge 到 concept / map。
 
+**Guided Reading Style**
+
+Article card 的中文表達應參考 `../myBrainFood/prompts/ai-article-guided-reading/` 的導讀式翻譯風格，但本檔是 `my-llm-kb` 的正式 contract。寫作時請遵守：
+
+- 使用繁體中文導讀，不逐字翻譯，也不只做摘要。
+- 保留作者的重要推理，但用短段落與清楚 bullet 呈現，避免學術化或報告式語氣。
+- 先說直覺意思，再說必要技術含義，最後說產品、管理、工程或 AI 導入意義。
+- 對抽象概念主動轉成管理者、產品經理、工程主管與 AI 導入負責人也能理解的語言。
+- 若內容涉及 AI agent engineering、AI native workflow、自動化流程、組織協作、產品設計、品質管理或持續改善，應主動建立連結。
+- 不大量引用原文；必要原文只保留關鍵詞或關鍵短句。
+- 不要把導讀風格做成互動式逐段輸出；article card 必須是一次可保存、可查詢、可 merge 的 compiled card。
+
 **編譯步驟**
 
 1. 讀 `raw/` 原始來源
@@ -34,7 +46,7 @@
 3. 讀相關 `wiki/concepts/` 與 `wiki/maps/`
 4. 將 source claims 轉成 article card rendering：
    - section headings 使用英文 template
-   - body 使用繁體中文導讀式編譯
+   - body 使用繁體中文導讀式編譯，並遵守 Guided Reading Style
    - 技術詞以 `中文（English）` 保留
    - 避免逐字翻譯與英文摘要堆疊
 5. 建立或更新 `wiki/articles/*.md`
