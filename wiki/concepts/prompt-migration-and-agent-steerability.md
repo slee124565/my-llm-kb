@@ -25,6 +25,7 @@ Prompt migration and agent steerability 指的是：當模型能力、API runtim
 - `After Automation` makes prompt framing part of eval interpretation: changing a prompt can raise or lower a benchmark score because the prompt defines the frame in which model capability is observed.
 - Claude Code best practices add a task-prompt hygiene layer: specify files, symptoms, constraints, existing patterns, examples, test preferences, and success criteria; use vague prompts mainly for exploration where course correction is acceptable.
 - Persistent instructions should be pruned like code. If removing a rule would not cause agent mistakes, it probably does not belong in the always-loaded entry file.
+- Claude Code skill practice moves many steerability details out of always-loaded prompts: routing descriptions, gotchas, setup config, reference snippets, scripts, and verification routines belong in skill folders when they are reusable but not globally relevant.
 
 ## GPT-5.5 Outcome-First Prompt Checklist
 
@@ -68,6 +69,7 @@ Prompt 負責定義 intent、success criteria、constraints、evidence policy、
 - [OpenAI harmony response format](../articles/openai-harmony.md)
 - [After Automation](../articles/every-after-automation.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
+- [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 
 ## Open Questions
 
@@ -78,6 +80,7 @@ Prompt 負責定義 intent、success criteria、constraints、evidence policy、
 - preamble / phase / final-answer separation 應在 prompt、runtime adapter 還是 product UI 裡負責
 - 當模型變得更強，哪些 harness rules 可以收斂成 outcome-first success criteria，哪些必須保持硬性規則
 - prompt benchmarks should report what intelligence is supplied by the prompt frame versus what is supplied by the model response
+- which steering rules should live in global prompt, repo entry file, task prompt, skill description, skill reference, hook, test, or runtime policy when the same behavior could be expressed in multiple layers
 
 ## Related Pages
 

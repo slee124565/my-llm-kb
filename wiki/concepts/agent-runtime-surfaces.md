@@ -46,6 +46,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Runtime-level profiles are stronger than persona prompts. If each profile owns its own config, memory, skills, sessions, and SOUL.md, multi-agent specialization becomes an isolation problem, not only a prompt-design problem.
 - Claude Code exposes a local terminal coding-agent surface where the user controls context, permissions, sandboxing, CLI tools, MCP servers, hooks, skills, subagents, plugins, checkpoints, and parallel sessions. These are separate control surfaces: some grant reach, some enforce invariants, some preserve reusable knowledge, and some isolate investigation or review context.
 - Hooks are a runtime guarantee rather than a prompt convention. When a behavior must happen every time, such as linting after edits or blocking writes to sensitive paths, it belongs closer to runtime policy than to advisory instructions.
+- Claude Code skills show how a runtime extension can combine progressive-disclosure context, executable scripts, reference assets, setup config, on-demand hooks, and usage logging. The skill folder is therefore both a context surface and an operational surface, not merely documentation.
 
 ## Signals From Recent Articles
 
@@ -77,6 +78,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
+- [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 
 ## Open Questions
 
@@ -104,6 +106,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - agent-employee surfaces and collaborative work-OS surfaces should expose different ownership, freshness, interruption, and review contracts
 - eval environments should mirror production runtime closely enough to be meaningful while still isolating trials so shared state does not inflate or corrupt measured performance
 - personal-agent runtimes should expose profile isolation, memory provider selection, skill source, scheduler state, logs, and execution backend clearly enough for users to understand blast radius
+- skill marketplaces should expose category, owner, dependencies, setup requirements, on-demand hooks, usage signal, and promotion status so users can distinguish lightweight reference skills from runtime-policy-changing skills
 
 ## Related Pages
 

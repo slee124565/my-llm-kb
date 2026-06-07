@@ -31,6 +31,7 @@
 ## Key Articles
 
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
+- [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [LLM Knowledge Bases](../articles/karpathy-llm-knowledge-bases.md)
@@ -97,3 +98,4 @@
 - agent eval reports should separate the model, scaffold, task spec, environment, transcript, outcome, grader, aggregation metric, and production-monitoring layer instead of collapsing them into one score
 - self-evolving personal-agent runtimes should be judged by whether memory, skills, traces, evals, curator decisions, and rollback paths form an auditable improvement loop
 - coding agent adoption should distinguish user habits from runtime guarantees: context hygiene, verifier-first task contracts, thin instruction files, hooks, skills, subagents, and sandbox / permission controls each solve different parts of reliability
+- team skill catalogs should be judged as shared procedural memory: routing descriptions, gotchas, progressive disclosure, verification scripts, setup state, usage logging, ownership, and deprecation policy determine whether skills improve agent behavior or become context noise

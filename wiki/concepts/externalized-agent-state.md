@@ -42,6 +42,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - Procedural memory should be treated as externalized state too. A skill file can change future agent behavior as much as a preference file, so it needs provenance, curation, rollback, and evaluation evidence instead of being treated as disposable prompt text.
 - Claude Code's `CLAUDE.md` / skills split is a concrete state-partitioning pattern: broad, stable project invariants belong in a short entry file; narrower domain workflows, repeatable procedures, hooks, subagents, and specs belong in separate artifacts that can be loaded, reviewed, and changed independently.
 - Compaction instructions, session names, specs, and review packets are also externalized state surfaces. They decide what survives context reset or handoff, so they need the same hygiene as code docs: concise wording, clear ownership, and evidence that the next session can resume correctly.
+- Anthropic's Claude Code skill practice sharpens skills as procedural state: a skill folder can hold instructions, scripts, assets, data, setup config, logs, references, templates, and hooks, so its entry description, owner, usage signal, rollback path, and deprecation policy become part of state hygiene.
 
 ## Signals From Recent Articles
 
@@ -68,6 +69,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
+- [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 
 ## Open Questions
 
@@ -89,6 +91,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - pinned thread、official memory、vault/repo files 三者應如何分工，才不會讓 useful context 被鎖在單一 UI 或變成不可審計的隱性偏好
 - production corrections should be stored at what granularity so they are useful for eval generation without overfitting to incidental workflow noise
 - identity files, compact memory, searchable transcript history, external memory providers, and skill catalogs should be migrated and audited together how when they jointly steer future agent behavior
+- team skill catalogs should use which evidence to promote, revise, or retire procedural memory: usage frequency, failure reduction, verifier coverage, owner review, or transcript-level success audits
 
 ## Related Pages
 

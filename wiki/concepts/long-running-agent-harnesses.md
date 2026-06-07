@@ -53,6 +53,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Claude Code best practices frame context as a scarce harness resource: long sessions should actively manage file reads, command output, compaction, `/clear`, subagent investigation, and fresh reviewer sessions instead of assuming one growing conversation remains reliable.
 - Verifier-first prompting is a user-level harness pattern. Tests, screenshots, expected outputs, lint/build commands, and root-cause acceptance criteria let the agent close a smaller loop before asking the human to judge.
 - Plan Mode is a risk-management primitive, not a universal ritual: use it when scope is uncertain, multi-file, or unfamiliar; skip it when the desired diff can be described directly and verified cheaply.
+- Verification skills are a reusable harness primitive. When product flows, checkout paths, CLI interactions, CI/CD steps, runbooks, or infra operations recur, a skill can package the driver script, assertions, transcript/video evidence, gotchas, and escalation policy so the agent verifies through the same route every time.
 
 ## Signals From Recent Articles
 
@@ -84,6 +85,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
+- [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 
 ## Open Questions
 
@@ -110,6 +112,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - benchmark reports should expose which parts of apparent capability come from model weights, prompt framing, harness scaffolding, verifier design, and human scoring judgment
 - agent reliability metrics should distinguish `pass@k` style opportunity for one success from `pass^k` style consistency across repeated runs
 - always-on personal agents need profile isolation, schedule visibility, secret boundaries, skill versioning, and curator / optimizer audit logs before cron-driven autonomy is safe
+- verification skills should be built first for which workflows: highest frequency, highest failure cost, easiest programmatic assertions, or largest human review bottleneck
 
 ## Related Pages
 

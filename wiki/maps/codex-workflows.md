@@ -29,6 +29,7 @@
 ## Key Articles
 
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
+- [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Introducing Codex](../articles/introducing-codex.md)
 - [Building a Safe, Effective Sandbox to Enable Codex on Windows](../articles/openai-building-codex-windows-sandbox.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
@@ -72,3 +73,4 @@
 - Codex as a work OS shifts the human role toward sandwiching agent work: set the frame, let agents collapse the task, then judge, redirect, and turn the result into the next useful slice
 - `/goal` work should be paired with a visible execution artifact: checklist for batch work, design doc plus phases for refactors, acceptance criteria for each phase, and commit/test gates after verified progress
 - Claude Code best practices add a comparable local-terminal workflow lens: verifier-first prompts, scoped context, thin persistent instructions, Plan Mode only when uncertainty warrants it, and fresh-context reviewer sessions should be treated as workflow control surfaces rather than generic prompt tips
+- Claude Code skill practice adds a companion-skill design lens for Codex: reusable workflow knowledge should be packaged with routing descriptions, gotchas, scripts, setup state, verification evidence, and owner / promotion rules rather than only as long task prompts
