@@ -43,6 +43,8 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - Claude Code's `CLAUDE.md` / skills split is a concrete state-partitioning pattern: broad, stable project invariants belong in a short entry file; narrower domain workflows, repeatable procedures, hooks, subagents, and specs belong in separate artifacts that can be loaded, reviewed, and changed independently.
 - Compaction instructions, session names, specs, and review packets are also externalized state surfaces. They decide what survives context reset or handoff, so they need the same hygiene as code docs: concise wording, clear ownership, and evidence that the next session can resume correctly.
 - Anthropic's Claude Code skill practice sharpens skills as procedural state: a skill folder can hold instructions, scripts, assets, data, setup config, logs, references, templates, and hooks, so its entry description, owner, usage signal, rollback path, and deprecation policy become part of state hygiene.
+- Temporal knowledge graph memory adds a different externalized-state model: facts live as entities and timestamped relationships, so new facts can supersede old facts without deleting history or treating both as equally current.
+- Vector RAG should be treated as a retrieval surface for mostly static documents, not as a complete memory governance layer; long-lived agents also need identity resolution, relationship modeling, valid-time semantics, and correction paths.
 
 ## Signals From Recent Articles
 
@@ -70,6 +72,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 
 ## Open Questions
 
@@ -92,10 +95,12 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - production corrections should be stored at what granularity so they are useful for eval generation without overfitting to incidental workflow noise
 - identity files, compact memory, searchable transcript history, external memory providers, and skill catalogs should be migrated and audited together how when they jointly steer future agent behavior
 - team skill catalogs should use which evidence to promote, revise, or retire procedural memory: usage frequency, failure reduction, verifier coverage, owner review, or transcript-level success audits
+- static KB, temporal graph, session transcript, compact memory files, and skills should synchronize which facts, and which should remain separate sources of truth
 
 ## Related Pages
 
 - [Agent Runtime Surfaces](agent-runtime-surfaces.md)
+- [Agent Memory Architecture](agent-memory-architecture.md)
 - [Agent Knowledge Compilation](agent-knowledge-compilation.md)
 - [Long-Running Agent Harnesses](long-running-agent-harnesses.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)

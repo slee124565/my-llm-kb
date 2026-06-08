@@ -8,6 +8,7 @@
 
 ## Core Concepts
 
+- [Agent Memory Architecture](wiki/concepts/agent-memory-architecture.md)
 - [Agent Knowledge Compilation](wiki/concepts/agent-knowledge-compilation.md)
 - [Agent Evaluations](wiki/concepts/agent-evaluations.md)
 - [AI Compute Infrastructure](wiki/concepts/ai-compute-infrastructure.md)
@@ -20,6 +21,7 @@
 
 ## Anchor Articles
 
+- [Building Agent Memory with Knowledge Graphs](wiki/articles/building-agent-memory-with-knowledge.md)
 - [LLM Knowledge Bases](wiki/articles/karpathy-llm-knowledge-bases.md)
 - [Effective Harnesses for Long-Running Agents](wiki/articles/effective-harnesses-for-long-running-agents.md)
 - [Harness Design for Long-Running Application Development](wiki/articles/harness-design-for-long-running-application-development.md)

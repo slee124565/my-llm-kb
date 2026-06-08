@@ -6,6 +6,7 @@
 
 ## Entry Points
 
+- [Agent Memory Architecture](../concepts/agent-memory-architecture.md)
 - [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
 - [Agent Evaluations](../concepts/agent-evaluations.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
@@ -16,6 +17,7 @@
 ## Core Concepts
 
 - progress artifacts
+- temporal memory and memory governance
 - agent evaluations
 - hosted vs local runtime surfaces
 - task contracts
@@ -27,6 +29,7 @@
 
 ## Key Articles
 
+- [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Shell + Skills + Compaction](../articles/shell-skills-compaction-long-running-agents.md)
@@ -76,3 +79,4 @@
 - long-running evals need isolated trial environments, transcript review, outcome verification, and reliability metrics that distinguish one successful attempt from repeatable task completion
 - personal-agent profiles, cron jobs, memory files, skills, and execution traces need explicit isolation and review rules before they can support always-on multi-agent work
 - local coding-agent session hygiene should be treated as part of long-running harness design: context clearing, compaction, verifier-first prompts, subagent investigation, and fresh reviewer sessions are continuity controls, not just personal preferences
+- long-lived agents need memory backends that can represent identity, relationships, valid time, superseded facts, source episodes, and correction paths; larger context windows or pure vector stores do not solve that governance problem by themselves

@@ -47,6 +47,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Claude Code exposes a local terminal coding-agent surface where the user controls context, permissions, sandboxing, CLI tools, MCP servers, hooks, skills, subagents, plugins, checkpoints, and parallel sessions. These are separate control surfaces: some grant reach, some enforce invariants, some preserve reusable knowledge, and some isolate investigation or review context.
 - Hooks are a runtime guarantee rather than a prompt convention. When a behavior must happen every time, such as linting after edits or blocking writes to sensitive paths, it belongs closer to runtime policy than to advisory instructions.
 - Claude Code skills show how a runtime extension can combine progressive-disclosure context, executable scripts, reference assets, setup config, on-demand hooks, and usage logging. The skill folder is therefore both a context surface and an operational surface, not merely documentation.
+- Graph memory backends such as Graphiti / Neo4j are runtime surfaces too: they decide how user facts are ingested as episodes, reconciled into entities and relationships, timestamped, queried, corrected, isolated by user namespace, and exposed back to the model.
 
 ## Signals From Recent Articles
 
@@ -79,6 +80,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 
 ## Open Questions
 
@@ -107,10 +109,12 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - eval environments should mirror production runtime closely enough to be meaningful while still isolating trials so shared state does not inflate or corrupt measured performance
 - personal-agent runtimes should expose profile isolation, memory provider selection, skill source, scheduler state, logs, and execution backend clearly enough for users to understand blast radius
 - skill marketplaces should expose category, owner, dependencies, setup requirements, on-demand hooks, usage signal, and promotion status so users can distinguish lightweight reference skills from runtime-policy-changing skills
+- memory providers should expose freshness, valid-time semantics, source episode links, deletion/correction controls, namespace isolation, and retrieval explanation rather than only promising "long-term memory"
 
 ## Related Pages
 
 - [Externalized Agent State](externalized-agent-state.md)
+- [Agent Memory Architecture](agent-memory-architecture.md)
 - [Agent Evaluations](agent-evaluations.md)
 - [Long-Running Agent Harnesses](long-running-agent-harnesses.md)
 - [Human-Supervised Agent Ops](human-supervised-agent-ops.md)

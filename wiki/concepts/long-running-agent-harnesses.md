@@ -54,6 +54,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Verifier-first prompting is a user-level harness pattern. Tests, screenshots, expected outputs, lint/build commands, and root-cause acceptance criteria let the agent close a smaller loop before asking the human to judge.
 - Plan Mode is a risk-management primitive, not a universal ritual: use it when scope is uncertain, multi-file, or unfamiliar; skip it when the desired diff can be described directly and verified cheaply.
 - Verification skills are a reusable harness primitive. When product flows, checkout paths, CLI interactions, CI/CD steps, runbooks, or infra operations recur, a skill can package the driver script, assertions, transcript/video evidence, gotchas, and escalation policy so the agent verifies through the same route every time.
+- Long-running assistants need memory harnesses, not only memory stores: episode ingest, entity resolution, relationship extraction, temporal supersession, retrieval explanation, correction/deletion policy, and namespace isolation all become part of the reliability contract.
 
 ## Signals From Recent Articles
 
@@ -86,6 +87,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 
 ## Open Questions
 
@@ -113,10 +115,12 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - agent reliability metrics should distinguish `pass@k` style opportunity for one success from `pass^k` style consistency across repeated runs
 - always-on personal agents need profile isolation, schedule visibility, secret boundaries, skill versioning, and curator / optimizer audit logs before cron-driven autonomy is safe
 - verification skills should be built first for which workflows: highest frequency, highest failure cost, easiest programmatic assertions, or largest human review bottleneck
+- temporal graph memory should be tested with what fixtures: stale fact replacement, same-name entity disambiguation, multi-hop recall, deletion/correction requests, and source-episode attribution
 
 ## Related Pages
 
 - [Agent Runtime Surfaces](agent-runtime-surfaces.md)
+- [Agent Memory Architecture](agent-memory-architecture.md)
 - [Agent Evaluations](agent-evaluations.md)
 - [Externalized Agent State](externalized-agent-state.md)
 - [Human-Supervised Agent Ops](human-supervised-agent-ops.md)

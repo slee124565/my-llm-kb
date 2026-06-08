@@ -8,6 +8,7 @@
 
 - [Agent Knowledge Compilation](../concepts/agent-knowledge-compilation.md)
 - [Agent Evaluations](../concepts/agent-evaluations.md)
+- [Agent Memory Architecture](../concepts/agent-memory-architecture.md)
 - [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
 - [AI Compute Infrastructure](../concepts/ai-compute-infrastructure.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
@@ -20,6 +21,7 @@
 
 - agent knowledge compilation
 - agent evaluations
+- agent memory architecture
 - agent runtime surfaces
 - AI compute infrastructure
 - externalized agent state
@@ -30,6 +32,7 @@
 
 ## Key Articles
 
+- [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
@@ -99,3 +102,4 @@
 - self-evolving personal-agent runtimes should be judged by whether memory, skills, traces, evals, curator decisions, and rollback paths form an auditable improvement loop
 - coding agent adoption should distinguish user habits from runtime guarantees: context hygiene, verifier-first task contracts, thin instruction files, hooks, skills, subagents, and sandbox / permission controls each solve different parts of reliability
 - team skill catalogs should be judged as shared procedural memory: routing descriptions, gotchas, progressive disclosure, verification scripts, setup state, usage logging, ownership, and deprecation policy determine whether skills improve agent behavior or become context noise
+- agent memory architecture should distinguish static document retrieval, temporal relationship memory, procedural skills, session history, task artifacts, and platform memory instead of treating all persistence as one store
