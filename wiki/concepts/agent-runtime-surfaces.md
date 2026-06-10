@@ -48,6 +48,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Hooks are a runtime guarantee rather than a prompt convention. When a behavior must happen every time, such as linting after edits or blocking writes to sensitive paths, it belongs closer to runtime policy than to advisory instructions.
 - Claude Code skills show how a runtime extension can combine progressive-disclosure context, executable scripts, reference assets, setup config, on-demand hooks, and usage logging. The skill folder is therefore both a context surface and an operational surface, not merely documentation.
 - Graph memory backends such as Graphiti / Neo4j are runtime surfaces too: they decide how user facts are ingested as episodes, reconciled into entities and relationships, timestamped, queried, corrected, isolated by user namespace, and exposed back to the model.
+- Sim-style executable tables add a data-native runtime surface: rows hold case state while columns perform enrichment, workflow execution, condition checks, approval gates, and downstream triggers. This turns a business table into a row-scoped agent workflow surface rather than a passive store plus external webhook glue.
 
 ## Signals From Recent Articles
 
@@ -81,6 +82,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
+- [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 
 ## Open Questions
 
@@ -110,6 +112,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - personal-agent runtimes should expose profile isolation, memory provider selection, skill source, scheduler state, logs, and execution backend clearly enough for users to understand blast radius
 - skill marketplaces should expose category, owner, dependencies, setup requirements, on-demand hooks, usage signal, and promotion status so users can distinguish lightweight reference skills from runtime-policy-changing skills
 - memory providers should expose freshness, valid-time semantics, source episode links, deletion/correction controls, namespace isolation, and retrieval explanation rather than only promising "long-term memory"
+- executable-table runtimes should expose event logs, retry semantics, permission boundaries, trigger provenance, and rollback controls rather than hiding workflow complexity behind column configuration
 
 ## Related Pages
 

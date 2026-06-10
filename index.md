@@ -46,6 +46,7 @@
 - [The Founder's Playbook: Building an AI-Native Startup](wiki/articles/claude-the-founders-playbook.md)
 - [After Automation](wiki/articles/every-after-automation.md)
 - [Demystifying Evals For AI Agents](wiki/articles/demystifying-evals-for-ai-agents.md)
+- [Collapse Your CRM Pipeline Into One Table](wiki/articles/collapse-your-crm-pipeline-into-one-table.md)
 
 ## Working Assets
 

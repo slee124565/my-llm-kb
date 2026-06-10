@@ -60,6 +60,7 @@
 - [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
 - [After Automation](../articles/every-after-automation.md)
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
+- [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 
 ## Key People Or Labs
 
@@ -103,3 +104,4 @@
 - coding agent adoption should distinguish user habits from runtime guarantees: context hygiene, verifier-first task contracts, thin instruction files, hooks, skills, subagents, and sandbox / permission controls each solve different parts of reliability
 - team skill catalogs should be judged as shared procedural memory: routing descriptions, gotchas, progressive disclosure, verification scripts, setup state, usage logging, ownership, and deprecation policy determine whether skills improve agent behavior or become context noise
 - agent memory architecture should distinguish static document retrieval, temporal relationship memory, procedural skills, session history, task artifacts, and platform memory instead of treating all persistence as one store
+- table-native agent workflows should be judged by whether rows, columns, triggers, approval gates, and logs form an auditable runtime rather than merely hiding webhook glue behind a familiar spreadsheet UI

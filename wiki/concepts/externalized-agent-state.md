@@ -45,6 +45,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - Anthropic's Claude Code skill practice sharpens skills as procedural state: a skill folder can hold instructions, scripts, assets, data, setup config, logs, references, templates, and hooks, so its entry description, owner, usage signal, rollback path, and deprecation policy become part of state hygiene.
 - Temporal knowledge graph memory adds a different externalized-state model: facts live as entities and timestamped relationships, so new facts can supersede old facts without deleting history or treating both as equally current.
 - Vector RAG should be treated as a retrieval surface for mostly static documents, not as a complete memory governance layer; long-lived agents also need identity resolution, relationship modeling, valid-time semantics, and correction paths.
+- Executable-table workflows externalize state at row / column granularity: enrichment status, scoring rationale, qualified flags, approval fields, trigger outputs, and action results remain in the business table instead of only in chat transcripts, webhook logs, or external orchestration services.
 
 ## Signals From Recent Articles
 
@@ -73,6 +74,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
+- [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 
 ## Open Questions
 
@@ -96,6 +98,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - identity files, compact memory, searchable transcript history, external memory providers, and skill catalogs should be migrated and audited together how when they jointly steer future agent behavior
 - team skill catalogs should use which evidence to promote, revise, or retire procedural memory: usage frequency, failure reduction, verifier coverage, owner review, or transcript-level success audits
 - static KB, temporal graph, session transcript, compact memory files, and skills should synchronize which facts, and which should remain separate sources of truth
+- table-native workflow state should version and audit which column changed, which workflow ran, which row values were used, and whether a human approval gate authorized the next action
 
 ## Related Pages
 

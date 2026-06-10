@@ -30,6 +30,7 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - Tax AI / Crete 的 self-improving loop 補上一個 production-domain pattern：human experts do not merely approve agent output; their corrections become structured evidence, reviewed findings, targeted evals, and bounded Codex engineering tasks.
 - Dan Shipper's `After Automation` adds a demand-side mechanism: as agents make framed competence cheap, human work moves to framing, taste, review, maintenance, escalation, and building systems that turn abundant first attempts into differentiated work.
 - Claude Code best practices show the same supervisor pattern at the local coding-workflow level: the human frames tasks with verification, interrupts early when direction drifts, rewinds bad paths, clears polluted context, and uses fresh reviewer sessions instead of acting as the agent's only test harness.
+- Sim-style table workflows provide a compact supervisor pattern for business operations: enrichment and scoring can run as row-scoped workflows, while a human changes an approval column that gates the next action. The supervisor surface becomes a state field plus evidence columns, not a separate manual operating process.
 
 ## Working Thesis
 
@@ -112,6 +113,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [After Automation](../articles/every-after-automation.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
+- [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 
 ## Open Questions
 
@@ -124,6 +126,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - steering / queuing / approval / side-panel annotation 這些 interactive controls 應如何轉成 durable evidence，而不是只留在短暫 UI 狀態中
 - production corrections 何時足以成為 Codex 可執行的 eval target，何時仍只是 domain expert judgment 或 workflow noise
 - when automation increases output volume, what supervisor metrics distinguish real differentiated work from abundant generic work
+- when approval is represented as a table field, what metadata is required for real governance: approver identity, timestamp, reasoning snapshot, source lineage, risk class, and rollback path
 
 ## Startup Operating Pattern
 
