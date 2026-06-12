@@ -32,6 +32,7 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - Claude Code best practices show the same supervisor pattern at the local coding-workflow level: the human frames tasks with verification, interrupts early when direction drifts, rewinds bad paths, clears polluted context, and uses fresh reviewer sessions instead of acting as the agent's only test harness.
 - Sim-style table workflows provide a compact supervisor pattern for business operations: enrichment and scoring can run as row-scoped workflows, while a human changes an approval column that gates the next action. The supervisor surface becomes a state field plus evidence columns, not a separate manual operating process.
 - AI systems engineering provides the role-level ownership frame for this shift: when an agent owns more of the operational loop, someone still has to own the full decision system, including policy, evaluation, monitoring, feedback, rollback, and supervisor evidence.
+- Agentic technical-debt framing makes the approval boundary concrete: irreversible actions, off-policy assistance, prompt injection through tool output, PII memory leaks, and runaway cost should be enforced by runtime gates, audit logs, and human approval paths rather than only by system-prompt instructions.
 
 ## Working Thesis
 
@@ -116,6 +117,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
+- [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 
 ## Open Questions
 

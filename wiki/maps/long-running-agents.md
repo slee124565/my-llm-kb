@@ -32,6 +32,7 @@
 
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
+- [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Shell + Skills + Compaction](../articles/shell-skills-compaction-long-running-agents.md)
@@ -83,3 +84,4 @@
 - local coding-agent session hygiene should be treated as part of long-running harness design: context clearing, compaction, verifier-first prompts, subagent investigation, and fresh reviewer sessions are continuity controls, not just personal preferences
 - long-lived agents need memory backends that can represent identity, relationships, valid time, superseded facts, source episodes, and correction paths; larger context windows or pure vector stores do not solve that governance problem by themselves
 - agentic AI should be evaluated as an AI systems engineering problem: multi-step plans, tool calls, memory writes, tracing, security gates, cost budgets, and task-level evals all belong to the harness contract.
+- production agent harnesses should be drawn and reviewed as state machines: states, transitions, retries, terminal conditions, step limits, cost circuit breakers, trace spans, and human approval gates are long-running reliability primitives.

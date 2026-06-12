@@ -56,6 +56,8 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Verification skills are a reusable harness primitive. When product flows, checkout paths, CLI interactions, CI/CD steps, runbooks, or infra operations recur, a skill can package the driver script, assertions, transcript/video evidence, gotchas, and escalation policy so the agent verifies through the same route every time.
 - Long-running assistants need memory harnesses, not only memory stores: episode ingest, entity resolution, relationship extraction, temporal supersession, retrieval explanation, correction/deletion policy, and namespace isolation all become part of the reliability contract.
 - AI systems engineering treats long-running agent reliability as a whole-system problem: planner quality, tool-call reliability, traceability, eval suites, cost budgets, security gates, rollback, and human supervision must be designed together.
+- Production agent harnesses should be reviewed as explicit state machines. ReAct, Plan-and-Execute, and Reflexion can be composed, but the harness still needs named states, legal transitions, step limits, retry / recovery policy, budget circuit breakers, trace spans, terminal states, and escalation paths.
+- The serving primitive for long-running agents is a session, not a request. Harness design must account for pause/resume, filesystem or external state, idle waiting on tools or humans, heterogeneous run length, and cost models that do not quietly bill idle time as active work.
 
 ## Signals From Recent Articles
 
@@ -90,6 +92,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
+- [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 
 ## Open Questions
 

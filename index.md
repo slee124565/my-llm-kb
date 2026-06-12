@@ -24,6 +24,7 @@
 
 - [Building Agent Memory with Knowledge Graphs](wiki/articles/building-agent-memory-with-knowledge.md)
 - [Welcome to The AI Systems Engineer Journey](wiki/articles/welcome-to-the-ai-systems-engineer.md)
+- [Hidden Technical Debt in Agentic Systems](wiki/articles/hidden-technical-debt-in-agentic-systems.md)
 - [LLM Knowledge Bases](wiki/articles/karpathy-llm-knowledge-bases.md)
 - [Effective Harnesses for Long-Running Agents](wiki/articles/effective-harnesses-for-long-running-agents.md)
 - [Harness Design for Long-Running Application Development](wiki/articles/harness-design-for-long-running-application-development.md)

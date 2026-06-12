@@ -25,6 +25,8 @@ For this repo, evals are part of harness design. They define success, preserve e
 - Benchmark scores should be read as performance inside a frame: model weights, prompt, scaffold, task distribution, environment, verifier, scoring policy, and human judgment all contribute.
 - GEPA-style skill optimization extends agent evals into procedural memory: execution traces identify failure points, candidate skill variants are evaluated with rubric-based judges, constraint gates prevent drift, and winning changes move through PRs rather than direct runtime mutation.
 - Self-evaluation by the same agent that wrote the skill is weak evidence. The stronger pattern is to separate the runtime that generated experience from the offline harness that reviews traces, constructs eval data, scores variants, enforces constraints, and records the change.
+- Production agent evals need trajectory and cost-aware signals, not only final-answer scoring. The eval surface should check tool order when policy-relevant, loop counts, retries, trace completeness, cost per successful task, and whether human approval gates fire for irreversible actions.
+- Eval suites themselves rot. They should be refreshed from sampled production traces, support queues, manual release checks, user feedback, and expert review so prompt, model-routing, tool-description, or memory changes are judged against current failure modes.
 
 ## Signals From Recent Articles
 
@@ -35,6 +37,7 @@ For this repo, evals are part of harness design. They define success, preserve e
 - [Verifying gpt-oss implementations](../articles/verifying-implementations.md): treats smoke tests, API-shape checks, and eval bundles as layered verification rather than a single pass/fail event.
 - [OpenAI Prompt Guidance - GPT-5.5](../articles/openai-prompt-guidance-gpt-5-5.md): pushes prompt migration and reasoning-effort choices toward eval-backed decisions.
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md): frames GEPA as an offline trace-based optimizer for agent-authored skills, with eval data, rubric scoring, constraint gates, and PR-based change flow.
+- [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md): argues that an agent without an eval harness is still a demo; adds reference-based, reference-free, trajectory, and online evals to the production debt map.
 
 ## Open Questions
 

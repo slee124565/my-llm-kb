@@ -46,6 +46,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - Temporal knowledge graph memory adds a different externalized-state model: facts live as entities and timestamped relationships, so new facts can supersede old facts without deleting history or treating both as equally current.
 - Vector RAG should be treated as a retrieval surface for mostly static documents, not as a complete memory governance layer; long-lived agents also need identity resolution, relationship modeling, valid-time semantics, and correction paths.
 - Executable-table workflows externalize state at row / column granularity: enrichment status, scoring rationale, qualified flags, approval fields, trigger outputs, and action results remain in the business table instead of only in chat transcripts, webhook logs, or external orchestration services.
+- Markdown configs, prompts, skills, sub-agent definitions, slash commands, tool descriptions, model routes, eval suites, trace schemas, and guardrail policies are all externalized state when they steer future agent behavior. Treating them as disposable text creates behavioral drift that cannot be reviewed or rolled back.
 
 ## Signals From Recent Articles
 
@@ -75,6 +76,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
+- [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 
 ## Open Questions
 

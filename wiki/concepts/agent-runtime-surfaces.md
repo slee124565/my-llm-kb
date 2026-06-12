@@ -50,6 +50,8 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Graph memory backends such as Graphiti / Neo4j are runtime surfaces too: they decide how user facts are ingested as episodes, reconciled into entities and relationships, timestamped, queried, corrected, isolated by user namespace, and exposed back to the model.
 - Sim-style executable tables add a data-native runtime surface: rows hold case state while columns perform enrichment, workflow execution, condition checks, approval gates, and downstream triggers. This turns a business table into a row-scoped agent workflow surface rather than a passive store plus external webhook glue.
 - AI systems engineering reframes runtime surfaces as parts of one decision-producing loop: feature/context stores, prompt or model registries, tool registries, memory stores, guardrails, tracing, cost controls, and feedback channels all carry system responsibility.
+- Agentic technical debt is distributed across runtime surfaces: markdown configs behave like source code, model routing behaves like cost / reliability policy, tool descriptions behave like model-facing APIs, memory behaves like state governance, and tracing / eval / guardrails behave like release infrastructure.
+- Agent serving should be modeled around sessions rather than stateless requests. Invocation mode, state location, scaling pattern, observability boundary, idle-time cost, and human approval wait all become runtime-surface decisions.
 
 ## Signals From Recent Articles
 
@@ -85,6 +87,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
+- [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 
 ## Open Questions
 
