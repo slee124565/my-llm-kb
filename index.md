@@ -12,6 +12,7 @@
 - [Agent Knowledge Compilation](wiki/concepts/agent-knowledge-compilation.md)
 - [Agent Evaluations](wiki/concepts/agent-evaluations.md)
 - [AI Compute Infrastructure](wiki/concepts/ai-compute-infrastructure.md)
+- [AI Systems Engineering](wiki/concepts/ai-systems-engineering.md)
 - [Agent Runtime Surfaces](wiki/concepts/agent-runtime-surfaces.md)
 - [Externalized Agent State](wiki/concepts/externalized-agent-state.md)
 - [Human-Supervised Agent Ops](wiki/concepts/human-supervised-agent-ops.md)
@@ -22,6 +23,7 @@
 ## Anchor Articles
 
 - [Building Agent Memory with Knowledge Graphs](wiki/articles/building-agent-memory-with-knowledge.md)
+- [Welcome to The AI Systems Engineer Journey](wiki/articles/welcome-to-the-ai-systems-engineer.md)
 - [LLM Knowledge Bases](wiki/articles/karpathy-llm-knowledge-bases.md)
 - [Effective Harnesses for Long-Running Agents](wiki/articles/effective-harnesses-for-long-running-agents.md)
 - [Harness Design for Long-Running Application Development](wiki/articles/harness-design-for-long-running-application-development.md)

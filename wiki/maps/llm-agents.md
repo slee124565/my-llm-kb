@@ -11,6 +11,7 @@
 - [Agent Memory Architecture](../concepts/agent-memory-architecture.md)
 - [Agent Runtime Surfaces](../concepts/agent-runtime-surfaces.md)
 - [AI Compute Infrastructure](../concepts/ai-compute-infrastructure.md)
+- [AI Systems Engineering](../concepts/ai-systems-engineering.md)
 - [Externalized Agent State](../concepts/externalized-agent-state.md)
 - [Human-Supervised Agent Ops](../concepts/human-supervised-agent-ops.md)
 - [Long-Running Agent Harnesses](../concepts/long-running-agent-harnesses.md)
@@ -24,6 +25,7 @@
 - agent memory architecture
 - agent runtime surfaces
 - AI compute infrastructure
+- AI systems engineering
 - externalized agent state
 - human-supervised agent ops
 - long-running agent harnesses
@@ -33,6 +35,7 @@
 ## Key Articles
 
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
+- [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
@@ -105,3 +108,4 @@
 - team skill catalogs should be judged as shared procedural memory: routing descriptions, gotchas, progressive disclosure, verification scripts, setup state, usage logging, ownership, and deprecation policy determine whether skills improve agent behavior or become context noise
 - agent memory architecture should distinguish static document retrieval, temporal relationship memory, procedural skills, session history, task artifacts, and platform memory instead of treating all persistence as one store
 - table-native agent workflows should be judged by whether rows, columns, triggers, approval gates, and logs form an auditable runtime rather than merely hiding webhook glue behind a familiar spreadsheet UI
+- AI systems engineering should be treated as a system-ownership pattern across ML, RAG, document intelligence, and agentic AI: the durable skill is owning the decision-producing loop, not adopting whichever role title is current.

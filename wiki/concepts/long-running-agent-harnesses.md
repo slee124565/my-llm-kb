@@ -55,6 +55,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Plan Mode is a risk-management primitive, not a universal ritual: use it when scope is uncertain, multi-file, or unfamiliar; skip it when the desired diff can be described directly and verified cheaply.
 - Verification skills are a reusable harness primitive. When product flows, checkout paths, CLI interactions, CI/CD steps, runbooks, or infra operations recur, a skill can package the driver script, assertions, transcript/video evidence, gotchas, and escalation policy so the agent verifies through the same route every time.
 - Long-running assistants need memory harnesses, not only memory stores: episode ingest, entity resolution, relationship extraction, temporal supersession, retrieval explanation, correction/deletion policy, and namespace isolation all become part of the reliability contract.
+- AI systems engineering treats long-running agent reliability as a whole-system problem: planner quality, tool-call reliability, traceability, eval suites, cost budgets, security gates, rollback, and human supervision must be designed together.
 
 ## Signals From Recent Articles
 
@@ -88,6 +89,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
+- [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 
 ## Open Questions
 
@@ -122,6 +124,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Agent Runtime Surfaces](agent-runtime-surfaces.md)
 - [Agent Memory Architecture](agent-memory-architecture.md)
 - [Agent Evaluations](agent-evaluations.md)
+- [AI Systems Engineering](ai-systems-engineering.md)
 - [Externalized Agent State](externalized-agent-state.md)
 - [Human-Supervised Agent Ops](human-supervised-agent-ops.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)

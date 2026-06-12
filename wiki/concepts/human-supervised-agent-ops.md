@@ -31,6 +31,7 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - Dan Shipper's `After Automation` adds a demand-side mechanism: as agents make framed competence cheap, human work moves to framing, taste, review, maintenance, escalation, and building systems that turn abundant first attempts into differentiated work.
 - Claude Code best practices show the same supervisor pattern at the local coding-workflow level: the human frames tasks with verification, interrupts early when direction drifts, rewinds bad paths, clears polluted context, and uses fresh reviewer sessions instead of acting as the agent's only test harness.
 - Sim-style table workflows provide a compact supervisor pattern for business operations: enrichment and scoring can run as row-scoped workflows, while a human changes an approval column that gates the next action. The supervisor surface becomes a state field plus evidence columns, not a separate manual operating process.
+- AI systems engineering provides the role-level ownership frame for this shift: when an agent owns more of the operational loop, someone still has to own the full decision system, including policy, evaluation, monitoring, feedback, rollback, and supervisor evidence.
 
 ## Working Thesis
 
@@ -114,6 +115,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - [After Automation](../articles/every-after-automation.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
+- [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 
 ## Open Questions
 
@@ -148,6 +150,7 @@ Anthropic 的 `The Founder's Playbook` 把 human-supervised agent ops 放進 sta
 - [Externalized Agent State](externalized-agent-state.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)
 - [Prompt Migration And Agent Steerability](prompt-migration-and-agent-steerability.md)
+- [AI Systems Engineering](ai-systems-engineering.md)
 - [LLM Agents](../maps/llm-agents.md)
 - [Long-Running Agents](../maps/long-running-agents.md)
 - [Codex Workflows](../maps/codex-workflows.md)

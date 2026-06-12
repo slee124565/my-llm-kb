@@ -49,6 +49,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Claude Code skills show how a runtime extension can combine progressive-disclosure context, executable scripts, reference assets, setup config, on-demand hooks, and usage logging. The skill folder is therefore both a context surface and an operational surface, not merely documentation.
 - Graph memory backends such as Graphiti / Neo4j are runtime surfaces too: they decide how user facts are ingested as episodes, reconciled into entities and relationships, timestamped, queried, corrected, isolated by user namespace, and exposed back to the model.
 - Sim-style executable tables add a data-native runtime surface: rows hold case state while columns perform enrichment, workflow execution, condition checks, approval gates, and downstream triggers. This turns a business table into a row-scoped agent workflow surface rather than a passive store plus external webhook glue.
+- AI systems engineering reframes runtime surfaces as parts of one decision-producing loop: feature/context stores, prompt or model registries, tool registries, memory stores, guardrails, tracing, cost controls, and feedback channels all carry system responsibility.
 
 ## Signals From Recent Articles
 
@@ -83,6 +84,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
+- [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 
 ## Open Questions
 
@@ -119,6 +121,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Externalized Agent State](externalized-agent-state.md)
 - [Agent Memory Architecture](agent-memory-architecture.md)
 - [Agent Evaluations](agent-evaluations.md)
+- [AI Systems Engineering](ai-systems-engineering.md)
 - [Long-Running Agent Harnesses](long-running-agent-harnesses.md)
 - [Human-Supervised Agent Ops](human-supervised-agent-ops.md)
 - [Repository Knowledge As System Of Record](repository-knowledge-as-system-of-record.md)
