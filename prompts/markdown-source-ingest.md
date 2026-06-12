@@ -48,6 +48,8 @@ tags:
 3. 是否應新增 article card，或只更新既有頁面
 4. 哪些 provenance 必須保留
 
+如果來源來自本 repo 的 `raw/inbox/`，且你已把完整內容正規化到 `raw/sources/YYYY/`，請刪除原本 inbox 副本；article card 只引用 canonical `raw/sources/YYYY/` 檔案。若來源來自其他 workspace path，保留該 path 作為 provenance metadata，但不要在本 repo 的 inbox 長期保留第二份相同內容。
+
 建立或更新 article card 時，請遵守 `docs/compile.md` 的 Article Card Rendering Contract：
 section headings 維持英文，說明內容使用繁體中文導讀式編譯風格。
 中文表達風格以 `docs/compile.md` 的 Guided Reading Style 為準。

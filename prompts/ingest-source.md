@@ -42,6 +42,7 @@ tags:
 請先檢查 repo 裡是否已有高度重複的 article、concept 或 map。
 如果值得保留，請：
 - 保存 source 與最小 provenance
+- 若來源先在 `raw/inbox/`，正規化進 `raw/sources/YYYY/` 後刪除 inbox 副本
 - 建立或更新對應 article card
 - 指出它最應該連到哪些既有 concept / map
 - 明確標出哪些觀察只是 article-level，哪些值得 merge
@@ -68,4 +69,5 @@ section headings 維持英文，說明內容使用繁體中文導讀式編譯風
 ## Notes
 
 - 若來源價值不夠高，可只留在 `raw/inbox/` 或保留 provenance 而不建 article card
+- 若來源已正式 ingest 且 canonical copy 已在 `raw/sources/YYYY/`，不要繼續保留相同內容的 `raw/inbox/` 副本
 - 若來源和既有 article 高度重複，應優先更新既有頁而不是新增近似頁

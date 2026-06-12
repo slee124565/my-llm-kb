@@ -5,15 +5,17 @@
 結構：
 
 - `raw/inbox/`
-  剛收進來、尚未正式編譯的來源
+  剛收進來、尚未正式編譯或尚未判斷的暫存來源
 - `raw/sources/`
-  已決定保留的來源材料
+  已決定保留的 canonical 來源材料
 
 原則：
 
 - 不在原地改寫來源內容
 - 保留最小 provenance
 - 圖片、截圖、轉錄稿可和來源一起存放
+- 從 `raw/inbox/` 正規化到 `raw/sources/YYYY/` 後，確認 canonical source 完整保存，即刪除 inbox 副本
+- article card 應引用 `raw/sources/YYYY/` 作為 raw source；inbox path 不應作為已 ingest 文章的長期 metadata
 
 `raw/inbox/` 的 markdown source 建議使用簡易版 frontmatter：
 

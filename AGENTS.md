@@ -87,14 +87,16 @@
 
 1. 先放到 `raw/inbox/` 或 `raw/sources/YYYY/`
 2. 補最小 metadata
-3. 建立或更新對應 article card
-4. 把可重用觀察 merge 到 concepts
-5. 必要時更新 maps、index、log
+3. 若來源從 `raw/inbox/` 升級到 `raw/sources/YYYY/`，確認 canonical source 已完整保存後，移除原本 inbox 副本
+4. 建立或更新對應 article card，source metadata 指向 canonical `raw/sources/YYYY/` 檔案
+5. 把可重用觀察 merge 到 concepts
+6. 必要時更新 maps、index、log
 
 若來源是從 workspace 其他位置匯入：
 
 - 將內容複製到 `raw/sources/YYYY/`，讓 `raw/` 成為此 repo 的 source of truth
 - 在 article card 的 source metadata 裡保留原始 workspace path，避免 provenance 斷裂
+- 不要在此 repo 的 `raw/inbox/` 長期保留第二份相同內容；`raw/inbox/` 只作為尚未判斷或尚未正規化的暫存區
 
 ## Query Rule
 

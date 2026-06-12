@@ -20,6 +20,7 @@
   `Source`、`Main Claims`、`Why It Matters`、`Relation To Existing Concepts`、
   `Tensions Or Disagreements`、`Open Questions`、`Merge Candidates`。
 - `Source` 區塊保留 metadata 原樣；URL、檔名、日期、作者、產品名與專有名詞不要為了中文化而改寫。
+- 已正式 ingest 的 article card 應以 canonical `raw/sources/YYYY/` 檔案作為 raw source metadata；不要引用已正規化後應刪除的 `raw/inbox/` 暫存副本。
 - 除 metadata、link target、code、檔名、產品名與必要原文術語外，article card 的說明內容預設使用繁體中文。
 - 說明內容採「導讀式編譯」風格，不做逐字翻譯，也不要只列英文摘要。
 - 每個 claim 應先讓非工程讀者理解直覺意思，再保留必要技術含義與管理、產品、工程意義。

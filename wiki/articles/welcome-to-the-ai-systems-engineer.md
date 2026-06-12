@@ -7,8 +7,7 @@
 - Publisher: The Neural Maze
 - Published: 2026-04-29
 - Captured: 2026-06-12
-- Raw inbox file: `raw/inbox/2026-04-29-welcome-to-the-ai-systems-engineer.md`
-- Raw source file: `raw/sources/2026/2026-04-29-welcome-to-the-ai-systems-engineer.md`
+- Raw file: `raw/sources/2026/2026-04-29-welcome-to-the-ai-systems-engineer.md`
 - Subtitle: Issue #01 - One single role behind a dozen titles
 - Source note: Opening article for `The AI Systems Engineer Journey`; frames AI systems engineering as the system-level role behind ML, MLOps, LLM, RAG, and agentic AI job-title fragmentation.
 

@@ -92,10 +92,11 @@
 
 1. source enters `raw/inbox/`
 2. source is normalized into `raw/sources/`
-3. article card is created in `wiki/articles/`
-4. reusable claims are merged into `wiki/concepts/`
-5. topic maps are updated if needed
-6. `index.md` and `log.md` are maintained
+3. the duplicate inbox copy is removed after canonical `raw/sources/` preservation is confirmed
+4. article card is created in `wiki/articles/`
+5. reusable claims are merged into `wiki/concepts/`
+6. topic maps are updated if needed
+7. `index.md` and `log.md` are maintained
 
 **Scaling Rule**
 

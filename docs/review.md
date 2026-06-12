@@ -6,7 +6,7 @@
 
 **每週 review**
 
-1. 清理 `raw/inbox/`
+1. 清理 `raw/inbox/`，移除已由 `raw/sources/YYYY/` 完整承接的 duplicate source copy
 2. 檢查是否有 article card 尚未 merge 回 concept pages
 3. 合併重複或過薄的 concept pages
 4. 檢查是否需要新建或重寫 `wiki/maps/`

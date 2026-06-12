@@ -157,10 +157,11 @@
 **最小日更流程**
 
 1. 把文章或材料放進 `raw/inbox/` 或 `raw/sources/`
-2. 建立或更新對應的 `wiki/articles/*.md`
-3. 把可重用觀察 merge 回 `wiki/concepts/*.md`
-4. 必要時更新 `wiki/maps/*.md`
-5. 更新 `index.md` 與 `log.md`
+2. 若從 `raw/inbox/` 正規化到 `raw/sources/YYYY/`，確認保存完成後移除 inbox 副本
+3. 建立或更新對應的 `wiki/articles/*.md`
+4. 把可重用觀察 merge 回 `wiki/concepts/*.md`
+5. 必要時更新 `wiki/maps/*.md`
+6. 更新 `index.md` 與 `log.md`
 
 **設計原則**
 
