@@ -58,6 +58,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - AI systems engineering treats long-running agent reliability as a whole-system problem: planner quality, tool-call reliability, traceability, eval suites, cost budgets, security gates, rollback, and human supervision must be designed together.
 - Production agent harnesses should be reviewed as explicit state machines. ReAct, Plan-and-Execute, and Reflexion can be composed, but the harness still needs named states, legal transitions, step limits, retry / recovery policy, budget circuit breakers, trace spans, terminal states, and escalation paths.
 - The serving primitive for long-running agents is a session, not a request. Harness design must account for pause/resume, filesystem or external state, idle waiting on tools or humans, heterogeneous run length, and cost models that do not quietly bill idle time as active work.
+- Every's `The Eight Levels of AI Adoption` makes Level 5 `Workflows` the adoption threshold where harness design becomes load-bearing: moving beyond autopilot requires explicit planning, review, confidence checks, tests, guardrails, and repeatable output professionalization.
 
 ## Signals From Recent Articles
 
@@ -93,6 +94,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
+- [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 
 ## Open Questions
 
@@ -121,6 +123,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - always-on personal agents need profile isolation, schedule visibility, secret boundaries, skill versioning, and curator / optimizer audit logs before cron-driven autonomy is safe
 - verification skills should be built first for which workflows: highest frequency, highest failure cost, easiest programmatic assertions, or largest human review bottleneck
 - temporal graph memory should be tested with what fixtures: stale fact replacement, same-name entity disambiguation, multi-hop recall, deletion/correction requests, and source-episode attribution
+- what minimum workflow harness is required before a team moves a task from supervised agent use to autopilot, always-on assistant, multi-agent, or orchestrator mode
 
 ## Related Pages
 

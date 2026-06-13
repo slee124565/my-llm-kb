@@ -63,6 +63,7 @@
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [The Founder's Playbook: Building an AI-Native Startup](../articles/claude-the-founders-playbook.md)
 - [After Automation](../articles/every-after-automation.md)
+- [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 
@@ -103,6 +104,7 @@
 - AI-native startup design should preserve stage-specific evidence gates: faster research, coding, and automation only help if validation, scope, security, metrics, and handoff state stay ahead of execution speed
 - self-improving agent claims should be evaluated by whether production feedback becomes structured, replayable, eval-backed improvement work rather than informal prompt tweaking
 - automation cheapens already-framed competence and pushes the scarce human role toward framing, taste, review, harness design, and deciding what should matter now
+- AI adoption level should be chosen by task stakes, trust calibration, setup / review economics, and available scaffolding rather than by the highest autonomy the tool can demo
 - agent eval reports should separate the model, scaffold, task spec, environment, transcript, outcome, grader, aggregation metric, and production-monitoring layer instead of collapsing them into one score
 - self-evolving personal-agent runtimes should be judged by whether memory, skills, traces, evals, curator decisions, and rollback paths form an auditable improvement loop
 - coding agent adoption should distinguish user habits from runtime guarantees: context hygiene, verifier-first task contracts, thin instruction files, hooks, skills, subagents, and sandbox / permission controls each solve different parts of reliability

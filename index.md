@@ -48,6 +48,7 @@
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](wiki/articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [The Founder's Playbook: Building an AI-Native Startup](wiki/articles/claude-the-founders-playbook.md)
 - [After Automation](wiki/articles/every-after-automation.md)
+- [The Eight Levels of AI Adoption](wiki/articles/every-the-eight-levels-of-ai-adoption.md)
 - [Demystifying Evals For AI Agents](wiki/articles/demystifying-evals-for-ai-agents.md)
 - [Collapse Your CRM Pipeline Into One Table](wiki/articles/collapse-your-crm-pipeline-into-one-table.md)
 

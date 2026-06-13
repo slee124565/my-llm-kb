@@ -52,6 +52,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - AI systems engineering reframes runtime surfaces as parts of one decision-producing loop: feature/context stores, prompt or model registries, tool registries, memory stores, guardrails, tracing, cost controls, and feedback channels all carry system responsibility.
 - Agentic technical debt is distributed across runtime surfaces: markdown configs behave like source code, model routing behaves like cost / reliability policy, tool descriptions behave like model-facing APIs, memory behaves like state governance, and tracing / eval / guardrails behave like release infrastructure.
 - Agent serving should be modeled around sessions rather than stateless requests. Invocation mode, state location, scaling pattern, observability boundary, idle-time cost, and human approval wait all become runtime-surface decisions.
+- Every's `The Eight Levels of AI Adoption` is also a runtime-surface map: chatbot, copilot, supervised agent, autopilot, workflow, assistant, multi-agent, and orchestrator modes expose different context, permissions, proactivity, review, and coordination surfaces.
 
 ## Signals From Recent Articles
 
@@ -88,6 +89,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
+- [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 
 ## Open Questions
 
@@ -118,6 +120,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - skill marketplaces should expose category, owner, dependencies, setup requirements, on-demand hooks, usage signal, and promotion status so users can distinguish lightweight reference skills from runtime-policy-changing skills
 - memory providers should expose freshness, valid-time semantics, source episode links, deletion/correction controls, namespace isolation, and retrieval explanation rather than only promising "long-term memory"
 - executable-table runtimes should expose event logs, retry semantics, permission boundaries, trigger provenance, and rollback controls rather than hiding workflow complexity behind column configuration
+- adoption ladders should separate runtime-surface changes from trust-boundary changes: embedding in a file, granting tool access, skipping approvals, running on a schedule, and delegating orchestration are different control surfaces
 
 ## Related Pages
 

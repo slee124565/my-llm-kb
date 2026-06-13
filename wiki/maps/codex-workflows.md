@@ -47,6 +47,7 @@
 - [OpenClaw: The Viral AI Agent that Broke the Internet](../articles/openclaw-viral-ai-agent-lex-fridman-peter-steinberger.md)
 - [Notes From a Marketer Building a Real CLI With Codex](../articles/notes-from-a-marketer-building-a-real-cli-with-codex.md)
 - [After Automation](../articles/every-after-automation.md)
+- [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 
 ## Key People Or Labs
 
@@ -74,3 +75,4 @@
 - `/goal` work should be paired with a visible execution artifact: checklist for batch work, design doc plus phases for refactors, acceptance criteria for each phase, and commit/test gates after verified progress
 - Claude Code best practices add a comparable local-terminal workflow lens: verifier-first prompts, scoped context, thin persistent instructions, Plan Mode only when uncertainty warrants it, and fresh-context reviewer sessions should be treated as workflow control surfaces rather than generic prompt tips
 - Claude Code skill practice adds a companion-skill design lens for Codex: reusable workflow knowledge should be packaged with routing descriptions, gotchas, scripts, setup state, verification evidence, and owner / promotion rules rather than only as long task prompts
+- Codex adoption should not be measured by reaching maximum autonomy; chatbot, copilot, agent, autopilot, workflow, Goal, and orchestration modes each fit different task stakes and review economics

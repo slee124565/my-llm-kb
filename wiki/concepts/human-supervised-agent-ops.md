@@ -33,6 +33,7 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - Sim-style table workflows provide a compact supervisor pattern for business operations: enrichment and scoring can run as row-scoped workflows, while a human changes an approval column that gates the next action. The supervisor surface becomes a state field plus evidence columns, not a separate manual operating process.
 - AI systems engineering provides the role-level ownership frame for this shift: when an agent owns more of the operational loop, someone still has to own the full decision system, including policy, evaluation, monitoring, feedback, rollback, and supervisor evidence.
 - Agentic technical-debt framing makes the approval boundary concrete: irreversible actions, off-policy assistance, prompt injection through tool output, PII memory leaks, and runaway cost should be enforced by runtime gates, audit logs, and human approval paths rather than only by system-prompt instructions.
+- Every's `The Eight Levels of AI Adoption` turns this ownership shift into an adoption ladder: chatbot / copilot keep humans as primary operators, agent / autopilot delegate bounded execution, workflows professionalize the output, and assistant / multi-agent / orchestrator modes require explicit supervisor governance.
 
 ## Working Thesis
 
@@ -114,6 +115,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [After Automation](../articles/every-after-automation.md)
+- [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
@@ -131,6 +133,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - production corrections 何時足以成為 Codex 可執行的 eval target，何時仍只是 domain expert judgment 或 workflow noise
 - when automation increases output volume, what supervisor metrics distinguish real differentiated work from abundant generic work
 - when approval is represented as a table field, what metadata is required for real governance: approver identity, timestamp, reasoning snapshot, source lineage, risk class, and rollback path
+- adoption level should be chosen by which operational loops can be delegated with acceptable evidence, approval, rollback, and maintenance cost, not by the most autonomous demo available
 
 ## Startup Operating Pattern
 

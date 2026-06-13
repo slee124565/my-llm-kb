@@ -48,6 +48,7 @@
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
 - [After Automation](../articles/every-after-automation.md)
+- [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 
 ## Key People Or Labs
@@ -85,3 +86,4 @@
 - long-lived agents need memory backends that can represent identity, relationships, valid time, superseded facts, source episodes, and correction paths; larger context windows or pure vector stores do not solve that governance problem by themselves
 - agentic AI should be evaluated as an AI systems engineering problem: multi-step plans, tool calls, memory writes, tracing, security gates, cost budgets, and task-level evals all belong to the harness contract.
 - production agent harnesses should be drawn and reviewed as state machines: states, transitions, retries, terminal conditions, step limits, cost circuit breakers, trace spans, and human approval gates are long-running reliability primitives.
+- adoption from assistant to multi-agent to orchestrator should be treated as a governance change: role isolation, progress observability, escalation thresholds, and review queues must improve before concurrency increases.
