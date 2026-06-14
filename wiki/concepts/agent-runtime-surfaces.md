@@ -39,6 +39,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Environment-variable network suppression is only an advisory runtime convention; for local coding agents that execute arbitrary developer tools, network containment needs an OS-enforced boundary that applies to descendant processes, not just to the harness binary
 - Anthropic's founder playbook offers a startup-stage surface split: Chat for quick conversational work, Claude Cowork for longer knowledge and operational workflows across connected tools, and Claude Code for codebase work. The useful abstraction is not the product names, but the fact that each surface carries different context, tools, permissions, persistence, and verification responsibilities.
 - Codex app 的 durable threads、side panel、browser/Chrome/computer-use、MCP/connectors、Skills、thread automations、Goals 與 memory 組成一個 composite work runtime；它的 runtime surface 不再只是 code execution，而是「持久 thread + tool reach + artifact review + scheduled continuation + external memory」的組合。
+- Codex Mobile adds a mobile supervisor/control surface over that composite runtime: the connected host remains the execution environment, while the phone exposes workspace/worktree selection, attachments, side chat, diff review, inline comments, steering, queued prompts, Goals, skills, and plugins as portable control points.
 - Tax AI's Codex loop splits runtime surfaces deliberately: writable product repo, read-only production trace / source artifact context, scoped domain tools, targeted evals, regression suites, and human practitioner review each carry different authority.
 - Every's `After Automation` separates delegated agent-employee surfaces from collaborative work-OS surfaces. In the first, the agent receives a bounded job and needs a maintainer; in the second, humans and agents share a computer, data sources, interruptions, and judgment loops for work that stays too live to fully delegate.
 - Agent eval design is also runtime-surface dependent: coding agents, conversational agents, research agents, and computer-use agents need different task environments, transcript artifacts, outcome checks, graders, and production-monitoring complements.
@@ -90,6 +91,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 - [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
+- [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
 
 ## Open Questions
 

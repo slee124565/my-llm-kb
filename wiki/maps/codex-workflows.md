@@ -39,6 +39,7 @@
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Codex /goal Playbook](../articles/codex-goal-playbook.md)
+- [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](../articles/openai-prompt-engineering-gpt-3-5-era.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
@@ -76,3 +77,4 @@
 - Claude Code best practices add a comparable local-terminal workflow lens: verifier-first prompts, scoped context, thin persistent instructions, Plan Mode only when uncertainty warrants it, and fresh-context reviewer sessions should be treated as workflow control surfaces rather than generic prompt tips
 - Claude Code skill practice adds a companion-skill design lens for Codex: reusable workflow knowledge should be packaged with routing descriptions, gotchas, scripts, setup state, verification evidence, and owner / promotion rules rather than only as long task prompts
 - Codex adoption should not be measured by reaching maximum autonomy; chatbot, copilot, agent, autopilot, workflow, Goal, and orchestration modes each fit different task stakes and review economics
+- Codex Mobile should be treated as a supervisor/control plane over connected engineering hosts: it is strongest when it lets humans select task boundaries, capture mobile context, steer runs, add review comments, and unblock bounded decisions without pretending the phone is the execution environment

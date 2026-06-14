@@ -27,6 +27,7 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - 與 coding agent 共同開發 human-supervised agent ops 系統時，開發流程本身也需要 supervisor discipline：每個 milestone 要問 agent 多擁有哪一小段 loop、需要哪些 evidence、哪個 gate 沒過就停，而不是讓 `PLANS.md` 無限延伸成 design/implement loop
 - Karpathy 對 future agents 的 human-to-agent ratio framing，補強了這個概念的需求來源：更長的 autonomous run 會把人推向 supervisor role，但 supervision 必須靠 evidence、approval、rollback 與 risk boundary 實作，而不是只靠人「看著」agent
 - Codex steering、queuing、side-panel review、thread automation 與 mobile approval 共同提供了個人版 supervisor loop：人類不一定逐步操作，但可以中途改向、安排下一步、檢查 artifact、批准敏感操作，並要求 agent 把重要 context 寫回可接手 memory。
+- Codex Mobile sharpens that personal supervisor loop: the phone is useful when it lets a human capture context from the physical/device environment, make bounded unblock decisions, annotate diffs, steer or queue the next action, and leave actual execution on a connected engineering host.
 - Tax AI / Crete 的 self-improving loop 補上一個 production-domain pattern：human experts do not merely approve agent output; their corrections become structured evidence, reviewed findings, targeted evals, and bounded Codex engineering tasks.
 - Dan Shipper's `After Automation` adds a demand-side mechanism: as agents make framed competence cheap, human work moves to framing, taste, review, maintenance, escalation, and building systems that turn abundant first attempts into differentiated work.
 - Claude Code best practices show the same supervisor pattern at the local coding-workflow level: the human frames tasks with verification, interrupts early when direction drifts, rewinds bad paths, clears polluted context, and uses fresh reviewer sessions instead of acting as the agent's only test harness.
@@ -116,6 +117,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [After Automation](../articles/every-after-automation.md)
 - [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
+- [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)

@@ -40,6 +40,7 @@
 - [Using PLANS.md for Multi-Hour Problem Solving](wiki/articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [Getting The Most Out Of Codex](wiki/articles/getting-the-most-out-of-codex.md)
 - [Codex /goal Playbook](wiki/articles/codex-goal-playbook.md)
+- [Mastering Codex Mobile For Engineering](wiki/articles/mastering-codex-mobile-for-engineering.md)
 - [Best Practices For Claude Code](wiki/articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](wiki/articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](wiki/articles/openai-prompt-engineering-gpt-3-5-era.md)
