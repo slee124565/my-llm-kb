@@ -8,6 +8,7 @@
 - Published: 2026-05-06
 - Captured: 2026-06-12
 - Raw file: `raw/sources/2026/2026-05-06-hidden-technical-debt-in-agentic.md`
+- Guided reading note: `raw/sources/2026/2026-05-06-hidden-technical-debt-in-agentic-guided-reading-note.md`
 - Subtitle: Issue #02 — Eleven years later, the same diagram is being redrawn
 - Source note: Second article in `The AI Systems Engineer Journey`; adapts the 2015 hidden-technical-debt framing from ML systems to production agentic AI systems.
 
