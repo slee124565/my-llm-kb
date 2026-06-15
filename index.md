@@ -43,6 +43,7 @@
 - [Mastering Codex Mobile For Engineering](wiki/articles/mastering-codex-mobile-for-engineering.md)
 - [Best Practices For Claude Code](wiki/articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](wiki/articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [Using Skills To Accelerate OSS Maintenance](wiki/articles/using-skills-to-accelerate-oss-maintenance.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](wiki/articles/openai-prompt-engineering-gpt-3-5-era.md)
 - [OpenAI Prompt Guidance - GPT-5.5](wiki/articles/openai-prompt-guidance-gpt-5-5.md)
 - [OpenAI Prompt Guidance - GPT-5.4](wiki/articles/openai-prompt-guidance-gpt-5-4.md)

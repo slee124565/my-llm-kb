@@ -26,6 +26,7 @@ Prompt migration and agent steerability 指的是：當模型能力、API runtim
 - Claude Code best practices add a task-prompt hygiene layer: specify files, symptoms, constraints, existing patterns, examples, test preferences, and success criteria; use vague prompts mainly for exploration where course correction is acceptable.
 - Persistent instructions should be pruned like code. If removing a rule would not cause agent mistakes, it probably does not belong in the always-loaded entry file.
 - Claude Code skill practice moves many steerability details out of always-loaded prompts: routing descriptions, gotchas, setup config, reference snippets, scripts, and verification routines belong in skill folders when they are reusable but not globally relevant.
+- OpenAI Agents SDK maintenance reinforces `description` as a steering surface: a skill description should encode the trigger condition, change scope, mandatory status, and expected evidence/output so the model can route before it reads the full workflow.
 
 ## GPT-5.5 Outcome-First Prompt Checklist
 
@@ -70,6 +71,7 @@ Prompt 負責定義 intent、success criteria、constraints、evidence policy、
 - [After Automation](../articles/every-after-automation.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
 
 ## Open Questions
 

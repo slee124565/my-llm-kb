@@ -30,6 +30,7 @@
 
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
 - [Introducing Codex](../articles/introducing-codex.md)
 - [Building a Safe, Effective Sandbox to Enable Codex on Windows](../articles/openai-building-codex-windows-sandbox.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
@@ -76,5 +77,6 @@
 - `/goal` work should be paired with a visible execution artifact: checklist for batch work, design doc plus phases for refactors, acceptance criteria for each phase, and commit/test gates after verified progress
 - Claude Code best practices add a comparable local-terminal workflow lens: verifier-first prompts, scoped context, thin persistent instructions, Plan Mode only when uncertainty warrants it, and fresh-context reviewer sessions should be treated as workflow control surfaces rather than generic prompt tips
 - Claude Code skill practice adds a companion-skill design lens for Codex: reusable workflow knowledge should be packaged with routing descriptions, gotchas, scripts, setup state, verification evidence, and owner / promotion rules rather than only as long task prompts
+- OpenAI Agents SDK maintenance adds an OSS-scale Codex workflow lens: keep mandatory triggers in `AGENTS.md`, put repeatable procedure in repo-local skills, push deterministic mechanics into scripts, preserve evidence in logs / rerun files / release diffs, and reserve human review for high-judgment API, architecture, migration, and release decisions.
 - Codex adoption should not be measured by reaching maximum autonomy; chatbot, copilot, agent, autopilot, workflow, Goal, and orchestration modes each fit different task stakes and review economics
 - Codex Mobile should be treated as a supervisor/control plane over connected engineering hosts: it is strongest when it lets humans select task boundaries, capture mobile context, steer runs, add review comments, and unblock bounded decisions without pretending the phone is the execution environment

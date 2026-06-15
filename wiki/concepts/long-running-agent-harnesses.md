@@ -55,6 +55,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Verifier-first prompting is a user-level harness pattern. Tests, screenshots, expected outputs, lint/build commands, and root-cause acceptance criteria let the agent close a smaller loop before asking the human to judge.
 - Plan Mode is a risk-management primitive, not a universal ritual: use it when scope is uncertain, multi-file, or unfamiliar; skip it when the desired diff can be described directly and verified cheaply.
 - Verification skills are a reusable harness primitive. When product flows, checkout paths, CLI interactions, CI/CD steps, runbooks, or infra operations recur, a skill can package the driver script, assertions, transcript/video evidence, gotchas, and escalation policy so the agent verifies through the same route every time.
+- OSS maintenance skills are harness primitives for recurring repository work: code-change verification, docs sync, example auto-runs, integration tests, release review, OpenAI docs lookup, and PR draft handoff each bind commands, evidence, model judgment, and maintainer-facing output into a repeatable loop.
 - Long-running assistants need memory harnesses, not only memory stores: episode ingest, entity resolution, relationship extraction, temporal supersession, retrieval explanation, correction/deletion policy, and namespace isolation all become part of the reliability contract.
 - AI systems engineering treats long-running agent reliability as a whole-system problem: planner quality, tool-call reliability, traceability, eval suites, cost budgets, security gates, rollback, and human supervision must be designed together.
 - Production agent harnesses should be reviewed as explicit state machines. ReAct, Plan-and-Execute, and Reflexion can be composed, but the harness still needs named states, legal transitions, step limits, retry / recovery policy, budget circuit breakers, trace spans, terminal states, and escalation paths.
@@ -92,6 +93,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)

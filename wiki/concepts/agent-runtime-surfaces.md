@@ -48,6 +48,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Claude Code exposes a local terminal coding-agent surface where the user controls context, permissions, sandboxing, CLI tools, MCP servers, hooks, skills, subagents, plugins, checkpoints, and parallel sessions. These are separate control surfaces: some grant reach, some enforce invariants, some preserve reusable knowledge, and some isolate investigation or review context.
 - Hooks are a runtime guarantee rather than a prompt convention. When a behavior must happen every time, such as linting after edits or blocking writes to sensitive paths, it belongs closer to runtime policy than to advisory instructions.
 - Claude Code skills show how a runtime extension can combine progressive-disclosure context, executable scripts, reference assets, setup config, on-demand hooks, and usage logging. The skill folder is therefore both a context surface and an operational surface, not merely documentation.
+- Codex GitHub Action turns repo-local skills into a CI runtime surface. In public OSS repos, that surface must account for trusted triggers, untrusted prompt input, protected secrets, reduced privileges, final-step execution, and whether the workflow can write back to the repo.
 - Graph memory backends such as Graphiti / Neo4j are runtime surfaces too: they decide how user facts are ingested as episodes, reconciled into entities and relationships, timestamped, queried, corrected, isolated by user namespace, and exposed back to the model.
 - Sim-style executable tables add a data-native runtime surface: rows hold case state while columns perform enrichment, workflow execution, condition checks, approval gates, and downstream triggers. This turns a business table into a row-scoped agent workflow surface rather than a passive store plus external webhook glue.
 - AI systems engineering reframes runtime surfaces as parts of one decision-producing loop: feature/context stores, prompt or model registries, tool registries, memory stores, guardrails, tracing, cost controls, and feedback channels all carry system responsibility.
@@ -86,6 +87,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)

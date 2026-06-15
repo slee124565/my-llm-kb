@@ -43,6 +43,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - Claude Code's `CLAUDE.md` / skills split is a concrete state-partitioning pattern: broad, stable project invariants belong in a short entry file; narrower domain workflows, repeatable procedures, hooks, subagents, and specs belong in separate artifacts that can be loaded, reviewed, and changed independently.
 - Compaction instructions, session names, specs, and review packets are also externalized state surfaces. They decide what survives context reset or handoff, so they need the same hygiene as code docs: concise wording, clear ownership, and evidence that the next session can resume correctly.
 - Anthropic's Claude Code skill practice sharpens skills as procedural state: a skill folder can hold instructions, scripts, assets, data, setup config, logs, references, templates, and hooks, so its entry description, owner, usage signal, rollback path, and deprecation policy become part of state hygiene.
+- OpenAI Agents SDK maintenance adds operational evidence to procedural state: example logs, rerun files, release diffs, verification transcripts, PR draft blocks, and CI run output are the artifacts that let maintainers audit Codex work after the conversation ends.
 - Temporal knowledge graph memory adds a different externalized-state model: facts live as entities and timestamped relationships, so new facts can supersede old facts without deleting history or treating both as equally current.
 - Vector RAG should be treated as a retrieval surface for mostly static documents, not as a complete memory governance layer; long-lived agents also need identity resolution, relationship modeling, valid-time semantics, and correction paths.
 - Executable-table workflows externalize state at row / column granularity: enrichment status, scoring rationale, qualified flags, approval fields, trigger outputs, and action results remain in the business table instead of only in chat transcripts, webhook logs, or external orchestration services.
@@ -74,6 +75,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)

@@ -27,6 +27,7 @@ For this repo, evals are part of harness design. They define success, preserve e
 - Self-evaluation by the same agent that wrote the skill is weak evidence. The stronger pattern is to separate the runtime that generated experience from the offline harness that reviews traces, constructs eval data, scores variants, enforces constraints, and records the change.
 - Production agent evals need trajectory and cost-aware signals, not only final-answer scoring. The eval surface should check tool order when policy-relevant, loop counts, retries, trace completeness, cost per successful task, and whether human approval gates fire for irreversible actions.
 - Eval suites themselves rot. They should be refreshed from sampled production traces, support queues, manual release checks, user feedback, and expert review so prompt, model-routing, tool-description, or memory changes are judged against current failure modes.
+- Example and integration validation in OSS agent SDKs should preserve per-example logs, rerun files, install/runtime evidence, and source intent. A passing exit code is evidence, but the stronger check is whether observed stdout/stderr matches the intended example flow across supported runtimes.
 
 ## Signals From Recent Articles
 
@@ -38,6 +39,7 @@ For this repo, evals are part of harness design. They define success, preserve e
 - [OpenAI Prompt Guidance - GPT-5.5](../articles/openai-prompt-guidance-gpt-5-5.md): pushes prompt migration and reasoning-effort choices toward eval-backed decisions.
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md): frames GEPA as an offline trace-based optimizer for agent-authored skills, with eval data, rubric scoring, constraint gates, and PR-based change flow.
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md): argues that an agent without an eval harness is still a demo; adds reference-based, reference-free, trajectory, and online evals to the production debt map.
+- [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md): shows example auto-run, integration tests, release review, and PR review as repeatable OSS maintenance eval surfaces.
 
 ## Open Questions
 

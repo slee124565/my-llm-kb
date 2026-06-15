@@ -21,6 +21,7 @@ Repository knowledge as system of record 指的是：讓 agent 所需的長期�
 - OpenAI GPT-5.3 Codex prompt guidance reinforces that `AGENTS.md` should be a repo-local steering surface: it should route the agent to deeper docs, protect user work, define validation expectations, and keep global prompts from absorbing all repo-specific workflow detail
 - Codex shared-memory guidance generalizes repo-local system of record beyond codebases: a vault or repo plus `AGENTS.md` can define where people, projects, decisions, blockers, drafts, and TODOs live so future threads reload explicit state instead of relying on hidden memory.
 - Claude Code's `CLAUDE.md` guidance reinforces the same thin-entry principle: an agent entry file should contain only broad rules that prevent real mistakes, while deeper domain knowledge should be linked, skill-scoped, hook-enforced, or encoded as tests / commands.
+- OpenAI Agents SDK maintenance shows the same principle at OSS scale: `AGENTS.md` should carry mandatory workflow triggers and compatibility invariants, while skills, scripts, references, examples, release-review rules, and PR-draft schemas carry the deeper operational procedure.
 
 ## Signals From Recent Articles
 
@@ -32,6 +33,7 @@ Repository knowledge as system of record 指的是：讓 agent 所需的長期�
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
+- [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
 
 ## Open Questions
 
