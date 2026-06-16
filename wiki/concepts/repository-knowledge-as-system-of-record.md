@@ -22,6 +22,7 @@ Repository knowledge as system of record 指的是：讓 agent 所需的長期�
 - Codex shared-memory guidance generalizes repo-local system of record beyond codebases: a vault or repo plus `AGENTS.md` can define where people, projects, decisions, blockers, drafts, and TODOs live so future threads reload explicit state instead of relying on hidden memory.
 - Claude Code's `CLAUDE.md` guidance reinforces the same thin-entry principle: an agent entry file should contain only broad rules that prevent real mistakes, while deeper domain knowledge should be linked, skill-scoped, hook-enforced, or encoded as tests / commands.
 - OpenAI Agents SDK maintenance shows the same principle at OSS scale: `AGENTS.md` should carry mandatory workflow triggers and compatibility invariants, while skills, scripts, references, examples, release-review rules, and PR-draft schemas carry the deeper operational procedure.
+- Long-horizon Codex work shows repo-local system of record at task scale: a spec file, milestone plan, implementation runbook, and documentation/status file can preserve goals, constraints, validations, decisions, and known issues across a 25-hour run.
 
 ## Signals From Recent Articles
 
@@ -34,6 +35,7 @@ Repository knowledge as system of record 指的是：讓 agent 所需的長期�
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
+- [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 
 ## Open Questions
 

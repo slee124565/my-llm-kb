@@ -61,6 +61,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Production agent harnesses should be reviewed as explicit state machines. ReAct, Plan-and-Execute, and Reflexion can be composed, but the harness still needs named states, legal transitions, step limits, retry / recovery policy, budget circuit breakers, trace spans, terminal states, and escalation paths.
 - The serving primitive for long-running agents is a session, not a request. Harness design must account for pause/resume, filesystem or external state, idle waiting on tools or humans, heterogeneous run length, and cost models that do not quietly bill idle time as active work.
 - Every's `The Eight Levels of AI Adoption` makes Level 5 `Workflows` the adoption threshold where harness design becomes load-bearing: moving beyond autopilot requires explicit planning, review, confidence checks, tests, guardrails, and repeatable output professionalization.
+- Long-horizon Codex experiments make durable project memory concrete: `prompt.md` freezes goals and constraints, `plans.md` defines milestones and validation, `implement.md` gives the runbook, and `documentation.md` records status, decisions, demo flow, known issues, and audit evidence.
 
 ## Signals From Recent Articles
 
@@ -99,6 +100,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 - [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 - [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
+- [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 
 ## Open Questions
 
@@ -128,6 +130,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - verification skills should be built first for which workflows: highest frequency, highest failure cost, easiest programmatic assertions, or largest human review bottleneck
 - temporal graph memory should be tested with what fixtures: stale fact replacement, same-name entity disambiguation, multi-hop recall, deletion/correction requests, and source-episode attribution
 - what minimum workflow harness is required before a team moves a task from supervised agent use to autopilot, always-on assistant, multi-agent, or orchestrator mode
+- which long-running task types need a full spec / plan / runbook / documentation file stack, and which can safely rely on a lighter checklist plus validation commands
 
 ## Related Pages
 

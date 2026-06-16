@@ -55,6 +55,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Agentic technical debt is distributed across runtime surfaces: markdown configs behave like source code, model routing behaves like cost / reliability policy, tool descriptions behave like model-facing APIs, memory behaves like state governance, and tracing / eval / guardrails behave like release infrastructure.
 - Agent serving should be modeled around sessions rather than stateless requests. Invocation mode, state location, scaling pattern, observability boundary, idle-time cost, and human approval wait all become runtime-surface decisions.
 - Every's `The Eight Levels of AI Adoption` is also a runtime-surface map: chatbot, copilot, supervised agent, autopilot, workflow, assistant, multi-agent, and orchestrator modes expose different context, permissions, proactivity, review, and coordination surfaces.
+- Codex long-horizon work combines multiple runtime surfaces: app thread continuity, CLI/tool execution, repo-local files, worktree isolation, skills, automations, plan mode, validation commands, and documentation artifacts each carry part of the control loop.
 
 ## Signals From Recent Articles
 
@@ -94,6 +95,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 - [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 - [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
+- [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 
 ## Open Questions
 

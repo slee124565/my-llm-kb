@@ -48,6 +48,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - Vector RAG should be treated as a retrieval surface for mostly static documents, not as a complete memory governance layer; long-lived agents also need identity resolution, relationship modeling, valid-time semantics, and correction paths.
 - Executable-table workflows externalize state at row / column granularity: enrichment status, scoring rationale, qualified flags, approval fields, trigger outputs, and action results remain in the business table instead of only in chat transcripts, webhook logs, or external orchestration services.
 - Markdown configs, prompts, skills, sub-agent definitions, slash commands, tool descriptions, model routes, eval suites, trace schemas, and guardrail policies are all externalized state when they steer future agent behavior. Treating them as disposable text creates behavioral drift that cannot be reviewed or rolled back.
+- A long-running Codex file stack externalizes task memory at multiple layers: `prompt.md` holds target and constraints, `plans.md` holds milestones and acceptance criteria, `implement.md` holds execution discipline, and `documentation.md` holds progress, decisions, commands, demo flow, known issues, and handoff evidence.
 
 ## Signals From Recent Articles
 
@@ -79,6 +80,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
+- [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 
 ## Open Questions
 
