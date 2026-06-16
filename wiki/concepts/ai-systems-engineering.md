@@ -50,6 +50,23 @@ Useful questions:
 
 If these questions are unanswered, the system is still a demo or assisted workflow, even if it uses a powerful model.
 
+## Organization-Level AI Core Capabilities
+
+在 AI 時代，組織的 AI 核心能力不應被定義成「會用哪個模型」或「有多少 AI 功能」，而應定義成：能否持續把重要工作流改造成可被 AI 系統理解、執行、評估、監督與改善的 decision-producing loop。
+
+最低限度應包含：
+
+- `workflow framing`: 能把業務問題切成明確任務、輸入、輸出、限制、成功條件與停止條件，而不是只要求 AI 自由發揮。
+- `context and knowledge operations`: 能把 domain knowledge、SOP、案例、資料來源、例外規則與歷史決策整理成 agent 可檢索、可引用、可回寫、可更新的 knowledge layer。
+- `AI systems engineering`: 能管理 prompt、model route、retrieval config、tool schema、policy、eval suite、memory schema、traces、cost 與 serving constraints 等 behavioral artifacts。
+- `evaluation and evidence discipline`: 能把人工 review、production failure、support queue、agent transcript、grader、regression suite 與 monitoring 串成品質閉環。
+- `human-supervised delegation`: 能判斷哪些 operational loops 可交給 agent 關閉，哪些需要 human approval、exception review、rollback、audit log 或 freeze gate。
+- `tool and runtime design`: 能把內部系統、資料表、issue tracker、browser、CLI、API 與 approval surface 變成 agent-legible / agent-actionable 的 runtime，而不是只在既有 UI 上加聊天框。
+- `feedback-to-improvement loop`: 能把人類修正轉成 structured finding、eval target、scoped engineering task、validated fix 與 rollout / rollback decision。
+- `organizational taste and governance`: 能保留人類在 framing、taste、policy、risk boundary、customer promise 與 final accountability 上的責任，而不是把責任外包給模型輸出。
+
+因此，AI-era organization capability 的成熟度可用一個問題檢查：這個組織是否能把 AI 從零散 productivity tool，升級成可治理、可評估、可迭代的 operating layer？
+
 ## Open Questions
 
 - 應如何把 AI systems engineering 轉成 hiring rubric、team charter 或 architecture review checklist？
@@ -57,6 +74,7 @@ If these questions are unanswered, the system is still a demo or assisted workfl
 - FTI 在 agentic workflow 中是否應擴展成 feature/context pipeline、artifact pipeline、action pipeline、feedback/eval pipeline？
 - 哪些 systems-engineering responsibilities 應由 platform team 承擔，哪些必須由 product/domain team 擁有？
 - Human supervisor 的 evidence packet 應包含哪些欄位，才能讓 AI systems engineering 從「模型測試」升級成「可治理的 operational loop」？
+- 組織應如何把 AI 核心能力拆成 team charter、能力盤點、adoption ladder、review checklist 與 operating metrics，而不是停在工具採購或培訓課程？
 
 ## Related Pages
 
