@@ -37,6 +37,7 @@
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
+- [Don't Marry Your LLM Provider](../articles/dont-marry-your-llm-provider.md)
 - [Building a Local Ambient Agent That Never Sleeps](../articles/building-a-local-ambient-agent-that-never-sleeps.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
@@ -94,6 +95,7 @@
 - issue tracker 作為 agent control plane 時，哪些 team process 應該被版本化成 repo-local workflow contract
 - local personal agents 與 cloud coding agents 應共享哪些設計原則，又該在哪些地方刻意分流
 - provider-managed agent infrastructure 會不會把 runtime 與 orchestration 進一步集中到少數平台
+- AI gateway 會成為多模型、多 tool、多 MCP server agent stack 的必要 reverse proxy，還是只適合多 provider / 多 team / 高流量 production apps
 - 如果 coding 不再是主要瓶頸，agent-era builder 的最小能力組合應如何定義，哪些 specialist review 仍然不可壓縮
 - 當 hosted model quality regressions 只在特定 routing path 或硬體平台上出現時，使用者可見的 agent reliability 應如何被觀測、解釋與治理
 - AI compute stack 的分裂或集中，會如何影響 hosted agent 的成本、可用性、可靠性與 developer ecosystem lock-in

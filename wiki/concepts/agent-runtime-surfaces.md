@@ -14,6 +14,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - ticket-backed orchestrator 是另一種 runtime surface：issue tracker 持有 task state 與 dependency graph，repo 持有 workflow contract，agent runner 持有 per-issue workspace 與 session execution
 - 隨 coding 本身被壓縮，repo-local coding agent 的工作面也可能向上游擴張：不只實作 feature，還會吸收 feedback triage、bug prioritization、PR drafting 與部分 product shaping
 - provider-managed hosted agent 會把 sandbox lifecycle、session recovery、credential routing 與部分 orchestration 收斂到平台，由平台吸收模型快速演化帶來的 runtime churn
+- AI gateway 是 model/runtime 邊界上的 reverse-proxy surface：client 看見穩定 API shape，gateway 持有 virtual keys、provider adapters、model routing、fallback、budget、cost attribution、trace export 與 MCP/tool routing policy
 - local personal agent 則更強調 user-owned memory、conversation-first steerability、CLI-first operability 與對本地資料面的直接接觸
 - Hassabis's local/cloud assistant framing adds another runtime split: small on-device models can handle private high-bandwidth perception, while frontier cloud models are called selectively for harder work
 - OpenClaw's Lex interview gives a concrete local-personal runtime stack: gateway, chat client, harness, agent loop, memory, skills, browser/app control, local system access, and a model identity the agent can inspect
@@ -94,6 +95,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
+- [Don't Marry Your LLM Provider](../articles/dont-marry-your-llm-provider.md)
 - [Building a Local Ambient Agent That Never Sleeps](../articles/building-a-local-ambient-agent-that-never-sleeps.md)
 - [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 - [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
@@ -113,6 +115,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - 當 coding agent 開始讀取回饋、整理需求與建議優先順序時，runtime surface 會如何重畫 PM、design 與 engineering 的責任邊界
 - issue tracker、repo workflow file、agent app-server 與 dynamic tool calls 之間的權限邊界應如何切，才能讓 agent 操作 tracker 而不暴露完整 credential surface
 - provider-managed runtime 的品質問題若只在特定硬體、流量路由或 partner surface 上發生，使用者與 team 應透過哪些 artifact 才能看見並調試這些差異
+- AI gateway 應暴露哪些 provider identity、fallback path、cost、latency、policy refusal、context-window escalation 與 MCP/tool-routing evidence，才能讓 application team 在獲得 provider abstraction 的同時仍保留 eval 與 debugging 能力
 - harmony / reasoning / tool-call contract 是否應被視為 runtime surface 的核心層，而非單純的 model-specific adapter
 - verification 的邊界要畫到哪裡：prompt format、response shape、reasoning transport，還是完整 eval bundle
 - safety policy prompts 的控制面要落在 repo 文件、模板還是 runtime library
