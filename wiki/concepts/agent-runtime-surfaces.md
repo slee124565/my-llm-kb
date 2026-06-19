@@ -56,6 +56,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Agent serving should be modeled around sessions rather than stateless requests. Invocation mode, state location, scaling pattern, observability boundary, idle-time cost, and human approval wait all become runtime-surface decisions.
 - Every's `The Eight Levels of AI Adoption` is also a runtime-surface map: chatbot, copilot, supervised agent, autopilot, workflow, assistant, multi-agent, and orchestrator modes expose different context, permissions, proactivity, review, and coordination surfaces.
 - Codex long-horizon work combines multiple runtime surfaces: app thread continuity, CLI/tool execution, repo-local files, worktree isolation, skills, automations, plan mode, validation commands, and documentation artifacts each carry part of the control loop.
+- Ambient agents add an event-stream runtime surface: sources, stream bus, windowing logic, threshold filters, local or cloud reasoners, notification channels, and kill switches jointly define what the agent can notice, how often it wakes the model, and when it interrupts a human.
 
 ## Signals From Recent Articles
 
@@ -93,6 +94,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
+- [Building a Local Ambient Agent That Never Sleeps](../articles/building-a-local-ambient-agent-that-never-sleeps.md)
 - [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 - [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
 - [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)

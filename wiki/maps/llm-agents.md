@@ -37,6 +37,7 @@
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
+- [Building a Local Ambient Agent That Never Sleeps](../articles/building-a-local-ambient-agent-that-never-sleeps.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
@@ -113,3 +114,4 @@
 - table-native agent workflows should be judged by whether rows, columns, triggers, approval gates, and logs form an auditable runtime rather than merely hiding webhook glue behind a familiar spreadsheet UI
 - AI systems engineering should be treated as a system-ownership pattern across ML, RAG, document intelligence, and agentic AI: the durable skill is owning the decision-producing loop, not adopting whichever role title is current.
 - agentic technical debt should be reviewed by surface, not only by model choice: markdown configs, model routing, harness state machines, tool contracts, memory, serving, traces, evals, guardrails, and human gates each carry separate failure modes.
+- ambient agents should be treated as event-driven systems with model reasoning inserted after a cheap filter; the durable pattern is stream -> filter -> LLM judgment -> human escalation, not chat UI plus background polling.

@@ -35,6 +35,7 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - AI systems engineering provides the role-level ownership frame for this shift: when an agent owns more of the operational loop, someone still has to own the full decision system, including policy, evaluation, monitoring, feedback, rollback, and supervisor evidence.
 - Agentic technical-debt framing makes the approval boundary concrete: irreversible actions, off-policy assistance, prompt injection through tool output, PII memory leaks, and runaway cost should be enforced by runtime gates, audit logs, and human approval paths rather than only by system-prompt instructions.
 - Every's `The Eight Levels of AI Adoption` turns this ownership shift into an adoption ladder: chatbot / copilot keep humans as primary operators, agent / autopilot delegate bounded execution, workflows professionalize the output, and assistant / multi-agent / orchestrator modes require explicit supervisor governance.
+- Ambient agents provide a proactivity ladder for human-supervised ops: notify only, ask a question before continuing, or prepare an action for review. Moving up that ladder should require stronger evidence, audit logs, rollback, and alert-budget discipline.
 
 ## Working Thesis
 
@@ -122,6 +123,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
+- [Building a Local Ambient Agent That Never Sleeps](../articles/building-a-local-ambient-agent-that-never-sleeps.md)
 
 ## Open Questions
 

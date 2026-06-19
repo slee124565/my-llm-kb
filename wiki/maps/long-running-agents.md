@@ -33,6 +33,7 @@
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
+- [Building a Local Ambient Agent That Never Sleeps](../articles/building-a-local-ambient-agent-that-never-sleeps.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
@@ -87,5 +88,6 @@
 - long-lived agents need memory backends that can represent identity, relationships, valid time, superseded facts, source episodes, and correction paths; larger context windows or pure vector stores do not solve that governance problem by themselves
 - agentic AI should be evaluated as an AI systems engineering problem: multi-step plans, tool calls, memory writes, tracing, security gates, cost budgets, and task-level evals all belong to the harness contract.
 - production agent harnesses should be drawn and reviewed as state machines: states, transitions, retries, terminal conditions, step limits, cost circuit breakers, trace spans, and human approval gates are long-running reliability primitives.
+- ambient agents make always-on operation the default: harness design must control event-stream backpressure, model wakeup frequency, alert fatigue, and escalation authority before proactivity becomes autonomy.
 - adoption from assistant to multi-agent to orchestrator should be treated as a governance change: role isolation, progress observability, escalation thresholds, and review queues must improve before concurrency increases.
 - 25-hour Codex-style runs should be evaluated by the quality of their harness loop: stable spec, milestone acceptance criteria, validation after each milestone, repair-before-progress discipline, and inspectable documentation.
