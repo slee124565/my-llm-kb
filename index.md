@@ -55,6 +55,7 @@
 - [After Automation](wiki/articles/every-after-automation.md)
 - [The Eight Levels of AI Adoption](wiki/articles/every-the-eight-levels-of-ai-adoption.md)
 - [Demystifying Evals For AI Agents](wiki/articles/demystifying-evals-for-ai-agents.md)
+- [METR - Measuring AI Ability to Complete Long Tasks](wiki/articles/metr-measuring-ai-ability-to-complete-long-tasks.md)
 - [Collapse Your CRM Pipeline Into One Table](wiki/articles/collapse-your-crm-pipeline-into-one-table.md)
 
 ## Working Assets

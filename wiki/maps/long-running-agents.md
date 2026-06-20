@@ -52,6 +52,7 @@
 - [After Automation](../articles/every-after-automation.md)
 - [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
+- [METR - Measuring AI Ability to Complete Long Tasks](../articles/metr-measuring-ai-ability-to-complete-long-tasks.md)
 
 ## Key People Or Labs
 
@@ -91,3 +92,4 @@
 - ambient agents make always-on operation the default: harness design must control event-stream backpressure, model wakeup frequency, alert fatigue, and escalation authority before proactivity becomes autonomy.
 - adoption from assistant to multi-agent to orchestrator should be treated as a governance change: role isolation, progress observability, escalation thresholds, and review queues must improve before concurrency increases.
 - 25-hour Codex-style runs should be evaluated by the quality of their harness loop: stable spec, milestone acceptance criteria, validation after each milestone, repair-before-progress discipline, and inspectable documentation.
+- time-horizon benchmarks should be used as delegation-boundary estimates: when a task exceeds the agent's reliable human-duration horizon, split it into smaller verified tasks instead of assuming a longer run will preserve goal fidelity.
