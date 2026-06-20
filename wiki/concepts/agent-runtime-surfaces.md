@@ -58,6 +58,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Every's `The Eight Levels of AI Adoption` is also a runtime-surface map: chatbot, copilot, supervised agent, autopilot, workflow, assistant, multi-agent, and orchestrator modes expose different context, permissions, proactivity, review, and coordination surfaces.
 - Codex long-horizon work combines multiple runtime surfaces: app thread continuity, CLI/tool execution, repo-local files, worktree isolation, skills, automations, plan mode, validation commands, and documentation artifacts each carry part of the control loop.
 - Ambient agents add an event-stream runtime surface: sources, stream bus, windowing logic, threshold filters, local or cloud reasoners, notification channels, and kill switches jointly define what the agent can notice, how often it wakes the model, and when it interrupts a human.
+- Agent RFT adds a training-time runtime surface: agent client code, trajectory recorder, environment, LLM judge, reward adapter, vLLM inference server, GRPO trainer, LoRA checkpoint loading, eval gates, and rollback path all become separate operational responsibilities.
 
 ## Signals From Recent Articles
 
@@ -100,6 +101,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 - [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
 - [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
+- [How to Fine-Tune LLMs in 2026](../articles/how-to-fine-tune-llms-in-2026.md)
 
 ## Open Questions
 
@@ -132,6 +134,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - memory providers should expose freshness, valid-time semantics, source episode links, deletion/correction controls, namespace isolation, and retrieval explanation rather than only promising "long-term memory"
 - executable-table runtimes should expose event logs, retry semantics, permission boundaries, trigger provenance, and rollback controls rather than hiding workflow complexity behind column configuration
 - adoption ladders should separate runtime-surface changes from trust-boundary changes: embedding in a file, granting tool access, skipping approvals, running on a schedule, and delegating orchestration are different control surfaces
+- fine-tuning an agent should expose the training runtime as clearly as the inference runtime: which tasks produced trajectories, which judge produced rewards, which checkpoint is serving, and which eval gate can block or roll back the update
 
 ## Related Pages
 

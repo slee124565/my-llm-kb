@@ -53,6 +53,7 @@
 - [Harness Engineering](../articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
+- [How to Fine-Tune LLMs in 2026](../articles/how-to-fine-tune-llms-in-2026.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [What Happens After Coding Is Solved](../articles/what-happens-after-coding-is-solved-boris-cherny.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
@@ -117,3 +118,4 @@
 - AI systems engineering should be treated as a system-ownership pattern across ML, RAG, document intelligence, and agentic AI: the durable skill is owning the decision-producing loop, not adopting whichever role title is current.
 - agentic technical debt should be reviewed by surface, not only by model choice: markdown configs, model routing, harness state machines, tool contracts, memory, serving, traces, evals, guardrails, and human gates each carry separate failure modes.
 - ambient agents should be treated as event-driven systems with model reasoning inserted after a cheap filter; the durable pattern is stream -> filter -> LLM judgment -> human escalation, not chat UI plus background polling.
+- agent fine-tuning should be treated as a governed improvement loop over trajectories, relative judging, rewards, checkpoints, eval gates, and rollback paths rather than as a standalone model-training trick.
