@@ -133,3 +133,167 @@ The fix is a two-stage funnel, and it's the single most important idea in this b
 This is the same principle every good monitoring system uses: cheap filters up front, expensive analysis only on the candidates that survive. The LLM is precious; spend it deliberately.
 
 ## Let's build it (grab the code first!)
+
+Everything from here on is a walkthrough of a small, complete project you can run yourself.
+
+Rather than paste hundreds of lines into the article, I've packaged the whole thing — Docker Compose, the producer, the agent, and the optional Telegram bit — into a single download.
+
+[Download the code here!](https://drive.google.com/file/d/1zECsXxm8cEIFJ7SW6UmrMvYR7tqesnM8/view?usp=sharing)
+
+The rest of this article walks through why each piece looks the way it does. I'll show the parts that matter and skip the boilerplate — you've got the full source in front of you, so I'd rather explain the decisions than narrate every line.
+
+### 🎥 Watch it run
+
+Video embed: `data-video-id="acd2c5fd-89ea-4961-ac5e-1e971fb15c85"`; poster: `https://substack-video.s3.amazonaws.com/video_upload/post/200983183/acd2c5fd-89ea-4961-ac5e-1e971fb15c85/transcoded-00001.png?refresh=Mon Jun 22 2026 16:57:28 GMT+0800 (台北標準時間)`.
+
+## The senses: streaming Coinbase into Kafka
+
+The producer connects to Coinbase’s WebSocket, subscribes to the `ticker` channel, and republishes each tick in a normalized shape onto a Kafka topic. The key idea: the agent never talks to Coinbase. It only ever sees our own event schema. That’s what makes this a template — swap the producer for one that reads earthquakes or Wikipedia edits, and nothing downstream changes.
+
+```
+def to_event(msg: dict) -> dict | None:
+    """Map a Coinbase ticker message to our normalized schema."""
+    if msg.get("type") != "ticker" or "price" not in msg:
+        return None
+    return {
+        "ts": msg.get("time"),
+        "source": "coinbase",
+        "symbol": msg["product_id"],
+        "price": float(msg["price"]),
+        "side": msg.get("side", ""),          # taker side: buy | sell
+        "size": float(msg.get("last_size", 0) or 0),
+        "best_bid": float(msg.get("best_bid", 0) or 0),
+        "best_ask": float(msg.get("best_ask", 0) or 0),
+        "vol_24h": float(msg.get("volume_24h", 0) or 0),
+    }
+```
+
+The rest of the producer is plumbing: connect to Kafka (with retries, because the broker may still be electing a leader when we boot), subscribe, and on every message push the normalized event. It reconnects forever — an ambient agent’s senses should never stay down.
+
+## The brain: window, filter, then reason
+
+The agent is the heart of the project. It consumes the stream into per-symbol windows, and every `WINDOW_SECONDS` it runs the funnel.
+
+Stage 1 is just arithmetic:
+
+```
+def summarize(symbol: str, ticks: list) -> dict:
+    """Stage 1: cheap per-symbol stats over the window. No LLM."""
+    prices = [t["price"] for t in ticks]
+    first, last = prices[0], prices[-1]
+    move_pct = ((last - first) / first * 100.0) if first else 0.0
+    buys = sum(1 for t in ticks if t.get("side") == "buy")
+    n = len(ticks)
+    buy_share = buys / n if n else 0.0
+    return {
+        "symbol": symbol, "trades": n,
+        "first_price": round(first, 2), "last_price": round(last, 2),
+        "move_pct": round(move_pct, 3),
+        "high": round(max(prices), 2), "low": round(min(prices), 2),
+        "buy_share": round(buy_share, 2), "sell_share": round(1 - buy_share, 2),
+        "volume": round(sum(t.get("size", 0) for t in ticks), 4),
+    }
+```
+
+The gate decides whether this window is worth the LLM’s time:
+
+```
+def is_interesting(s: dict) -> bool:
+    if s["trades"] < MIN_TRADES_TRIGGER:      # ignore thin, illiquid noise
+        return False
+    if abs(s["move_pct"]) >= MOVE_PCT_TRIGGER:    # a real price move
+        return True
+    if max(s["buy_share"], s["sell_share"]) >= IMBALANCE_TRIGGER:  # lopsided flow
+        return True
+    return False
+```
+
+Only if `is_interesting` returns `True` do we reach Stage 2 and ask Ollama. Notice the prompt does two jobs: it asks for a plain, sober description, and it forbids the model from giving advice or telling anyone to trade. The agent observes and notifies — nothing more.
+
+```
+SYSTEM_PROMPT = """You are an ambient crypto market-watch agent.
+You receive a JSON summary of one symbol's trading over a short window...
+You CANNOT trade. You only notify. Never give financial advice.
+Respond with ONLY a JSON object: {notable, severity, headline, detail}."""
+```
+
+We call Ollama with `"format": "json"` so the response is constrained to valid JSON we can parse directly — no fragile string scraping.
+
+## Notify-only, on purpose
+
+When a window survives both stages, the agent does three things, none of which touch the market:
+
+```
+def notify(verdict: dict, summary: dict) -> None:
+    """Notify-only: console + JSONL + optional Telegram. No trading."""
+    # 1. print a human-readable line to the console
+    # 2. append a structured record to alerts.jsonl
+    # 3. (optional) push the same alert to Telegram
+```
+
+That `notify()` function is the single seam where the human-in-the-loop lives. Today it prints and optionally pushes to Telegram. Tomorrow you could point it at an approval inbox and graduate from notify to review — the rest of the agent wouldn’t change.
+
+The optional Telegram bit is genuinely satisfying: with a bot token and a chat id dropped into `.env`, the alerts land on your phone.
+
+Your laptop is now quietly watching the market and tapping you on the shoulder only when it matters! 🤣
+
+## Watching it run
+
+`docker compose up --build` brings up Kafka, Ollama (which pulls the model once), the producer, and the agent. Most windows look like this:
+
+```
+[agent] quiet — 412 ticks across 3 symbols, nothing tripped the filter
+```
+
+That’s the funnel working: 412 trades processed, zero LLM calls, zero cost. Then the market does something, Stage 1 trips, and:
+
+```
+================================================================
+  ⚡ [MEDIUM] BTC-USD  Sharp upward move on heavy buy pressure
+     Price rose ~0.6% in 30s with buyers taking 82% of trades.
+     move 0.61%  |  143 trades  |  buy 0.82 / sell 0.18
+================================================================
+```
+
+No one asked it a question. It just knew.
+
+![](https://substackcdn.com/image/fetch/$s_!n27T!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba3c3e8a-38cf-4a73-9fe1-ec7bd833d10f_2752x1536.png)
+
+## Making it yours
+
+The whole thing is a template, and the seams are deliberate:
+
+- Different stream? Rewrite the producer to read any source from the awesome-public-real-time-datasets list — USGS earthquakes, Wikimedia edits, Binance, the Bluesky firehose. Keep the event schema and nothing else changes.
+- More or less twitchy? Tune the three thresholds in `.env`.
+- Different judgment? Edit the system prompt.
+- Different model? Change one line in `.env` — `qwen2.5`, `mistral`, whatever runs on your machine.
+
+## From laptop to production
+
+This stack is a dev rig, but the path to production is short because every piece is already decoupled:
+
+- Kafka → swap the local broker for a managed one (Confluent, Redpanda, MSK); point `KAFKA_BOOTSTRAP` at it and add SASL / TLS.
+- The model → move off laptop Ollama to a GPU host or a hosted inference endpoint. The agent only needs a URL, so it’s a one-line change.
+- producer + agent → each is a stateless container. Run them on a small VM with `docker compose up -d`, or as two services on Cloud Run / ECS / a Kubernetes Deployment. Because the agent uses a Kafka consumer group, you can run several replicas and they'll split the partitions automatically.
+- Durability → give the topic real retention, supervise the agent so it restarts, and ship the alerts to a database or alerting service instead of a local file.
+- Secrets → tokens and broker creds move into your platform's secret manager, out of `.env`.
+
+## The takeaway
+
+Ambient agents aren't a new model or a new framework. They're a shift in posture — from an agent that waits for you to one that watches the world and reaches out only when it should. The three organs (senses, a stream, a brain) and the two-stage funnel (cheap filter, then LLM) are all you need to start.
+
+We built ours on crypto because the data is free and live, but the shape is universal. Point the senses somewhere else and you’ve got an entirely different agent for free.
+
+Now go give yours something to watch.
+
+> ⚠️ The complete, runnable project — Docker Compose, producer, agent, and Telegram integration — is included alongside this article. Clone it, `docker compose up`, and watch it work. This is a technical demo, not trading or financial advice; the agent only ever notifies.
+
+## References
+
+- LangChain — Introducing Ambient Agents — https://www.langchain.com/blog/introducing-ambient-agents
+- Google Agent Development Kit — Ambient Agents — https://adk.dev/runtime/ambient-agents/
+- Bijit Ghosh — Ambient Agents — https://medium.com/@bijit211987/ambient-agents-e80d3c77518e
+- Coinbase Exchange — WebSocket Feed Overview (public market data) — https://docs.cdp.coinbase.com/exchange/websocket-feed/overview
+- bytewax — Awesome Public Real-Time Datasets — https://github.com/bytewax/awesome-public-real-time-datasets
+- Ollama — https://ollama.com
+- Apache Kafka — https://kafka.apache.org
