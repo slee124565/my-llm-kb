@@ -49,6 +49,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - Executable-table workflows externalize state at row / column granularity: enrichment status, scoring rationale, qualified flags, approval fields, trigger outputs, and action results remain in the business table instead of only in chat transcripts, webhook logs, or external orchestration services.
 - Markdown configs, prompts, skills, sub-agent definitions, slash commands, tool descriptions, model routes, eval suites, trace schemas, and guardrail policies are all externalized state when they steer future agent behavior. Treating them as disposable text creates behavioral drift that cannot be reviewed or rolled back.
 - A long-running Codex file stack externalizes task memory at multiple layers: `prompt.md` holds target and constraints, `plans.md` holds milestones and acceptance criteria, `implement.md` holds execution discipline, and `documentation.md` holds progress, decisions, commands, demo flow, known issues, and handoff evidence.
+- Anthropic's long-running agent harness shows the same pattern in a compact coding setup: `init.sh` externalizes how to restart the app, git history externalizes recoverable working states, progress notes externalize recent decisions, and a structured JSON feature list externalizes both remaining work and completion evidence.
 
 ## Signals From Recent Articles
 
@@ -105,6 +106,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - team skill catalogs should use which evidence to promote, revise, or retire procedural memory: usage frequency, failure reduction, verifier coverage, owner review, or transcript-level success audits
 - static KB, temporal graph, session transcript, compact memory files, and skills should synchronize which facts, and which should remain separate sources of truth
 - table-native workflow state should version and audit which column changed, which workflow ran, which row values were used, and whether a human approval gate authorized the next action
+- feature lists that agents are allowed to update need ownership rules: who can add, delete, edit, or only mark checks as passing, and what evidence is required before a state transition is trusted
 
 ## Related Pages
 

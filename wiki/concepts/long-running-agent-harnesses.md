@@ -59,6 +59,8 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Long-running assistants need memory harnesses, not only memory stores: episode ingest, entity resolution, relationship extraction, temporal supersession, retrieval explanation, correction/deletion policy, and namespace isolation all become part of the reliability contract.
 - AI systems engineering treats long-running agent reliability as a whole-system problem: planner quality, tool-call reliability, traceability, eval suites, cost budgets, security gates, rollback, and human supervision must be designed together.
 - Production agent harnesses should be reviewed as explicit state machines. ReAct, Plan-and-Execute, and Reflexion can be composed, but the harness still needs named states, legal transitions, step limits, retry / recovery policy, budget circuit breakers, trace spans, terminal states, and escalation paths.
+- Anthropic's effective-harness pattern makes the minimum cross-session contract concrete: an initializer agent should create runnable setup, structured feature requirements, progress notes, and an initial git baseline; each coding session should pick one feature, verify through the real user path, leave a clean state, commit, and update progress.
+- Machine-readable task state is a drift-control surface. A JSON feature list with immutable test descriptions and a narrow mutable `passes` field is safer than a free-form Markdown checklist when agents repeatedly read and update completion state.
 - The serving primitive for long-running agents is a session, not a request. Harness design must account for pause/resume, filesystem or external state, idle waiting on tools or humans, heterogeneous run length, and cost models that do not quietly bill idle time as active work.
 - Every's `The Eight Levels of AI Adoption` makes Level 5 `Workflows` the adoption threshold where harness design becomes load-bearing: moving beyond autopilot requires explicit planning, review, confidence checks, tests, guardrails, and repeatable output professionalization.
 - Long-horizon Codex experiments make durable project memory concrete: `prompt.md` freezes goals and constraints, `plans.md` defines milestones and validation, `implement.md` gives the runbook, and `documentation.md` records status, decisions, demo flow, known issues, and audit evidence.
@@ -133,6 +135,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - temporal graph memory should be tested with what fixtures: stale fact replacement, same-name entity disambiguation, multi-hop recall, deletion/correction requests, and source-episode attribution
 - what minimum workflow harness is required before a team moves a task from supervised agent use to autopilot, always-on assistant, multi-agent, or orchestrator mode
 - which long-running task types need a full spec / plan / runbook / documentation file stack, and which can safely rely on a lighter checklist plus validation commands
+- when an initializer agent expands a vague product prompt into hundreds of feature checks, what review gate prevents the long-running harness from faithfully executing the wrong spec
 
 ## Related Pages
 
