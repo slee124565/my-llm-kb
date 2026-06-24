@@ -28,6 +28,7 @@
 - [Don't Marry Your LLM Provider](wiki/articles/dont-marry-your-llm-provider.md)
 - [Building a Local Ambient Agent That Never Sleeps](wiki/articles/building-a-local-ambient-agent-that-never-sleeps.md)
 - [Question-Answer Packets for RAG](wiki/articles/2026-05-08-question-answer-packets-for-rag.md)
+- [Vibe Coding is a Ticking Time Bomb](wiki/articles/2026-06-18-vibe-coding-runtime-safety-boundary.md)
 - [LLM Knowledge Bases](wiki/articles/karpathy-llm-knowledge-bases.md)
 - [Effective Harnesses for Long-Running Agents](wiki/articles/effective-harnesses-for-long-running-agents.md)
 - [Harness Design for Long-Running Application Development](wiki/articles/harness-design-for-long-running-application-development.md)

@@ -40,6 +40,7 @@
 - [Don't Marry Your LLM Provider](../articles/dont-marry-your-llm-provider.md)
 - [Building a Local Ambient Agent That Never Sleeps](../articles/building-a-local-ambient-agent-that-never-sleeps.md)
 - [Question-Answer Packets for RAG](../articles/2026-05-08-question-answer-packets-for-rag.md)
+- [Vibe Coding is a Ticking Time Bomb](../articles/2026-06-18-vibe-coding-runtime-safety-boundary.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
@@ -118,6 +119,7 @@
 - table-native agent workflows should be judged by whether rows, columns, triggers, approval gates, and logs form an auditable runtime rather than merely hiding webhook glue behind a familiar spreadsheet UI
 - AI systems engineering should be treated as a system-ownership pattern across ML, RAG, document intelligence, and agentic AI: the durable skill is owning the decision-producing loop, not adopting whichever role title is current.
 - agentic technical debt should be reviewed by surface, not only by model choice: markdown configs, model routing, harness state machines, tool contracts, memory, serving, traces, evals, guardrails, and human gates each carry separate failure modes.
+- vibe-coded internal tools should be reviewed by runtime boundary, not only app code: generated UI that performs business writes needs identity, permissions, approval, audit logs, scoped resources, and rollback before production use.
 - ambient agents should be treated as event-driven systems with model reasoning inserted after a cheap filter; the durable pattern is stream -> filter -> LLM judgment -> human escalation, not chat UI plus background polling.
 - agent fine-tuning should be treated as a governed improvement loop over trajectories, relative judging, rewards, checkpoints, eval gates, and rollback paths rather than as a standalone model-training trick.
 - RAG reliability should be reviewed at the knowledge-unit layer: chunks, question-answer packets, graph triples, page units, and governance-tagged claims create different retrieval and memory failure modes.

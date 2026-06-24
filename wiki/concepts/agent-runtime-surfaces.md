@@ -52,6 +52,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Codex GitHub Action turns repo-local skills into a CI runtime surface. In public OSS repos, that surface must account for trusted triggers, untrusted prompt input, protected secrets, reduced privileges, final-step execution, and whether the workflow can write back to the repo.
 - Graph memory backends such as Graphiti / Neo4j are runtime surfaces too: they decide how user facts are ingested as episodes, reconciled into entities and relationships, timestamped, queried, corrected, isolated by user namespace, and exposed back to the model.
 - Sim-style executable tables add a data-native runtime surface: rows hold case state while columns perform enrichment, workflow execution, condition checks, approval gates, and downstream triggers. This turns a business table into a row-scoped agent workflow surface rather than a passive store plus external webhook glue.
+- Governed internal-tool runtimes such as Retool-style resource layers are runtime surfaces for agent-built apps: generated code can remain portable, while production data calls inherit SSO identity, permission groups, approval gates, audit logs, and scoped credentials from the environment that executes them.
 - AI systems engineering reframes runtime surfaces as parts of one decision-producing loop: feature/context stores, prompt or model registries, tool registries, memory stores, guardrails, tracing, cost controls, and feedback channels all carry system responsibility.
 - Agentic technical debt is distributed across runtime surfaces: markdown configs behave like source code, model routing behaves like cost / reliability policy, tool descriptions behave like model-facing APIs, memory behaves like state governance, and tracing / eval / guardrails behave like release infrastructure.
 - Agent serving should be modeled around sessions rather than stateless requests. Invocation mode, state location, scaling pattern, observability boundary, idle-time cost, and human approval wait all become runtime-surface decisions.
@@ -94,6 +95,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)
+- [Vibe Coding is a Ticking Time Bomb](../articles/2026-06-18-vibe-coding-runtime-safety-boundary.md)
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 - [Don't Marry Your LLM Provider](../articles/dont-marry-your-llm-provider.md)
@@ -133,6 +135,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - skill marketplaces should expose category, owner, dependencies, setup requirements, on-demand hooks, usage signal, and promotion status so users can distinguish lightweight reference skills from runtime-policy-changing skills
 - memory providers should expose freshness, valid-time semantics, source episode links, deletion/correction controls, namespace isolation, and retrieval explanation rather than only promising "long-term memory"
 - executable-table runtimes should expose event logs, retry semantics, permission boundaries, trigger provenance, and rollback controls rather than hiding workflow complexity behind column configuration
+- generated internal-tool runtimes should expose identity, permission, approval, audit, and rollback boundaries as platform guarantees rather than relying on every coding-agent prompt to recreate them correctly
 - adoption ladders should separate runtime-surface changes from trust-boundary changes: embedding in a file, granting tool access, skipping approvals, running on a schedule, and delegating orchestration are different control surfaces
 - fine-tuning an agent should expose the training runtime as clearly as the inference runtime: which tasks produced trajectories, which judge produced rewards, which checkpoint is serving, and which eval gate can block or roll back the update
 
