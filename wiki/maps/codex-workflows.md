@@ -42,6 +42,7 @@
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Codex /goal Playbook](../articles/codex-goal-playbook.md)
 - [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
+- [Unlocking The Codex Harness](../articles/unlocking-the-codex-harness.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](../articles/openai-prompt-engineering-gpt-3-5-era.md)
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [OpenAI Prompt Guidance - GPT-5.4](../articles/openai-prompt-guidance-gpt-5-4.md)
@@ -82,3 +83,4 @@
 - Codex adoption should not be measured by reaching maximum autonomy; chatbot, copilot, agent, autopilot, workflow, Goal, and orchestration modes each fit different task stakes and review economics
 - Codex Mobile should be treated as a supervisor/control plane over connected engineering hosts: it is strongest when it lets humans select task boundaries, capture mobile context, steer runs, add review comments, and unblock bounded decisions without pretending the phone is the execution environment
 - Long-horizon Codex delegation needs a durable file stack, not just a long prompt: spec, milestone plan, implementation runbook, documentation/status, validation commands, and worktree isolation together define what the agent should keep doing and how humans can review it.
+- Codex App Server turns the Codex harness into an embeddable product runtime: clients integrate through thread / turn / item events, streamed assistant deltas, tool approvals, diff artifacts, and reconnectable session state rather than a flat request/response API.

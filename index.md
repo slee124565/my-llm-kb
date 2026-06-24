@@ -50,6 +50,7 @@
 - [Lessons From Building Claude Code: How We Use Skills](wiki/articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Using Skills To Accelerate OSS Maintenance](wiki/articles/using-skills-to-accelerate-oss-maintenance.md)
 - [Run Long Horizon Tasks With Codex](wiki/articles/run-long-horizon-tasks-with-codex.md)
+- [Unlocking The Codex Harness](wiki/articles/unlocking-the-codex-harness.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](wiki/articles/openai-prompt-engineering-gpt-3-5-era.md)
 - [OpenAI Prompt Guidance - GPT-5.5](wiki/articles/openai-prompt-guidance-gpt-5-5.md)
 - [OpenAI Prompt Guidance - GPT-5.4](wiki/articles/openai-prompt-guidance-gpt-5-4.md)

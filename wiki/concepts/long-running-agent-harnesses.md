@@ -65,6 +65,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Every's `The Eight Levels of AI Adoption` makes Level 5 `Workflows` the adoption threshold where harness design becomes load-bearing: moving beyond autopilot requires explicit planning, review, confidence checks, tests, guardrails, and repeatable output professionalization.
 - Long-horizon Codex experiments make durable project memory concrete: `prompt.md` freezes goals and constraints, `plans.md` defines milestones and validation, `implement.md` gives the runbook, and `documentation.md` records status, decisions, demo flow, known issues, and audit evidence.
 - Ambient-agent harnesses are long-running by default. They need backpressure control, cheap first-stage filters, bounded LLM wakeups, notification rate limits, replayable event windows, and a clear escalation tier before any irreversible action is allowed.
+- Codex App Server shows the harness protocol layer directly: thread persistence, turn lifecycle, item lifecycle, streamed deltas, tool approval pauses, diff artifacts, and client reconnect support are not UI details; they are runtime primitives for long-running coding-agent work.
 
 ## Signals From Recent Articles
 
@@ -105,6 +106,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [The Eight Levels of AI Adoption](../articles/every-the-eight-levels-of-ai-adoption.md)
 - [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
 - [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
+- [Unlocking The Codex Harness](../articles/unlocking-the-codex-harness.md)
 
 ## Open Questions
 
