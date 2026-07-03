@@ -28,6 +28,8 @@ LLM 與 agent 工具降低了 demo 門檻，但沒有降低 production system �
 - Prompt files, skills, tool descriptions, policy prompts, model routes, eval suites, and memory schemas should be treated as behavioral artifacts. They need versioning, review, rollout and rollback discipline because they change the decision-producing loop as directly as code.
 - AI systems engineering 必須把 evaluation 視為一等 artifact。對 non-deterministic outputs、tool loop、agent traces 與 human approval workflow，只靠單次人工看結果不構成可靠治理。
 - Fine-tuning pipelines for agents should be treated as system loops, not isolated ML experiments: scenario generation, trajectory capture, relative judging, reward construction, checkpoint lineage, serving, eval regression, and rollback all affect the decision-producing system.
+- Agentic RL is mostly a systems loop wrapped around a training algorithm: inference workers generate trajectories, trainers update weights, environments score outcomes, sandboxes constrain actions, and checkpoints move through eval and rollback gates.
+- Reward functions, rubrics, and verifiers are behavioral artifacts. In an RL loop, a bug in these artifacts does not merely misreport quality; it can teach the model to optimize the wrong behavior.
 - Human-supervised agent ops 是 AI systems engineering 的產品化方向之一：agent 擁有 operational loop，人類負責 policy、approval、exception review、taste calibration、evidence audit 與 rollout control。
 
 ## Signals From Recent Articles
@@ -41,6 +43,7 @@ LLM 與 agent 工具降低了 demo 門檻，但沒有降低 production system �
 - [After Automation](../articles/every-after-automation.md): cheap automation raises the value of framing, review, harnesses, and taste rather than eliminating system ownership.
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md): production corrections can become structured findings, eval targets, and bounded improvement loops.
 - [How to Fine-Tune LLMs in 2026](../articles/how-to-fine-tune-llms-in-2026.md): connects agent trajectories, GRPO/RULER-style relative rewards, LoRA checkpoints, and MCP tool-use training into a model-weight improvement loop that still needs systems governance.
+- [A Hands-On Guide to Agentic RL](../articles/a-hands-on-guide-to-agentic-rl.md): connects Prime Intellect environments, verifiable rewards, GRPO, asynchronous inference/training workers, and reward-function risk to the AI Systems Engineer ownership boundary.
 - [Question-Answer Packets for RAG](../articles/2026-05-08-question-answer-packets-for-rag.md): adds the RAG representation layer: claim-level packets, semantic deduplication, version/access metadata, validation, and vector export are part of the system, not just pre-processing.
 - [Vibe Coding is a Ticking Time Bomb](../articles/2026-06-18-vibe-coding-runtime-safety-boundary.md): shows why generated internal tools need runtime-level identity, permission, approval, audit, and scoped-resource enforcement before production writes are allowed.
 
@@ -87,6 +90,7 @@ If these questions are unanswered, the system is still a demo or assisted workfl
 - Human supervisor 的 evidence packet 應包含哪些欄位，才能讓 AI systems engineering 從「模型測試」升級成「可治理的 operational loop」？
 - 組織應如何把 AI 核心能力拆成 team charter、能力盤點、adoption ladder、review checklist 與 operating metrics，而不是停在工具採購或培訓課程？
 - 當 agent traces 被用來 fine-tune 模型權重時，哪些 artifact 必須進 registry：trajectory、judge prompt、reward output、training config、checkpoint、eval report、rollback decision？
+- 當 eval environment 被用來做 agentic RL 時，reward function 是否應像 production write path 一樣接受 code review、anti-gaming tests、sandbox review 與 rollback rehearsal？
 - RAG artifact registry 是否應把 parser config、chunking / packetization policy、semantic dedup threshold、governance schema、validation owner 與 vector export version 納入同一個 review surface？
 
 ## Related Pages

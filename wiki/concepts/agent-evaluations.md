@@ -23,6 +23,8 @@ For this repo, evals are part of harness design. They define success, preserve e
 - Automated evals are one layer in a broader quality system with production monitoring, A/B tests, user feedback, manual transcript review, and systematic human studies.
 - Production self-improvement loops work only when traces, corrections, reviewed findings, targeted evals, and regression suites are connected into a durable evidence chain.
 - Agent fine-tuning loops reuse many of the same eval artifacts. When tasks, trajectories, LLM-as-judge comparisons, reward signals, checkpoints, and rollback gates are versioned together, eval infrastructure can become training infrastructure rather than only a release gate.
+- Agentic RL makes the eval/training overlap explicit: the same task dataset, harness, and rubric can measure a frozen model or train a learning model. The artifact does not change; the difference is whether the score is reported or fed back into model weights.
+- Verifiable rewards are strongest when the task outcome can be checked by code, such as a solved puzzle or passing tests. That makes the grader cheaper and less subjective, but it also raises the stakes of reward bugs because a loophole can become trained behavior.
 - Benchmark scores should be read as performance inside a frame: model weights, prompt, scaffold, task distribution, environment, verifier, scoring policy, and human judgment all contribute.
 - GEPA-style skill optimization extends agent evals into procedural memory: execution traces identify failure points, candidate skill variants are evaluated with rubric-based judges, constraint gates prevent drift, and winning changes move through PRs rather than direct runtime mutation.
 - Self-evaluation by the same agent that wrote the skill is weak evidence. The stronger pattern is to separate the runtime that generated experience from the offline harness that reviews traces, constructs eval data, scores variants, enforces constraints, and records the change.
@@ -36,6 +38,7 @@ For this repo, evals are part of harness design. They define success, preserve e
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md): provides the anchor vocabulary for task / trial / grader / transcript / outcome / harness / suite, plus the practical zero-to-one roadmap.
 - [METR - Measuring AI Ability to Complete Long Tasks](../articles/metr-measuring-ai-ability-to-complete-long-tasks.md): anchors time-horizon evaluation as a task-duration / reliability curve for long-running agents, with clear caveats about scaffold, task distribution, and real-world messiness.
 - [How to Fine-Tune LLMs in 2026](../articles/how-to-fine-tune-llms-in-2026.md): shows how trajectory-level evaluation can feed RFT loops through GRPO and RULER-style relative LLM judging, while preserving the need for task distribution, judge calibration, reward-hacking checks, and checkpoint rollback.
+- [A Hands-On Guide to Agentic RL](../articles/a-hands-on-guide-to-agentic-rl.md): frames Prime Intellect-style environments as both eval harnesses and RL environments, anchored on task datasets, agent harnesses, rubrics, verifiable rewards, GRPO, and reward-hacking risk.
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md): shows how practitioner corrections can become targeted evals and regression gates when production evidence is structured.
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md): shows that noisy benchmark-heavy validation can miss real regressions, so production quality signals and rollback loops are part of the eval system.
 - [After Automation](../articles/every-after-automation.md): frames benchmarks and evals as artifacts inside a chosen task frame, not neutral proof of capability outside that frame.
@@ -55,6 +58,7 @@ For this repo, evals are part of harness design. They define success, preserve e
 - How can benchmark reports clearly separate model capability from prompt framing, scaffold design, verifier choices, and task distribution?
 - When a skill is improved from session traces, what evidence proves the new variant generalizes instead of overfitting to one user's recent failures?
 - When an eval suite becomes training input for RFT, what additional evidence is needed to prove the new checkpoint learned task-general behavior rather than judge-specific shortcuts?
+- Before an eval environment is used for agentic RL, what review should prove that its reward function, sandbox, task distribution, and trajectory schema are safe enough to feed into weight updates?
 
 ## Related Pages
 

@@ -56,6 +56,7 @@
 - [OpenAI Symphony Codex Orchestration](../articles/openai-symphony-codex-orchestration.md)
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [How to Fine-Tune LLMs in 2026](../articles/how-to-fine-tune-llms-in-2026.md)
+- [A Hands-On Guide to Agentic RL](../articles/a-hands-on-guide-to-agentic-rl.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [What Happens After Coding Is Solved](../articles/what-happens-after-coding-is-solved-boris-cherny.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
@@ -122,4 +123,5 @@
 - vibe-coded internal tools should be reviewed by runtime boundary, not only app code: generated UI that performs business writes needs identity, permissions, approval, audit logs, scoped resources, and rollback before production use.
 - ambient agents should be treated as event-driven systems with model reasoning inserted after a cheap filter; the durable pattern is stream -> filter -> LLM judgment -> human escalation, not chat UI plus background polling.
 - agent fine-tuning should be treated as a governed improvement loop over trajectories, relative judging, rewards, checkpoints, eval gates, and rollback paths rather than as a standalone model-training trick.
+- agentic RL should reuse eval-environment artifacts only after the task dataset, harness, rubric, sandbox, reward loopholes, checkpoint gates, and rollback path are reviewed as one system.
 - RAG reliability should be reviewed at the knowledge-unit layer: chunks, question-answer packets, graph triples, page units, and governance-tagged claims create different retrieval and memory failure modes.
