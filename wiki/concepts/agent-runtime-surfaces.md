@@ -61,6 +61,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Codex App Server makes the runtime surface explicit and embeddable: local apps, IDE extensions, web workers, and future TUI clients can all drive the same Codex core through JSON-RPC events for threads, turns, items, assistant deltas, tool approvals, diffs, configuration/auth, and session persistence.
 - Ambient agents add an event-stream runtime surface: sources, stream bus, windowing logic, threshold filters, local or cloud reasoners, notification channels, and kill switches jointly define what the agent can notice, how often it wakes the model, and when it interrupts a human.
 - Agent RFT adds a training-time runtime surface: agent client code, trajectory recorder, environment, LLM judge, reward adapter, vLLM inference server, GRPO trainer, LoRA checkpoint loading, eval gates, and rollback path all become separate operational responsibilities.
+- Alook-style local agent companies define another runtime surface: existing Claude Code or OpenCode sessions remain the execution hands, while a daemon, dashboard, agent identity, inbox, org chart, and calendar layer provide coordination, persistence, and review surfaces around them.
 
 ## Signals From Recent Articles
 
@@ -106,6 +107,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 - [Unlocking The Codex Harness](../articles/unlocking-the-codex-harness.md)
 - [How to Fine-Tune LLMs in 2026](../articles/how-to-fine-tune-llms-in-2026.md)
+- [How to Build Your Own AI Company](../articles/2026-07-03-ai-company-open-source-agent-org-chart.md)
 
 ## Open Questions
 
@@ -140,6 +142,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - generated internal-tool runtimes should expose identity, permission, approval, audit, and rollback boundaries as platform guarantees rather than relying on every coding-agent prompt to recreate them correctly
 - adoption ladders should separate runtime-surface changes from trust-boundary changes: embedding in a file, granting tool access, skipping approvals, running on a schedule, and delegating orchestration are different control surfaces
 - fine-tuning an agent should expose the training runtime as clearly as the inference runtime: which tasks produced trajectories, which judge produced rewards, which checkpoint is serving, and which eval gate can block or roll back the update
+- local multi-agent runtimes should expose role identity, inbox history, tool authority, schedule state, running sessions, and kill switches clearly enough that users can audit what the agent organization is doing
 
 ## Related Pages
 

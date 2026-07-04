@@ -66,6 +66,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Long-horizon Codex experiments make durable project memory concrete: `prompt.md` freezes goals and constraints, `plans.md` defines milestones and validation, `implement.md` gives the runbook, and `documentation.md` records status, decisions, demo flow, known issues, and audit evidence.
 - Ambient-agent harnesses are long-running by default. They need backpressure control, cheap first-stage filters, bounded LLM wakeups, notification rate limits, replayable event windows, and a clear escalation tier before any irreversible action is allowed.
 - Codex App Server shows the harness protocol layer directly: thread persistence, turn lifecycle, item lifecycle, streamed deltas, tool approval pauses, diff artifacts, and client reconnect support are not UI details; they are runtime primitives for long-running coding-agent work.
+- Alook-style agent org charts add a coordination-topology harness pattern: roles, inboxes, reporting lines, persistent local coding sessions, schedules, dashboards, and audit trails jointly carry long-running work that would otherwise collapse into an unreviewable multi-agent chat.
 
 ## Signals From Recent Articles
 
@@ -107,6 +108,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
 - [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 - [Unlocking The Codex Harness](../articles/unlocking-the-codex-harness.md)
+- [How to Build Your Own AI Company](../articles/2026-07-03-ai-company-open-source-agent-org-chart.md)
 
 ## Open Questions
 
@@ -138,6 +140,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - what minimum workflow harness is required before a team moves a task from supervised agent use to autopilot, always-on assistant, multi-agent, or orchestrator mode
 - which long-running task types need a full spec / plan / runbook / documentation file stack, and which can safely rely on a lighter checklist plus validation commands
 - when an initializer agent expands a vague product prompt into hundreds of feature checks, what review gate prevents the long-running harness from faithfully executing the wrong spec
+- when should long-running work be split into an agent org chart, and what evidence proves that role separation reduces coordination risk rather than adding handoff overhead
 
 ## Related Pages
 

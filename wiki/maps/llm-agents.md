@@ -57,6 +57,7 @@
 - [Building Self-Improving Tax Agents With Codex](../articles/building-self-improving-tax-agents-with-codex.md)
 - [How to Fine-Tune LLMs in 2026](../articles/how-to-fine-tune-llms-in-2026.md)
 - [A Hands-On Guide to Agentic RL](../articles/a-hands-on-guide-to-agentic-rl.md)
+- [How to Build Your Own AI Company](../articles/2026-07-03-ai-company-open-source-agent-org-chart.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [What Happens After Coding Is Solved](../articles/what-happens-after-coding-is-solved-boris-cherny.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
@@ -125,3 +126,4 @@
 - agent fine-tuning should be treated as a governed improvement loop over trajectories, relative judging, rewards, checkpoints, eval gates, and rollback paths rather than as a standalone model-training trick.
 - agentic RL should reuse eval-environment artifacts only after the task dataset, harness, rubric, sandbox, reward loopholes, checkpoint gates, and rollback path are reviewed as one system.
 - RAG reliability should be reviewed at the knowledge-unit layer: chunks, question-answer packets, graph triples, page units, and governance-tagged claims create different retrieval and memory failure modes.
+- multi-agent org charts should be judged by coordination topology, role-scoped tool authority, inbox/audit evidence, and supervisor value, not by the number of agents involved.
