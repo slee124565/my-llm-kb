@@ -35,6 +35,7 @@
 - [Harness Engineering](wiki/articles/harness-engineering-codex-agent-first-world.md)
 - [OpenAI Symphony Codex Orchestration](wiki/articles/openai-symphony-codex-orchestration.md)
 - [Jensen Huang - TPU Competition, China Chips, and Nvidia's Supply Chain Moat](wiki/articles/jensen-huang-tpu-china-chips-nvidia-supply-chain-moat.md)
+- [Your KV Caching Is Broken](wiki/articles/2026-07-07-your-kv-caching-is-broken.md)
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](wiki/articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [Introducing Codex](wiki/articles/introducing-codex.md)
 - [Building a Safe, Effective Sandbox to Enable Codex on Windows](wiki/articles/openai-building-codex-windows-sandbox.md)

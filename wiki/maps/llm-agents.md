@@ -64,6 +64,7 @@
 - [What Happens After Coding Is Solved](../articles/what-happens-after-coding-is-solved-boris-cherny.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
 - [Jensen Huang - TPU Competition, China Chips, and Nvidia's Supply Chain Moat](../articles/jensen-huang-tpu-china-chips-nvidia-supply-chain-moat.md)
+- [Your KV Caching Is Broken](../articles/2026-07-07-your-kv-caching-is-broken.md)
 - [Introducing Codex](../articles/introducing-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](../articles/using-plans-md-for-multi-hour-problem-solving.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](../articles/openai-prompt-engineering-gpt-3-5-era.md)
@@ -106,6 +107,7 @@
 - 如果 coding 不再是主要瓶頸，agent-era builder 的最小能力組合應如何定義，哪些 specialist review 仍然不可壓縮
 - 當 hosted model quality regressions 只在特定 routing path 或硬體平台上出現時，使用者可見的 agent reliability 應如何被觀測、解釋與治理
 - AI compute stack 的分裂或集中，會如何影響 hosted agent 的成本、可用性、可靠性與 developer ecosystem lock-in
+- agent inference economics should distinguish token price from repeated-context cost: prompt / prefix / KV cache behavior can dominate cost and latency when agent loops repeatedly resend stable prompts, tool schemas, documents, and memory summaries.
 - context window, externalized memory, and learned continual memory should be composed how if agents are expected to adapt to a user's or task's long-term context
 - future general agents should absorb specialized capabilities into one model, or orchestrate separate expert systems as tools
 - local personal agents with browser/app control should expose which security and agent-facing API contracts before becoming mainstream consumer software
@@ -128,6 +130,7 @@
 - agent fine-tuning should be treated as a governed improvement loop over trajectories, relative judging, rewards, checkpoints, eval gates, and rollback paths rather than as a standalone model-training trick.
 - agentic RL should reuse eval-environment artifacts only after the task dataset, harness, rubric, sandbox, reward loopholes, checkpoint gates, and rollback path are reviewed as one system.
 - RAG reliability should be reviewed at the knowledge-unit layer: chunks, question-answer packets, graph triples, page units, and governance-tagged claims create different retrieval and memory failure modes.
+- RAG and agent serving should also be reviewed at the inference-cache layer: document ordering, prefix stability, KV cache reuse, and cache locality can decide whether long-context workflows are economically viable.
 - multi-agent org charts should be judged by coordination topology, role-scoped tool authority, inbox/audit evidence, and supervisor value, not by the number of agents involved.
 - agent loop design should separate trigger, stop condition, primitive, task fit, verification evidence, and token budget rather than treating all recurring autonomy as the same pattern.
 - agentic coding should treat unknown discovery as part of the workflow: blindspot passes, prototypes, interviews, references, implementation notes, explainers, and quizzes externalize human judgment before and after the implementation loop.
