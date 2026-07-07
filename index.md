@@ -42,6 +42,7 @@
 - [How to Fine-Tune LLMs in 2026](wiki/articles/how-to-fine-tune-llms-in-2026.md)
 - [A Hands-On Guide to Agentic RL](wiki/articles/a-hands-on-guide-to-agentic-rl.md)
 - [How to Build Your Own AI Company](wiki/articles/2026-07-03-ai-company-open-source-agent-org-chart.md)
+- [A Field Guide to Fable: Finding Your Unknowns](wiki/articles/2026-07-03-a-field-guide-to-fable-finding-your-unknowns.md)
 - [Hermes Agent Masterclass](wiki/articles/hermes-agent-masterclass.md)
 - [Bespoke CLIs for Codex](wiki/articles/bespoke-clis-for-codex.md)
 - [Using PLANS.md for Multi-Hour Problem Solving](wiki/articles/using-plans-md-for-multi-hour-problem-solving.md)

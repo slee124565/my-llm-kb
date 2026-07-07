@@ -69,6 +69,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Ambient-agent harnesses are long-running by default. They need backpressure control, cheap first-stage filters, bounded LLM wakeups, notification rate limits, replayable event windows, and a clear escalation tier before any irreversible action is allowed.
 - Codex App Server shows the harness protocol layer directly: thread persistence, turn lifecycle, item lifecycle, streamed deltas, tool approval pauses, diff artifacts, and client reconnect support are not UI details; they are runtime primitives for long-running coding-agent work.
 - Alook-style agent org charts add a coordination-topology harness pattern: roles, inboxes, reporting lines, persistent local coding sessions, schedules, dashboards, and audit trails jointly carry long-running work that would otherwise collapse into an unreviewable multi-agent chat.
+- Unknown discovery should be an explicit harness phase for ambiguous long-running work. Blindspot passes, prototypes, interviews, references, implementation notes, explainers, and quizzes reduce the risk that an agent faithfully executes an incomplete or wrong map.
 
 ## Signals From Recent Articles
 
@@ -112,6 +113,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 - [Unlocking The Codex Harness](../articles/unlocking-the-codex-harness.md)
 - [How to Build Your Own AI Company](../articles/2026-07-03-ai-company-open-source-agent-org-chart.md)
+- [A Field Guide to Fable: Finding Your Unknowns](../articles/2026-07-03-a-field-guide-to-fable-finding-your-unknowns.md)
 
 ## Open Questions
 
@@ -145,6 +147,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - when an initializer agent expands a vague product prompt into hundreds of feature checks, what review gate prevents the long-running harness from faithfully executing the wrong spec
 - when should long-running work be split into an agent org chart, and what evidence proves that role separation reduces coordination risk rather than adding handoff overhead
 - which recurring tasks should graduate from turn-based prompts to goal loops, time-based loops, or proactive routines, and what evidence proves the extra autonomy is worth the cost
+- when an ambiguous task should spend one or more turns discovering unknowns before entering a goal loop or implementation session
 
 ## Related Pages
 

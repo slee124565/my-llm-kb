@@ -59,6 +59,7 @@
 - [A Hands-On Guide to Agentic RL](../articles/a-hands-on-guide-to-agentic-rl.md)
 - [How to Build Your Own AI Company](../articles/2026-07-03-ai-company-open-source-agent-org-chart.md)
 - [Getting Started With Loops](../articles/2026-07-06-getting-started-with-loops.md)
+- [A Field Guide to Fable: Finding Your Unknowns](../articles/2026-07-03-a-field-guide-to-fable-finding-your-unknowns.md)
 - [Claude Managed Agents](../articles/claude-managed-agents.md)
 - [What Happens After Coding Is Solved](../articles/what-happens-after-coding-is-solved-boris-cherny.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
@@ -129,3 +130,4 @@
 - RAG reliability should be reviewed at the knowledge-unit layer: chunks, question-answer packets, graph triples, page units, and governance-tagged claims create different retrieval and memory failure modes.
 - multi-agent org charts should be judged by coordination topology, role-scoped tool authority, inbox/audit evidence, and supervisor value, not by the number of agents involved.
 - agent loop design should separate trigger, stop condition, primitive, task fit, verification evidence, and token budget rather than treating all recurring autonomy as the same pattern.
+- agentic coding should treat unknown discovery as part of the workflow: blindspot passes, prototypes, interviews, references, implementation notes, explainers, and quizzes externalize human judgment before and after the implementation loop.

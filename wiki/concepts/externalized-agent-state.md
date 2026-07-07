@@ -51,6 +51,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - A long-running Codex file stack externalizes task memory at multiple layers: `prompt.md` holds target and constraints, `plans.md` holds milestones and acceptance criteria, `implement.md` holds execution discipline, and `documentation.md` holds progress, decisions, commands, demo flow, known issues, and handoff evidence.
 - Anthropic's long-running agent harness shows the same pattern in a compact coding setup: `init.sh` externalizes how to restart the app, git history externalizes recoverable working states, progress notes externalize recent decisions, and a structured JSON feature list externalizes both remaining work and completion evidence.
 - Codex App Server externalizes session state as a protocol stream: thread history, turn boundaries, item lifecycle events, streamed assistant deltas, tool approval requests, command execution records, and diffs can be replayed or reattached across clients instead of being trapped inside one UI session.
+- Unknown-discovery artifacts are state too: blindspot reports, throwaway prototypes, references, implementation notes, pitch / explainer packets, and post-change quizzes preserve the assumptions, deviations, taste judgments, and reviewer comprehension that would otherwise vanish after one agent session.
 
 ## Signals From Recent Articles
 
@@ -84,6 +85,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 - [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 - [Unlocking The Codex Harness](../articles/unlocking-the-codex-harness.md)
+- [A Field Guide to Fable: Finding Your Unknowns](../articles/2026-07-03-a-field-guide-to-fable-finding-your-unknowns.md)
 
 ## Open Questions
 
@@ -109,6 +111,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - static KB, temporal graph, session transcript, compact memory files, and skills should synchronize which facts, and which should remain separate sources of truth
 - table-native workflow state should version and audit which column changed, which workflow ran, which row values were used, and whether a human approval gate authorized the next action
 - feature lists that agents are allowed to update need ownership rules: who can add, delete, edit, or only mark checks as passing, and what evidence is required before a state transition is trusted
+- which unknown-discovery artifacts should be retained after a task completes, and which should be summarized into specs, docs, skills, tests, or retrospective notes before being discarded
 
 ## Related Pages
 

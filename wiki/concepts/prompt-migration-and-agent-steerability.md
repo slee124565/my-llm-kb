@@ -27,6 +27,7 @@ Prompt migration and agent steerability 指的是：當模型能力、API runtim
 - Persistent instructions should be pruned like code. If removing a rule would not cause agent mistakes, it probably does not belong in the always-loaded entry file.
 - Claude Code skill practice moves many steerability details out of always-loaded prompts: routing descriptions, gotchas, setup config, reference snippets, scripts, and verification routines belong in skill folders when they are reusable but not globally relevant.
 - OpenAI Agents SDK maintenance reinforces `description` as a steering surface: a skill description should encode the trigger condition, change scope, mandatory status, and expected evidence/output so the model can route before it reads the full workflow.
+- Thariq's Fable unknowns framing adds a pre-contract steering layer: when the human cannot yet state the final outcome clearly, blindspot passes, interviews, prototypes, references, and implementation plans help convert unknown knowns and unknown unknowns into a better task contract before implementation starts.
 
 ## GPT-5.5 Outcome-First Prompt Checklist
 
@@ -72,6 +73,7 @@ Prompt 負責定義 intent、success criteria、constraints、evidence policy、
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
+- [A Field Guide to Fable: Finding Your Unknowns](../articles/2026-07-03-a-field-guide-to-fable-finding-your-unknowns.md)
 
 ## Open Questions
 
@@ -83,6 +85,7 @@ Prompt 負責定義 intent、success criteria、constraints、evidence policy、
 - 當模型變得更強，哪些 harness rules 可以收斂成 outcome-first success criteria，哪些必須保持硬性規則
 - prompt benchmarks should report what intelligence is supplied by the prompt frame versus what is supplied by the model response
 - which steering rules should live in global prompt, repo entry file, task prompt, skill description, skill reference, hook, test, or runtime policy when the same behavior could be expressed in multiple layers
+- how should task prompts represent uncertainty when the user only knows the desired direction, taste, or risk profile after seeing prototypes or being interviewed
 
 ## Related Pages
 

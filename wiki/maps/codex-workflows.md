@@ -42,6 +42,7 @@
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Codex /goal Playbook](../articles/codex-goal-playbook.md)
 - [Getting Started With Loops](../articles/2026-07-06-getting-started-with-loops.md)
+- [A Field Guide to Fable: Finding Your Unknowns](../articles/2026-07-03-a-field-guide-to-fable-finding-your-unknowns.md)
 - [Mastering Codex Mobile For Engineering](../articles/mastering-codex-mobile-for-engineering.md)
 - [Unlocking The Codex Harness](../articles/unlocking-the-codex-harness.md)
 - [OpenAI Prompt Engineering - GPT-3.5 Era](../articles/openai-prompt-engineering-gpt-3-5-era.md)
@@ -86,3 +87,4 @@
 - Long-horizon Codex delegation needs a durable file stack, not just a long prompt: spec, milestone plan, implementation runbook, documentation/status, validation commands, and worktree isolation together define what the agent should keep doing and how humans can review it.
 - Codex App Server turns the Codex harness into an embeddable product runtime: clients integrate through thread / turn / item events, streamed assistant deltas, tool approvals, diff artifacts, and reconnectable session state rather than a flat request/response API.
 - Claude Code's loop taxonomy is useful for Codex workflow design too: interactive prompts, Goals, automations, skills, and scheduled routines should be chosen by trigger and stop condition, then bounded with verification artifacts and usage evidence.
+- Before a Codex Goal or long-horizon implementation run, ambiguous work should often start with unknown discovery: ask for blindspot passes, architecture-changing questions, throwaway prototypes, source-code references, and implementation-note discipline so the agent does not efficiently execute the wrong map.
