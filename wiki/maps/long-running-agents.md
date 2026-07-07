@@ -54,6 +54,7 @@
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 - [METR - Measuring AI Ability to Complete Long Tasks](../articles/metr-measuring-ai-ability-to-complete-long-tasks.md)
 - [How to Build Your Own AI Company](../articles/2026-07-03-ai-company-open-source-agent-org-chart.md)
+- [Getting Started With Loops](../articles/2026-07-06-getting-started-with-loops.md)
 
 ## Key People Or Labs
 
@@ -95,3 +96,4 @@
 - 25-hour Codex-style runs should be evaluated by the quality of their harness loop: stable spec, milestone acceptance criteria, validation after each milestone, repair-before-progress discipline, and inspectable documentation.
 - time-horizon benchmarks should be used as delegation-boundary estimates: when a task exceeds the agent's reliable human-duration horizon, split it into smaller verified tasks instead of assuming a longer run will preserve goal fidelity.
 - agent org charts are a long-running coordination pattern only when reporting lines, inbox state, schedules, and escalation rules reduce drift; otherwise they can turn one hard task into several harder-to-debug handoffs.
+- loop primitives should be selected by task shape: turn-based for short supervised work, goal-based for verifiable completion, time-based for external-state polling, and proactive workflows only when trigger, stop, review, cost, and escalation boundaries are explicit.

@@ -44,6 +44,8 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - Codex's Windows sandbox adds a local-machine harness pattern: practical agent safety may require composing OS primitives, dedicated users, firewall rules, restricted tokens, ACLs, setup binaries, and command runners because no single primitive maps cleanly to autonomous coding-agent work
 - Codex app primitives split long-running work into three productized harness modes: durable pinned threads for continuity, thread automations for periodic wakeups inside the same context, and Goals for tasks with a measurable verifier and stopping condition.
 - Codex `/goal` becomes more reliable when its persistent objective is backed by a concrete local artifact: a small status checklist for batch work, or a design doc with phases, acceptance criteria, tests, and commit gates for refactors.
+- Claude Code's loop taxonomy adds a portable harness design axis: classify loops by trigger, stop condition, runtime primitive, and task fit before choosing turn-based interaction, goal mode, time-based polling, or proactive automation.
+- Stop conditions are as important as prompts. Goal-based and proactive loops need deterministic checks, evaluator criteria, turn caps, cancellation paths, usage evidence, and escalation rules so the agent does not keep spending tokens after the useful loop has ended.
 - Codex Mobile makes several harness controls portable: worktree / branch / environment setup define task isolation before the first prompt, side chat keeps understanding questions out of the execution transcript, and mobile review / steering lets a human unblock long-running work without returning to the desktop.
 - Tax AI shows a production self-improvement harness pattern: practitioner corrections are captured as structured review rows, grouped into recurring findings, converted into targeted evals, and then handed to Codex inside a bounded repo / trace / eval / skill environment.
 - `After Automation` reframes benchmarks and evals as frame-dependent harness artifacts: a model's score measures performance inside a chosen prompt, verifier, and task boundary, so benchmark saturation should lead to frame analysis rather than simple replacement conclusions.
@@ -94,6 +96,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - [OpenAI Prompt Guidance - GPT-5.3 Codex](../articles/openai-prompt-guidance-gpt-5-3-codex.md)
 - [Getting The Most Out Of Codex](../articles/getting-the-most-out-of-codex.md)
 - [Codex /goal Playbook](../articles/codex-goal-playbook.md)
+- [Getting Started With Loops](../articles/2026-07-06-getting-started-with-loops.md)
 - [After Automation](../articles/every-after-automation.md)
 - [Demystifying Evals For AI Agents](../articles/demystifying-evals-for-ai-agents.md)
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
@@ -141,6 +144,7 @@ Long-running agent harnesses 是讓 agent 能在多輪、多 session、長時間
 - which long-running task types need a full spec / plan / runbook / documentation file stack, and which can safely rely on a lighter checklist plus validation commands
 - when an initializer agent expands a vague product prompt into hundreds of feature checks, what review gate prevents the long-running harness from faithfully executing the wrong spec
 - when should long-running work be split into an agent org chart, and what evidence proves that role separation reduces coordination risk rather than adding handoff overhead
+- which recurring tasks should graduate from turn-based prompts to goal loops, time-based loops, or proactive routines, and what evidence proves the extra autonomy is worth the cost
 
 ## Related Pages
 

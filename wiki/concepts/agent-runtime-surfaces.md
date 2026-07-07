@@ -49,6 +49,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Claude Code exposes a local terminal coding-agent surface where the user controls context, permissions, sandboxing, CLI tools, MCP servers, hooks, skills, subagents, plugins, checkpoints, and parallel sessions. These are separate control surfaces: some grant reach, some enforce invariants, some preserve reusable knowledge, and some isolate investigation or review context.
 - Hooks are a runtime guarantee rather than a prompt convention. When a behavior must happen every time, such as linting after edits or blocking writes to sensitive paths, it belongs closer to runtime policy than to advisory instructions.
 - Claude Code skills show how a runtime extension can combine progressive-disclosure context, executable scripts, reference assets, setup config, on-demand hooks, and usage logging. The skill folder is therefore both a context surface and an operational surface, not merely documentation.
+- Claude Code loops show another runtime-surface distinction: turn prompts, `/goal`, `/loop`, `/schedule`, dynamic workflows, auto mode, and `/usage` each expose different trigger, stop, autonomy, and cost-reporting controls; treating them as one generic "agent mode" hides important governance boundaries.
 - Codex GitHub Action turns repo-local skills into a CI runtime surface. In public OSS repos, that surface must account for trusted triggers, untrusted prompt input, protected secrets, reduced privileges, final-step execution, and whether the workflow can write back to the repo.
 - Graph memory backends such as Graphiti / Neo4j are runtime surfaces too: they decide how user facts are ingested as episodes, reconciled into entities and relationships, timestamped, queried, corrected, isolated by user namespace, and exposed back to the model.
 - Sim-style executable tables add a data-native runtime surface: rows hold case state while columns perform enrichment, workflow execution, condition checks, approval gates, and downstream triggers. This turns a business table into a row-scoped agent workflow surface rather than a passive store plus external webhook glue.
@@ -108,6 +109,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Unlocking The Codex Harness](../articles/unlocking-the-codex-harness.md)
 - [How to Fine-Tune LLMs in 2026](../articles/how-to-fine-tune-llms-in-2026.md)
 - [How to Build Your Own AI Company](../articles/2026-07-03-ai-company-open-source-agent-org-chart.md)
+- [Getting Started With Loops](../articles/2026-07-06-getting-started-with-loops.md)
 
 ## Open Questions
 
@@ -143,6 +145,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - adoption ladders should separate runtime-surface changes from trust-boundary changes: embedding in a file, granting tool access, skipping approvals, running on a schedule, and delegating orchestration are different control surfaces
 - fine-tuning an agent should expose the training runtime as clearly as the inference runtime: which tasks produced trajectories, which judge produced rewards, which checkpoint is serving, and which eval gate can block or roll back the update
 - local multi-agent runtimes should expose role identity, inbox history, tool authority, schedule state, running sessions, and kill switches clearly enough that users can audit what the agent organization is doing
+- loop-capable runtimes should expose trigger source, stop criteria, cancel controls, usage/cost breakdown, and whether the loop can act without real-time human approval
 
 ## Related Pages
 

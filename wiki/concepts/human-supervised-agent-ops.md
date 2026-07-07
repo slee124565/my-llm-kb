@@ -38,6 +38,7 @@ AI-native 應用的核心不只是「有 AI 功能」，而是 operational loop 
 - Every's `The Eight Levels of AI Adoption` turns this ownership shift into an adoption ladder: chatbot / copilot keep humans as primary operators, agent / autopilot delegate bounded execution, workflows professionalize the output, and assistant / multi-agent / orchestrator modes require explicit supervisor governance.
 - Ambient agents provide a proactivity ladder for human-supervised ops: notify only, ask a question before continuing, or prepare an action for review. Moving up that ladder should require stronger evidence, audit logs, rollback, and alert-budget discipline.
 - Agent org charts make the supervisor shift concrete for business operations: the human gives one brief to a front-door agent, while role-scoped agents plan, build, schedule, monitor, and notify through auditable inbox threads instead of requiring the human to relay every message.
+- Claude Code's loop framing makes supervisor responsibility more explicit: humans should choose whether a task needs a turn-based loop, a goal with a verifier, a time-based routine, or a proactive workflow, then define the stop condition, evidence threshold, usage budget, and escalation path.
 
 ## Working Thesis
 
@@ -128,6 +129,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 - [Building a Local Ambient Agent That Never Sleeps](../articles/building-a-local-ambient-agent-that-never-sleeps.md)
 - [How to Build Your Own AI Company](../articles/2026-07-03-ai-company-open-source-agent-org-chart.md)
+- [Getting Started With Loops](../articles/2026-07-06-getting-started-with-loops.md)
 
 ## Open Questions
 
@@ -144,6 +146,7 @@ Shopee 客服 harness 的設計錯位可以這樣分辨：
 - when approval is represented as a runtime gate over generated apps, what metadata is required for real governance: caller identity, role decision, write intent, before/after state, approver, timestamp, reason, and rollback path
 - adoption level should be chosen by which operational loops can be delegated with acceptable evidence, approval, rollback, and maintenance cost, not by the most autonomous demo available
 - multi-agent org charts need a governance test: whether role boundaries, inbox evidence, tool authority, schedules, and escalation rules make the human more effective as supervisor, or merely hide operational complexity behind agent-to-agent chatter
+- loop design should expose who owns trigger choice, stop criteria, token budget, cancellation, and escalation before recurring work is moved into background automation
 
 ## Startup Operating Pattern
 
