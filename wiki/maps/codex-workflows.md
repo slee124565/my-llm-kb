@@ -30,6 +30,7 @@
 
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [A single CLAUDE.md file just hit 192k GitHub stars](../articles/2026-07-14-claude-md-behavioral-guidelines.md)
 - [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
 - [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 - [Introducing Codex](../articles/introducing-codex.md)
@@ -88,3 +89,4 @@
 - Codex App Server turns the Codex harness into an embeddable product runtime: clients integrate through thread / turn / item events, streamed assistant deltas, tool approvals, diff artifacts, and reconnectable session state rather than a flat request/response API.
 - Claude Code's loop taxonomy is useful for Codex workflow design too: interactive prompts, Goals, automations, skills, and scheduled routines should be chosen by trigger and stop condition, then bounded with verification artifacts and usage evidence.
 - Before a Codex Goal or long-horizon implementation run, ambiguous work should often start with unknown discovery: ask for blindspot passes, architecture-changing questions, throwaway prototypes, source-code references, and implementation-note discipline so the agent does not efficiently execute the wrong map.
+- Karpathy-derived `CLAUDE.md` rule files are a useful comparison point for Codex `AGENTS.md`: recurring agent mistakes belong in a persistent project contract only when they are stable, high-signal, and backed by evidence or a clear fallback to tests, hooks, skills, docs, or review gates.

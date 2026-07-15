@@ -47,6 +47,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - Hermes Agent is a concrete local personal-agent runtime surface: one core AIAgent loop can be entered through CLI, messaging gateway, batch runner, IDE integration, profiles, cron, and multiple execution backends, while state lives under user-owned local files and SQLite.
 - Runtime-level profiles are stronger than persona prompts. If each profile owns its own config, memory, skills, sessions, and SOUL.md, multi-agent specialization becomes an isolation problem, not only a prompt-design problem.
 - Claude Code exposes a local terminal coding-agent surface where the user controls context, permissions, sandboxing, CLI tools, MCP servers, hooks, skills, subagents, plugins, checkpoints, and parallel sessions. These are separate control surfaces: some grant reach, some enforce invariants, some preserve reusable knowledge, and some isolate investigation or review context.
+- Project instruction files such as `CLAUDE.md` are advisory runtime surfaces: they can steer predictable behavior, but they are weaker than hooks, tests, permissions, sandboxing, or CI gates. Treating all behavior control as prompt text hides which surfaces can actually enforce invariants.
 - Hooks are a runtime guarantee rather than a prompt convention. When a behavior must happen every time, such as linting after edits or blocking writes to sensitive paths, it belongs closer to runtime policy than to advisory instructions.
 - Claude Code skills show how a runtime extension can combine progressive-disclosure context, executable scripts, reference assets, setup config, on-demand hooks, and usage logging. The skill folder is therefore both a context surface and an operational surface, not merely documentation.
 - Claude Code loops show another runtime-surface distinction: turn prompts, `/goal`, `/loop`, `/schedule`, dynamic workflows, auto mode, and `/usage` each expose different trigger, stop, autonomy, and cost-reporting controls; treating them as one generic "agent mode" hides important governance boundaries.
@@ -95,6 +96,7 @@ Agent runtime surfaces 指的是：agent 實際在哪裡運行、由誰持有 me
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [A single CLAUDE.md file just hit 192k GitHub stars](../articles/2026-07-14-claude-md-behavioral-guidelines.md)
 - [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md)
 - [Building Agent Memory with Knowledge Graphs](../articles/building-agent-memory-with-knowledge.md)
 - [Collapse Your CRM Pipeline Into One Table](../articles/collapse-your-crm-pipeline-into-one-table.md)

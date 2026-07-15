@@ -102,3 +102,5 @@
 - 2026-07-07: compiled Thariq `A Field Guide to Fable: Finding Your Unknowns` into an article card and merged unknown-discovery / implementation-note / reviewer-quiz observations into prompt steerability, externalized state, long-running harness, and Codex workflow pages.
 - 2026-07-08: imported X.com post `2026-07-07-your-kv-caching-is-broken` from https://x.com/akshay_pachaar/status/2074502882812952666; created raw source and draft article card for agent compile/writeback
 - 2026-07-08: compiled Akshay Pachaar `Your KV Caching Is Broken` into an article card and merged repeated-context / KV-cache / disaggregated inference-cache observations into AI compute infrastructure and LLM agent navigation.
+- 2026-07-15: imported X.com post `2026-07-14-claude-md-behavioral-guidelines` from https://x.com/i/status/2077032502993256646; created raw source and draft article card for agent compile/writeback
+- 2026-07-15: compiled `A single CLAUDE.md file just hit 192k GitHub stars` into an article card and merged project-instruction-file / behavior-contract observations into prompt steerability, repo system-of-record, runtime surface, and Codex / LLM agent navigation.

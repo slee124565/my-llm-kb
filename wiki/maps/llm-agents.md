@@ -43,6 +43,7 @@
 - [Vibe Coding is a Ticking Time Bomb](../articles/2026-06-18-vibe-coding-runtime-safety-boundary.md)
 - [Best Practices For Claude Code](../articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](../articles/lessons-from-building-claude-code-how-we-use-skills.md)
+- [A single CLAUDE.md file just hit 192k GitHub stars](../articles/2026-07-14-claude-md-behavioral-guidelines.md)
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [Demis Hassabis: Agents, AGI & The Next Big Scientific Breakthrough](../articles/demis-hassabis-agents-agi-next-big-scientific-breakthrough.md)
 - [LLM Knowledge Bases](../articles/karpathy-llm-knowledge-bases.md)
@@ -134,3 +135,4 @@
 - multi-agent org charts should be judged by coordination topology, role-scoped tool authority, inbox/audit evidence, and supervisor value, not by the number of agents involved.
 - agent loop design should separate trigger, stop condition, primitive, task fit, verification evidence, and token budget rather than treating all recurring autonomy as the same pattern.
 - agentic coding should treat unknown discovery as part of the workflow: blindspot passes, prototypes, interviews, references, implementation notes, explainers, and quizzes externalize human judgment before and after the implementation loop.
+- project instruction files should be judged as behavior contracts: they are valuable when they prevent recurring agent mistakes, but should be pruned or moved into tests, hooks, skills, or docs when they become context pollution.
