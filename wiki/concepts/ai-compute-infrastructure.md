@@ -18,6 +18,7 @@ Agent users experience this layer indirectly as model speed, price, reliability,
 - Agent inference cost should be reviewed as repeated-context economics, not only price per token: stable system prompts, tool definitions, RAG documents, memory summaries, and long histories can dominate cost when every agent step resends and recomputes the same context.
 - KV cache management is part of the inference infrastructure layer. Prefix caching helps stable prompts, but multi-document RAG, reordered documents, and growing conversations need deeper cache architecture if teams want to avoid recomputing reusable context.
 - Disaggregated cache layers such as LMCache point to a serving-stack split: inference stays compute-heavy, while cache movement across GPU memory, CPU RAM, SSD, and remote storage becomes a separate I/O-heavy service with its own observability and failure modes.
+- GPU serving for document workloads is a queueing and scheduling problem as well as a model problem: dynamic batching, prefill policy, worker warm capacity, scale-to-zero, cold-start latency, file-size distribution and end-to-end SLO jointly determine whether expensive accelerators are economical. Improving utilization while silently increasing queue delay is not a production win.
 - Supply-chain coordination can be a moat when one platform can align foundries, HBM suppliers, packaging, networking, cloud operators, and downstream demand earlier than competitors.
 - Energy, data-center construction, and skilled labor can become as important as chips once accelerator supply starts to scale.
 - Export controls are not only hardware restrictions; they influence which developer ecosystem becomes default in different countries.
@@ -29,6 +30,7 @@ Agent users experience this layer indirectly as model speed, price, reliability,
 - [Deep Dive into LLMs like ChatGPT](../articles/deep-dive-into-llms-like-chatgpt.md)
 - [A Postmortem of Three Recent Issues](../articles/a-postmortem-of-three-recent-issues.md)
 - [Your KV Caching Is Broken](../articles/2026-07-07-your-kv-caching-is-broken.md)
+- [The SLM-OCR Course Starts Now](../articles/2026-07-22-the-slm-ocr-course-starts-now-the.md)
 
 ## Open Questions
 

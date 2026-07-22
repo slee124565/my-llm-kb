@@ -54,6 +54,7 @@
 - [Best Practices For Claude Code](wiki/articles/best-practices-for-claude-code.md)
 - [Lessons From Building Claude Code: How We Use Skills](wiki/articles/lessons-from-building-claude-code-how-we-use-skills.md)
 - [A single CLAUDE.md file just hit 192k GitHub stars](wiki/articles/2026-07-14-claude-md-behavioral-guidelines.md)
+- [How Anthropic Runs Large-Scale Code Migrations With Claude Code](wiki/articles/2026-07-22-anthropic-large-scale-code-migrations-claude-code.md)
 - [Using Skills To Accelerate OSS Maintenance](wiki/articles/using-skills-to-accelerate-oss-maintenance.md)
 - [Run Long Horizon Tasks With Codex](wiki/articles/run-long-horizon-tasks-with-codex.md)
 - [Unlocking The Codex Harness](wiki/articles/unlocking-the-codex-harness.md)

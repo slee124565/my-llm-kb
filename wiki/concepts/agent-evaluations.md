@@ -32,6 +32,8 @@ For this repo, evals are part of harness design. They define success, preserve e
 - Time-horizon evaluations translate agent capability into a delegation boundary: they ask what human-task duration a `model + scaffold + task suite + grader` can complete at a target reliability level, so the result should be read as benchmarked task difficulty rather than literal AI runtime or a claim about whole-job replacement.
 - Eval suites themselves rot. They should be refreshed from sampled production traces, support queues, manual release checks, user feedback, and expert review so prompt, model-routing, tool-description, or memory changes are judged against current failure modes.
 - Example and integration validation in OSS agent SDKs should preserve per-example logs, rerun files, install/runtime evidence, and source intent. A passing exit code is evidence, but the stronger check is whether observed stdout/stderr matches the intended example flow across supported runtimes.
+- 大型程式遷移把 eval 的「judge-first」要求推到極致：先將舊系統的外部行為轉成可攜測試，確認它能通過原版、也能拒絕刻意破壞的版本，才讓 agent 大量翻譯。這類跨版本 parity suite 是 exit condition，不是最後才跑的 regression check。
+- 當完整測試套件尚未可攜時，真實情境的雙版本輸出 diff 可先成為暫時的行為裁判；但它仍需以對抗式檢查防止測試在改寫時被悄悄弱化，並應把 post-merge regression 回流為新增案例。
 
 ## Signals From Recent Articles
 
@@ -47,6 +49,7 @@ For this repo, evals are part of harness design. They define success, preserve e
 - [Hermes Agent Masterclass](../articles/hermes-agent-masterclass.md): frames GEPA as an offline trace-based optimizer for agent-authored skills, with eval data, rubric scoring, constraint gates, and PR-based change flow.
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md): argues that an agent without an eval harness is still a demo; adds reference-based, reference-free, trajectory, and online evals to the production debt map.
 - [Using Skills To Accelerate OSS Maintenance](../articles/using-skills-to-accelerate-oss-maintenance.md): shows example auto-run, integration tests, release review, and PR review as repeatable OSS maintenance eval surfaces.
+- [How Anthropic Runs Large-Scale Code Migrations With Claude Code](../articles/2026-07-22-anthropic-large-scale-code-migrations-claude-code.md): shows portable parity tests, deliberately broken-code checks, compiler / smoke-test queues, and output diffs as a migration-specific judge that multi-agent work can safely optimize against.
 
 ## Open Questions
 

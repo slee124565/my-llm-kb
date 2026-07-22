@@ -52,6 +52,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - Anthropic's long-running agent harness shows the same pattern in a compact coding setup: `init.sh` externalizes how to restart the app, git history externalizes recoverable working states, progress notes externalize recent decisions, and a structured JSON feature list externalizes both remaining work and completion evidence.
 - Codex App Server externalizes session state as a protocol stream: thread history, turn boundaries, item lifecycle events, streamed assistant deltas, tool approval requests, command execution records, and diffs can be replayed or reattached across clients instead of being trapped inside one UI session.
 - Unknown-discovery artifacts are state too: blindspot reports, throwaway prototypes, references, implementation notes, pitch / explainer packets, and post-change quizzes preserve the assumptions, deviations, taste judgments, and reviewer comprehension that would otherwise vanish after one agent session.
+- 大型遷移的 rulebook、gap inventory、dependency map、`TODO(port)` 標記、可重建的檔案佇列、compiler error list 與行為 parity 結果，也都是 externalized state。它們讓實作 agent、reviewer、fixer 與 build daemon 能在不同 context 和不同時間點接力，而不把「下一步該做什麼」鎖進某個 session。
 
 ## Signals From Recent Articles
 
@@ -86,6 +87,7 @@ Externalized agent state 指的是：把 agent 執行所需的關鍵狀態從單
 - [Run Long Horizon Tasks With Codex](../articles/run-long-horizon-tasks-with-codex.md)
 - [Unlocking The Codex Harness](../articles/unlocking-the-codex-harness.md)
 - [A Field Guide to Fable: Finding Your Unknowns](../articles/2026-07-03-a-field-guide-to-fable-finding-your-unknowns.md)
+- [How Anthropic Runs Large-Scale Code Migrations With Claude Code](../articles/2026-07-22-anthropic-large-scale-code-migrations-claude-code.md)
 
 ## Open Questions
 
