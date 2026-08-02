@@ -26,6 +26,7 @@
 - [Welcome to The AI Systems Engineer Journey](wiki/articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](wiki/articles/hidden-technical-debt-in-agentic-systems.md)
 - [Don't Marry Your LLM Provider](wiki/articles/dont-marry-your-llm-provider.md)
+- [InsForge Machine-Readable Overview](wiki/articles/2026-07-02-insforge-machine-readable-overview.md)
 - [Building a Local Ambient Agent That Never Sleeps](wiki/articles/building-a-local-ambient-agent-that-never-sleeps.md)
 - [Question-Answer Packets for RAG](wiki/articles/2026-05-08-question-answer-packets-for-rag.md)
 - [Vibe Coding is a Ticking Time Bomb](wiki/articles/2026-06-18-vibe-coding-runtime-safety-boundary.md)

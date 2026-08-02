@@ -38,6 +38,7 @@
 - [Welcome to The AI Systems Engineer Journey](../articles/welcome-to-the-ai-systems-engineer.md)
 - [Hidden Technical Debt in Agentic Systems](../articles/hidden-technical-debt-in-agentic-systems.md)
 - [Don't Marry Your LLM Provider](../articles/dont-marry-your-llm-provider.md)
+- [InsForge Machine-Readable Overview](../articles/2026-07-02-insforge-machine-readable-overview.md)
 - [Building a Local Ambient Agent That Never Sleeps](../articles/building-a-local-ambient-agent-that-never-sleeps.md)
 - [Question-Answer Packets for RAG](../articles/2026-05-08-question-answer-packets-for-rag.md)
 - [Vibe Coding is a Ticking Time Bomb](../articles/2026-06-18-vibe-coding-runtime-safety-boundary.md)
@@ -105,6 +106,7 @@
 - local personal agents 與 cloud coding agents 應共享哪些設計原則，又該在哪些地方刻意分流
 - provider-managed agent infrastructure 會不會把 runtime 與 orchestration 進一步集中到少數平台
 - AI gateway 會成為多模型、多 tool、多 MCP server agent stack 的必要 reverse proxy，還是只適合多 provider / 多 team / 高流量 production apps
+- agent-native cloud platform 應提供哪些 inspect / plan / permission / approval / audit / rollback contracts，才能讓 coding agent 從寫 code 延伸到操作 production infrastructure，而不只是把 dashboard clicks 換成高權限 CLI calls
 - 如果 coding 不再是主要瓶頸，agent-era builder 的最小能力組合應如何定義，哪些 specialist review 仍然不可壓縮
 - 當 hosted model quality regressions 只在特定 routing path 或硬體平台上出現時，使用者可見的 agent reliability 應如何被觀測、解釋與治理
 - AI compute stack 的分裂或集中，會如何影響 hosted agent 的成本、可用性、可靠性與 developer ecosystem lock-in
