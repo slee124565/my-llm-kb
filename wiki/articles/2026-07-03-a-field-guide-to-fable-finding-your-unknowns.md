@@ -6,7 +6,7 @@
 - Author: Thariq @trq212
 - Published: 2026-07-03
 - Captured: 2026-07-07T19:19:04+08:00
-- Raw file: `raw/sources/2026/2026-07-03-a-field-guide-to-fable-finding-your-unknowns.md`
+- Raw file: `raw/sources/2026/2026-07-03-the-map-is-not-the-territory.md`
 - Source note: X.com long-form post / article about using Claude Fable 5 by turning vague task intent into explicit unknowns, prototypes, references, implementation notes, explainers, and review quizzes.
 
 ## Main Claims

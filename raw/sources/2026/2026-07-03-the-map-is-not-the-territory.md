@@ -1,5 +1,5 @@
 ---
-article_id: 2026-07-03-a-field-guide-to-fable-finding-your-unknowns
+article_id: 2026-07-03-the-map-is-not-the-territory
 source_path: https://x.com/i/status/2073100352921215386
 source_kind: xcom-post
 captured: 2026-07-07T19:19:04+08:00
